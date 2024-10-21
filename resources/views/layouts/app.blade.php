@@ -1,23 +1,5 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<!-- META -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  
-<title>LIVE Builders Chennai</title>
-<meta name="description" content="LIVE Builders is a Construction and Promoters company based in Chennai. We construct commercial and residential buildings . We are the best constructors in india.">
-<meta name="keywords" content="LIVE Builders,construction,architect,builder,construction company in Tambaram,builders in Tambaram, architect in Tambaram,Tambaram builders,architects in Tambaram,architectural firms in Tambaram,architectural firms in Tambaram,architectural firms in Tambaram,list of architects in Tambaram,top construction companies in Tambaram,Architecture firm,Building contractors,Architects,Home builders,Building promoter's,Construction company in Tambaram,Architecture firm in Tambaram,Building contractors in Tambaram,Architects in Tambaram,Home builders in Tambaram,Building in Tambaram,promoter's in Tambaram,Construction company in Chennai district,Architecture firm in Chennai district,Building contractors in Chennai district,Architects in Chennai district,Home builders in Chennai district,Building in Chennai district,promoter's in Chennai district,Construction company in tamilnadu,Architecture firm in tamilnadu,Building contractors in tamilnadu,Architects in tamilnadu,Home builders in tamilnadu,Building in tamilnadu,promoter's in tamilnadu,Construction company in India,Architecture firm in India,Building contractors in India,Architects in India,Home builders in India,Building in India,promoter's in India,Construction company in marthandam,Architecture firm in marthandam,Building contractors in marthandam,Architects in marthandam,Home builders in marthandam,Building in marthandam,promoter's in marthandam,Construction company in Chennai,Architecture firm in Chennai,Building contractors in Chennai,Architects in Chennai,Home builders in Chennai,Building in Chennai,promoter's in Chennai,Construction company in colachel,Architecture firm in colachel,Building contractors in colachel,Architects in colachel,Home builders in colachel,Building in colachel,promoter's in colachel,Construction company in Tambaram,Architecture firm in Tambaram,Building contractors in Tambaram,Architects in Tambaram,Home builders in Tambaram,Building in Tambaram,promoter's in Tambaram,Construction company in Tambaram,Architecture firm in Tambaram,Building contractors in Tambaram,Architects in Tambaram,Home builders in Tambaram,Building in Tambaram,promoter's in Tambaram"/>
-<meta name="conduct" content="8608007005" />
-<meta name="address" content="Plot No: 103, Mahalakshmi Street,
-Irumbuliyur,East Tamabaram Chennai -59. " />
-<meta name="link" content="http://livebuilders.in/" />
-<meta name="map" content="https://goo.gl/maps/nDQDuA2hwPP2" />
-<meta name="author" content="Galaxy Kannan" />
-<meta name="copyright" content="LIVE Builders" />
-<link rel="shortcut icon" href="images/logo.png" title="LIVE Builders"  />
-<link href="" rel="search" title="Search LIVE Builders" type="application/opensearchdescription+xml"/>
+
 <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 <link rel="icon" type="image/png" href="images/logo.png">
 <meta name="viewport" content="width=device-width, initial-scale=1"/>

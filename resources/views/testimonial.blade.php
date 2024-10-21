@@ -1,3 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- META -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+<title>Testimonial Jas Construction Kanyakumari Dist</title>
+<meta name="description" content="Testimonial Jas Builders is a Construction and Promoters company based in Kanyakumari Dist. We construct commercial and residential buildings . We are the best constructors in india.">
+<meta name="keywords" content="Testimonial Jas Builders,construction,architect,builder,construction company in Tambaram,builders in Tambaram, architect in Tambaram,Tambaram builders,architects in Tambaram,architectural firms in Tambaram,architectural firms in Tambaram,architectural firms in Tambaram,list of architects in Tambaram,top construction companies in Tambaram,Architecture firm,Building contractors,Architects,Home builders,Building promoter's,Construction company in Tambaram,Architecture firm in Tambaram,Building contractors in Tambaram,Architects in Tambaram,Home builders in Tambaram,Building in Tambaram,promoter's in Tambaram,Construction company in Kanyakumari Dist district,Architecture firm in Kanyakumari Dist district,Building contractors in Kanyakumari Dist district,Architects in Kanyakumari Dist district,Home builders in Kanyakumari Dist district,Building in Kanyakumari Dist district,promoter's in Kanyakumari Dist district,Construction company in tamilnadu,Architecture firm in tamilnadu,Building contractors in tamilnadu,Architects in tamilnadu,Home builders in tamilnadu,Building in tamilnadu,promoter's in tamilnadu,Construction company in India,Architecture firm in India,Building contractors in India,Architects in India,Home builders in India,Building in India,promoter's in India,Construction company in marthandam,Architecture firm in marthandam,Building contractors in marthandam,Architects in marthandam,Home builders in marthandam,Building in marthandam,promoter's in marthandam,Construction company in Kanyakumari Dist,Architecture firm in Kanyakumari Dist,Building contractors in Kanyakumari Dist,Architects in Kanyakumari Dist,Home builders in Kanyakumari Dist,Building in Kanyakumari Dist,promoter's in Kanyakumari Dist,Construction company in colachel,Architecture firm in colachel,Building contractors in colachel,Architects in colachel,Home builders in colachel,Building in colachel,promoter's in colachel,Construction company in Tambaram,Architecture firm in Tambaram,Building contractors in Tambaram,Architects in Tambaram,Home builders in Tambaram,Building in Tambaram,promoter's in Tambaram,Construction company in Tambaram,Architecture firm in Tambaram,Building contractors in Tambaram,Architects in Tambaram,Home builders in Tambaram,Building in Tambaram,promoter's in Tambaram"/>
+<meta name="conduct" content="9894180324" />
+<meta name="address" content="6/28 B, Main Rd, Parvathipuram, Nagercoil, 629003, Tamil Nadu, India" />
+<meta name="link" content="http://jasconstruction.in/" />
+<meta name="map" content="" />
+<meta name="author" content="Galaxy Kannan" />
+<meta name="copyright" content="Testimonial Jas Construction" />
+<link rel="shortcut icon" href="images/logo.png" title="Testimonial Jas Construction"  />
+<link href="" rel="search" title="Search Testimonial Jas Construction" type="application/opensearchdescription+xml"/>
+
 @extends('layouts.app')
 @section('content')
 
