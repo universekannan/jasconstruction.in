@@ -5,16 +5,13 @@
                     <div class="row">
                         <div class="wt-topbar-right clearfix">
                         	<ul class="social-bx list-inline pull-right">
-                                <li><a href="https://www.facebook.com/;" class="fa fa-facebook"></a></li>
-                                <li><a href="https://www.twitter.com/;" class="fa fa-twitter"></a></li>
-                                <li><a href="https://www.linkedin.com/;" class="fa fa-linkedin"></a></li>
-                                <li><a href="" class="fa fa-rss"></a></li>
-                                <li><a href="https://www.youtube.com/;" class="fa fa-youtube"></a></li>
-                                <li><a href="https://www.instagram.com/;" class="fa fa-instagram"></a></li>
+                                <li><a href="https://www.facebook.com/share/a9G9JqYys45DwjZG/?mibextid=LQQJ4d/;" class="fa fa-facebook"></a></li>
+                                <li><a href="https://youtube.com/@jasconstructionngl?si=EtxsEu7GdNpfi_9t/;" class="fa fa-youtube"></a></li>
+                                <li><a href="https://www.instagram.com/jasconstruction_ngl/profilecard/?igsh=dXFkeTdkeWt4c2Nz/;" class="fa fa-instagram"></a></li>
                             </ul>
                             <ul class="list-unstyled e-p-bx pull-right">
                                 <li><i class="fa fa-envelope"></i> jasconstruction@outlook.com</li>
-                                <li><i class="fa fa-phone"></i> 9894180324</li>
+                                <li><i class="fa fa-phone"></i> 9894180324 </li>
                             </ul>
                             
                         </div>
@@ -28,7 +25,7 @@
                     	<!-- SITE LOGO -->
                         <div class="logo-header mostion header-skew">
                             <a href="{{ url('home') }}">
-                                <img src="{{ URL::to('/') }}/assets/images/LOGO.png" width="200" height="67" alt="" />
+                                <img src="{{ URL::to('/') }}/assets/images/logo.png" width="200" height="67" alt="" />
                             </a>
                         </div>
                         <!-- NAV TOGGLE BUTTON -->

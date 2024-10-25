@@ -59,7 +59,7 @@
                                         </div>
                                         <div class="icon-content">
                                             <h5>Phone</h5>
-                                            <p>+91 8608007005</p>
+                                            <p>+91 9894180324<br>+91 8940906655</p>
                                             <p></p>
                                         </div>
                                     </div>
@@ -74,7 +74,9 @@
                                     </div>
                                     <div class="icon-content">
                                         <h6>Email</h6>
-                                        <p>infolivebuilders@yahoo.com</p>
+                                        <p>jasconstruction@outlook.com <br>info@jasconstruction.in
+
+</p>
                                         <p></p>
                                     </div>
                                 </div>
@@ -89,7 +91,7 @@
                                     </div>
                                     <div class="icon-content">
                                         <h5>Address</h5>
-                                        <p>Plot No: 103, Mahalakshmi Street,<br /> Irumbuliyur,East Tamabaram Chennai -59.</p>
+                                        6/28 B, Main Rd,Parvathipuram,</br>Nagercoil,629003 ,</br>Tamil Nadu, India .
                                     </div>
                                 </div>
                             </div>
@@ -112,42 +114,52 @@
                                        <span class="separator-right bg-primary"></span>
                                     </div>
                                 </div>
+                                <form action="{{ url('contactdetails') }}" method="post" enctype="multipart/form-data">
+                        {{ csrf_field() }} 
                                 
-                                <form class="cons-contact-form" method="post" action="">
                          <div class="wt-icon-box-wraper center p-a30 bdr-2 bdr-gray-light">
                                     <div class="row">
                                     
-                                        <div class="col-md-12">
+                                       <div class="col-md-12">
                                             <div class="form-group">
-                                                <div class="input-group">
-                                                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                                                    <input name="username" type="text" required class="form-control" placeholder="Name">
+                                                <div for="full_name" class="input-group">
+                                                  <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                                    <input name="full_name" type="text" required class="form-control" placeholder="Name">
                                                 </div>
                                             </div>
                                         </div>
         
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <div class="input-group">
+                                                <div for="email_address" class="input-group">
                                                     <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                                                    <input name="email" type="text" class="form-control" required placeholder="Email">
+                                                    <input name="email_address" type="text" class="form-control" required placeholder="Email">
                                                 </div>
                                             </div>
         
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <div class="input-group">
-                                                    <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                                                    <input name="email" type="text" class="form-control" required placeholder="Email">
+                                                <div for="phone" class="input-group">
+                                                    <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                                                    <input name="phone" type="text" class="form-control" required placeholder="phone">
                                                 </div>
                                             </div>
-        
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <div class="input-group">
-                                                    <span class="input-group-addon v-align-m"><i class="fa fa-pencil"></i></span>
+                                                <div for="subject" class="input-group">
+                                                    <span class="input-group-addon"><i class="fa fa-book"></i></span>
+                                                    <input name="subject" type="text" class="form-control" required placeholder="Subject">
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                         
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <div for="message" class="input-group">
+                                                    <span  class="input-group-addon v-align-m"><i class="fa fa-pencil"></i></span>
                                                     <textarea name="message" rows="4" class="form-control " required placeholder="Message"></textarea>
                                                 </div>
                                             </div>
@@ -161,7 +173,7 @@
                                     </div>
                                 </div>
 
-                                </form>
+                             </form>
                         
                             </div>
 
@@ -175,7 +187,7 @@
                                    </div>
                                 </div>
                                  <div class="wt-icon-box-wraper center p-a30 bdr-2 bdr-gray-light">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3888.902330470827!2d80.1038719!3d12.9139986!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6b3d7ca39ce15208!2zMTLCsDU0JzUwLjQiTiA4MMKwMDYnMjEuOCJF!5e0!3m2!1sen!2sin!4v1670054187878!5m2!1sen!2sin" width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15796.436554878395!2d77.39915400000001!3d8.19175995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b04f0c9c8f8dafd%3A0x20f6553173a34848!2sParvathipuram%2C%20Nagercoil%2C%20Tamil%20Nadu%20629003!5e0!3m2!1sen!2sin!4v1729682526628!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                 </div>
                             </div>
 

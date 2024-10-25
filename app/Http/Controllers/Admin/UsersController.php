@@ -644,6 +644,12 @@ if (Auth::user()->usertype_id == 1 || Auth::user()->usertype_id == 2 ){
         return view( 'admin/users/leads', compact( 'users','location','usertype','shop','leads_type','leadstypename', 'from', 'to','leads_type_id' ) );
 
     }
+     public function contact() {
+      $contact = DB::table('contact_details')->orderBy( 'id', 'DESC' )->get();
+
+        return view('admin/users/contact',compact('contact'));
+    }
+
 
 
      public function updatelead(Request $request)

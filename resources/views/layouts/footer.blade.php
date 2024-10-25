@@ -8,11 +8,9 @@
             <div class="widget widget_services">
                <h4 class="widget-title">Useful links</h4>
                <ul>
-                  <li><a href="https://www.facebook.com/;" class="fa fa-facebook"> Facebook</a></li>
-                  <li><a href="https://www.twitter.com/;" class="fa fa-twitter"> Twitter</a></li>
-                  <li><a href="https://www.linkedin.com/;" class="fa fa-linkedin"> Linkedin</a></li>
-                  <li><a href="https://www.youtube.com/;" class="fa fa-youtube"> Youtube</a></li>
-                  <li><a href="https://www.instagram.com/;" class="fa fa-instagram"> Instagram</a></li>
+                  <li><a href="https://www.facebook.com/share/a9G9JqYys45DwjZG/?mibextid=LQQJ4d/;" class="fa fa-facebook"> Facebook</a></li>
+                  <li><a href="https://youtube.com/@jasconstructionngl?si=EtxsEu7GdNpfi_9t/;" class="fa fa-youtube"> Youtube</a></li>
+                  <li><a href="https://www.instagram.com/jasconstruction_ngl/profilecard/?igsh=dXFkeTdkeWt4c2Nz/;" class="fa fa-instagram"> Instagram</a></li>
                </ul>
             </div>
          </div>
@@ -20,10 +18,10 @@
             <div class="widget widget_about">
                <h4 class="widget-title">About Company</h4>
                <div class="logo-footer clearfix p-b15">
-                  <a href="contact-us.php"><img src="images/logo.png" width="230" height="67" alt=""/></a>
+                  <a href="contact-us.php"><img src="assets/images/logo.png" width="230" height="67" alt=""/></a>
                </div>
-               <p>Live Builders is one of the best real estate developers in chennai,Tamilnadu. We specialize in building premier and Baget residential projects . We bring you the finest homes that are unsurpassed in quality and elegance.
-               </p>
+               <p>Jas Construction is one of the best Builders in Kanniyakumari,Tamilnadu. We specialize in building premier and Baget residential projects . We bring you the finest homes that are unsurpassed in quality and elegance.
+               </p> 
             </div>
          </div>
          <!-- RESENT POST -->
@@ -51,9 +49,8 @@
                <div class="icon-content">
                   <h5 class="wt-tilte text-uppercase m-b0">Address</h5>
                   <p>6/28 B, Main Rd,
-Parvathipuram,</br>
-Nagercoil,629003 ,</br>
-Tamil Nadu, India .</p>
+Parvathipuram,Nagercoil, </br>
+Tamil Nadu 629003</p>
                </div>
             </div>
          </div>
@@ -64,7 +61,7 @@ Tamil Nadu, India .</p>
                </div>
                <div class="icon-content">
                   <h5 class="wt-tilte text-uppercase m-b0">Phone</h5>
-                  <p class="m-b0">+91 9894180324</p>
+                  <p class="m-b0">+91 9894180324<br>+91 8940906655</p>
                   <p></p>
                </div>
             </div>
@@ -76,7 +73,8 @@ Tamil Nadu, India .</p>
                </div>
                <div class="icon-content">
                   <h5 class="wt-tilte text-uppercase m-b0">Email</h5>
-                  <p class="m-b0">jasconstruction@outlook.com</p>
+                  <p class="m-b0">jasconstruction@outlook.com<br>info@jasconstruction.in
+</p>
                   <p></p>
                </div>
             </div>
@@ -91,7 +89,7 @@ Tamil Nadu, India .</p>
    <div class="container p-t30">
       <div class="row">
          <div class="wt-footer-bot-left">
-            <span class="copyrights-text">Live Builders © 2018 All Rights Reserved.<a href="http://galaxytechnologypark.com/">   Designed By Galaxy Technology Park Inc </a></span>
+            <span class="copyrights-text">JAS Construction © 2018 All Rights Reserved.<a href="http://galaxytechnologypark.com/">   Designed By Galaxy Technology Park Inc </a></span>
          </div>
          <div class="wt-footer-bot-right">
             <ul class="copyrights-nav pull-right">

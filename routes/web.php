@@ -10,6 +10,11 @@ Route::get('about_us', [App\Http\Controllers\MainController::class, 'about_us'])
 Route::get('gallery', [App\Http\Controllers\MainController::class, 'gallery'])->name('gallery');
 Route::get('testimonial', [App\Http\Controllers\MainController::class, 'testimonial'])->name('testimonial');
 Route::get('contactus', [App\Http\Controllers\MainController::class, 'contactus'])->name('contactus');
+ROUTE::post('contactdetails', [App\Http\Controllers\MainController::class, 'contactdetails'])->name('contactdetails');
+Route::get('admin/contact',[App\Http\Controllers\Admin\UsersController::class, 'contact'])->name('contact');
+Route::post('/updatedetails',[App\Http\Controllers\MainController::class, 'updatedetails'])->name('updatedetails');
+
+
 
 Route::get('project/{id}', [App\Http\Controllers\MainController::class, 'project'])->name('project');
 Route::get('projects/{id}', [App\Http\Controllers\MainController::class, 'projects'])->name('projects');

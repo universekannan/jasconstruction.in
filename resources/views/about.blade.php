@@ -45,7 +45,7 @@
                         <h3 class="post-title"><a href="javascript:void(0);">About  Live Builders</a></h3>
                      </div>
                      <div class="wt-post-text">
-                        <p>Live Builders is one of the best real estate developers in chennai,Tamilnadu. We specialize in building premier and Baget residential projects . We bring you the finest homes that are unsurpassed in quality and elegance.</p>
+                        <p>Jas Construction is one of the best Builders in Kanniyakumari,Tamilnadu. We specialize in building premier and Baget residential projects . We bring you the finest homes that are unsurpassed in quality and elegance.</p>
                      </div>
                      <div class="wt-post-title ">
                         <h3 class="post-title"><a href="javascript:void(0);">Our Mission </a></h3>
@@ -67,10 +67,10 @@
                         <h3 class="post-title"><a href="javascript:void(0);">History</a></h3>
                      </div>
                      <div class="wt-post-text">
-                        <p>Started way back 1985 by a group of professional, the LIVE BUILDERS came into being from 1996 through sustained and dedicated efforts. At present this concern develops properties (promotes residential flats, commercial complexes) and builds bungalows, commercial complexes and industrial buildings to their clients with the association and guidance of the leading Architects of this Metropolis and other cities too.</p>
+                        <p>Started way back , the Jas Construction came into being through sustained and dedicated efforts. At present this concern develops properties (promotes residential flats, commercial complexes) and builds bungalows, commercial complexes and industrial buildings to their clients with the association and guidance of the leading Architects of this Metropolis and other cities too.</p>
                      </div>
                   </div>
-               </div>
+               </div> 
             </div>
             <!-- LEFT PART END -->
             <!-- SIDE BAR START -->

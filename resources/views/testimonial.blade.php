@@ -49,14 +49,14 @@
                                 <div class="testimonial-text clearfix">
                                     <div class="testimonial-pic"><img src="assets/images/testimonials/testimonial.jpg" width="100" height="100" alt=""></div>
                                     <div class="testimonial-paragraph">
-                                        <p>Very good builders who provides nice housing.My first investment is with Live builders and I have gained very good returns.</p>
+                                        <p>Very good builders who provides nice housing.My first investment is with JAS construction and I have gained very good returns.</p>
                                         <br>
                                     </div>
                                 </div>
                                 <div class="testimonial-detail clearfix">
                                     <span class="fa fa-quote-left"></span>
                                     <strong class="testimonial-name">- RADHA KRISHNAN -</strong>
-                                    <span class="testimonial-position">MANGADU</span>
+                                    <span class="testimonial-position">Kanniyakumari</span>
                                 </div>
                             </div>
                         </div>
@@ -72,7 +72,7 @@
                                 <div class="testimonial-detail clearfix">
                                     <span class="fa fa-quote-left"></span>
                                     <strong class="testimonial-name">- VIMAL.B -</strong>
-                                    <span class="testimonial-position">TAMBARAM</span>
+                                    <span class="testimonial-position">Thukalay</span>
                                 </div>
                             </div>
                         </div>
@@ -89,7 +89,7 @@
                                 <div class="testimonial-detail clearfix">
                                     <span class="fa fa-quote-left"></span>
                                     <strong class="testimonial-name">- DHARANI DIVAKAR -</strong>
-                                    <span class="testimonial-position">MOGAPPAIR</span>
+                                    <span class="testimonial-position">Nagercoil</span>
                                 </div>
                             </div>
                         </div>

@@ -194,7 +194,7 @@
          <div class="row">
             <div class="col-md-5 col-sm-5">
                <div class="about-com-pic">
-                  <img src="images/about.jpg" alt="" class="img-responsive"/>
+                  <img src="assets/images/about.jpg" alt="" class="img-responsive"/>
                </div>
             </div>
             <div class="col-md-7 col-sm-7">
@@ -206,7 +206,7 @@
                         <span class="separator-right bg-primary"></span>
                      </div>
                   </div>
-                  <p>Jas Builders is one of the best real estate developers in Kanyakumari Dist,Tamilnadu. We specialize in building premier and Baget residential projects . We bring you the finest homes that are unsurpassed in quality and elegance.</p>
+                  <p>Jas Builders is one of the best Builders in Kanyakumari Dist,Tamilnadu. We specialize in building premier and Baget residential projects . We bring you the finest homes that are unsurpassed in quality and elegance.</p>
                   <h3>Why Choose Us?</h3>
                   <div class="list-style">
                      <div class="col-lg-6 col-sm-6 col-xs-12">
@@ -727,7 +727,7 @@
                   </div>
                   <div class="testimonial-detail">
                      <strong class="testimonial-name">- RADHA KRISHNAN - </strong>
-                     <span class="testimonial-position">MANGADU</span>
+                     <span class="testimonial-position">Kanniyakumari</span>
                   </div>
                </div>
             </div>
@@ -739,7 +739,7 @@
                   </div>
                   <div class="testimonial-detail">
                      <strong class="testimonial-name">- VIMAL.B -</strong>
-                     <span class="testimonial-position">TAMBARAM</span>
+                     <span class="testimonial-position">Thukalay</span>
                   </div>
                </div>
             </div>
@@ -751,7 +751,7 @@
                   </div>
                   <div class="testimonial-detail">
                      <strong class="testimonial-name">- DHARANI DIVAKAR -</strong>
-                     <span class="testimonial-position">MOGAPPAIR</span>
+                     <span class="testimonial-position">Nagercoil</span>
                   </div>
                </div>
             </div>
