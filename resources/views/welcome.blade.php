@@ -291,7 +291,7 @@
                <span class="separator-right site-bg-primary"></span>
             </div>
          </div>
-         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+         <p>JAS Constructions is founded to give you trust, value and services alike in each of their services, and this certainly needs special mentioning about their Successful era.</p>
       </div>
       <!-- TITLE END-->
       <div class="section-content m-b20">
@@ -304,7 +304,7 @@
                   </div>
                   <div class="icon-content">
                      <h5 class="wt-tilte text-uppercase">BEST QUALITY</h5>
-                     <p>Lorem Ipsum is simply dummy text of the printing and typesg indtrysum has been the Ipsum dummy of the printing indus Lorem Ipsum is simply dummy text of the printing and typesg indtrysum has been the Ipsum dummy of the printing indus Lorem Ipsum is simply dummy text of the printing and typesg indtrysum has been the Ipsum dummy of the printing indus .</p>
+                     <p>The jas constructions has always been in the look out for integrating quality, modernity as well as excellence in each one of their property. The aim of changing the way people approach quality in construction. </p>
                   </div>
                </div>
             </div>
@@ -316,7 +316,7 @@
                   </div>
                   <div class="icon-content ">
                      <h5 class="wt-tilte text-uppercase">INTEGRITY</h5>
-                     <p>Lorem Ipsum is simply dummy text of the printing and typesg indtrysum has been the Ipsum dummy of the printing indus .</p>
+                     <p>Their sole aim is to exceed the expectations placed by the customers in all ways possible. The brand keeps its communication with customers utmost transparent and makes trendsetting innovations like no other</p>
                   </div>
                </div>
             </div>
@@ -328,7 +328,7 @@
                   </div>
                   <div class="icon-content">
                      <h5 class="wt-tilte text-uppercase">STRATEGY</h5>
-                     <p>Lorem Ipsum is simply dummy text of the printing and typesg indtrysum has been the Ipsum dummy of the printing indus .</p>
+                     <p>The brand has absorbed the trust of their customers with riveting marketing strategies online and offline to which their construction standard proves to be on par.</p>
                   </div>
                </div>
             </div>
@@ -342,7 +342,7 @@
                   </div>
                   <div class="icon-content">
                      <h5 class="wt-tilte text-uppercase">SAFETY</h5>
-                     <p>Lorem Ipsum is simply dummy text of the printing and typesg indtrysum has been the Ipsum dummy of the printing indus .</p>
+                     <p> When a construction comes from this house, there is no denying that it is certainly of excellence quality with complete vastu compliance and dedication to futuristic lifestyle.</p>
                   </div>
                </div>
             </div>
@@ -354,7 +354,7 @@
                   </div>
                   <div class="icon-content">
                      <h5 class="wt-tilte text-uppercase">COMMUNITY</h5>
-                     <p>Lorem Ipsum is simply dummy text of the printing and typesg indtrysum has been the Ipsum dummy of the printing indus .</p>
+                     <p>Among all the builders out there in the city, jas construction is particularly  developing the buildings into integrated community each of which has become a landmark in the city .</p>
                   </div>
                </div>
             </div>
@@ -366,7 +366,7 @@
                   </div>
                   <div class="icon-content">
                      <h5 class="wt-tilte text-uppercase">SUSTAINABILITY</h5>
-                     <p>Lorem Ipsum is simply dummy text of the printing and typesg indtrysum has been the Ipsum dummy of the printing indus .</p>
+                     <p>Jas constructions has now successfully constructed over serveral landmark constructions altogether.And in the present-day scenario, jas constructions is known exclusively to make innovations to such an extent that it is synonymous to the same!</p>
                   </div>
                </div>
             </div>
@@ -517,7 +517,7 @@
                         </div>
                         <div class="icon-content">
                            <h5 class="wt-tilte text-uppercase">Years of Experience</h5>
-                           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod [...]</p>
+                           <p>Being in the industry for over 17+ years, Jas constructions  is among the leading construction in the city.  And being succesfull in their era.</p>
                         </div>
                      </div>
                   </div>
@@ -529,7 +529,7 @@
                         </div>
                         <div class="icon-content">
                            <h5 class="wt-tilte text-uppercase">Fully Insured</h5>
-                           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod [...]</p>
+                           <p>The cost of damage done to a structure while under construction including fire, vandalism, weather, and theft can be covered </p>
                         </div>
                      </div>
                   </div>
@@ -541,7 +541,7 @@
                         </div>
                         <div class="icon-content">
                            <h5 class="wt-tilte text-uppercase">Free Consultation</h5>
-                           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod [...]</p>
+                           <p>The purpose of a free consultation is to provide a potential client with information regarding the services that we provide.</p>
                         </div>
                      </div>
                   </div>
@@ -553,7 +553,7 @@
                         </div>
                         <div class="icon-content">
                            <h5 class="wt-tilte text-uppercase">Affordable Pricing</h5>
-                           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod [...]</p>
+                           <p>There are varying definitions of “Affordable Pricing”, but it can generally be considered as a price lower than that charged for high income countries.</p>
                         </div>
                      </div>
                   </div>
@@ -565,7 +565,7 @@
                         </div>
                         <div class="icon-content">
                            <h5 class="wt-tilte text-uppercase">Cost Control Experts</h5>
-                           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod [...]</p>
+                           <p>Cost control refers to the process of monitoring and managing expenses within an organization to maintain financial stability</p>
                         </div>
                      </div>
                   </div>
@@ -577,7 +577,7 @@
                         </div>
                         <div class="icon-content">
                            <h5 class="wt-tilte text-uppercase">Satisfied Customers</h5>
-                           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod [...]</p>
+                           <p>Customer satisfaction information, including surveys and ratings, can help a company determine how to best improve or change the services.</p>
                         </div>
                      </div>
                   </div>
