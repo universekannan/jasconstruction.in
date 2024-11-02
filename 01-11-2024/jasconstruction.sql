@@ -44,7 +44,7 @@ CREATE TABLE `banners` (
 --
 
 CREATE TABLE `project` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `category_id` int(10) NOT NULL,
   `project_status_id` int(20) DEFAULT NULL,
   `project_name` varchar(50) DEFAULT NULL,
@@ -56,7 +56,8 @@ CREATE TABLE `project` (
   `photo` varchar(10) DEFAULT NULL,
   `pro_old_balance` varchar(10) DEFAULT NULL,
   `user_id` int(11) DEFAULT NULL,
-  `date` datetime DEFAULT NULL
+  `date` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 -- --------------------------------------------------------
@@ -79,7 +80,7 @@ CREATE TABLE `project_image` (
 --
 
 CREATE TABLE `project_status` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `project_status_name` varchar(50) DEFAULT NULL,
   `status` int(1) DEFAULT NULL,
   `created_at` datetime(6) DEFAULT NULL,
