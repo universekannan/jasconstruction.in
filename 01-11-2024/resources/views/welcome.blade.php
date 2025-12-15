@@ -22,6 +22,15 @@
 
     @extends('layouts.app')
     @section('content')
+    <style>
+
+      @media only screen and (max-width:600px){
+        .fts{
+         font-size: 20px;
+        }
+          
+      }
+    </style>
     <div class="page-content">
         <!-- SLIDER START -->
         <div class="main-slider style-two default-banner">
@@ -31,7 +40,7 @@
                     <div id="rev_slider_1014_1_wrapper" class="rev_slider_wrapper fullscreen-container"
                         data-alias="typewriter-effect" data-source="gallery">
                         <div id="rev_slider_1014_1" class="rev_slider fullscreenbanner" style="display:none;"
-                            data-version="5.4.1">
+                            data-version="5.4.1" >
                             <ul>
                                 @foreach ($banners as $ban)
                                 <li data-index="rs-1000" data-transition="slidingoverlayhorizontal"
@@ -78,7 +87,7 @@
                            color: rgba(255, 255, 255, 1.00);
                            border-width:0px;">
                                         <span class="text-uppercase" style="font-family:'Roboto' ;"><span
-                                                class="text-primary">{{ $ban->banner_name }}
+                                                class="text-primary fts">{{ $ban->banner_name }}
                                     </div>
                                     <!-- LAYER NR. 3 [ for paragraph] -->
                                     <div class="tp-caption  tp-resizeme" id="slide-100-layer-3"
