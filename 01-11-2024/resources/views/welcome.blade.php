@@ -802,7 +802,7 @@
                     </div>
                     <div class="item">
                         <div class="testimonial-1 testimonial-bg">
-                            <div class="testimonial-pic quote-left radius shadow"><img src="images/main.jpg" width="100"
+                            <div class="testimonial-pic quote-left radius shadow"><img src="images/testimonial.jpg" width="100"
                                     height="100" alt=""></div>
                             <div class="testimonial-text">
                                 <p>A very good builder, providing quality homes at affordable rates. Do check them out
@@ -934,7 +934,7 @@
     <footer class="site-footer footer-dark">
         <!-- COLL-TO ACTION START -->
         <div class="call-to-action-wrap call-to-action-skew"
-            style="background-image:url(images/background/bg-4.png); background-repeat:repeat;background-color:#273447;">
+            style="background-image:url ('{{ asset('assets/images/background/bg-4.png') }}'); background-repeat:repeat;background-color:#273447;">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-sm-8">
