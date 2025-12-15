@@ -20,13 +20,13 @@
             </div>
             <!-- MAIN BAR START -->
             <div class="sticky-header main-bar-wraper">
-                <div class="main-bar bg-primary" style="height: 90;">
+            <div class="main-bar" style="height: 90px; background-color: white;">
                     <div class="container">
                     	<!-- SITE LOGO -->
                         <div class="logo-header mostion header-skew">
                             <a href="{{ url('home') }}">
                                 <img src="{{ URL::to('/') }}/assets/images/logo.png" width="200" height="67" alt="" />
-                            </a>
+                            </a> 
                         </div>
                         <!-- NAV TOGGLE BUTTON -->
                         <button data-target=".header-nav" data-toggle="collapse" type="button" class="navbar-toggle collapsed">
@@ -35,20 +35,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <!-- EXTRA NAV -->
-                       
-                        <!-- SITE Search AREA -->
-                       <!--  <div class="site-search">
-                            <form action="#">
-                                <div class="input-group">
-                                    <input name="site-search" type="text" class="form-control" placeholder="Type to search">
-                                    <span class="input-group-btn">
-                                        <button type="button" class="site-button"><i class="fa fa-search"></i></button>
-                                    </span>
-                                </div>
-                            </form>
-                        </div>-->
-                        <!-- MAIN NAV -->
+                      
                         <div class="header-nav navbar-collapse collapse ">
                             <ul class=" nav navbar-nav">
                                 <li class='active'>
