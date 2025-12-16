@@ -23,13 +23,12 @@
     @extends('layouts.app')
     @section('content')
     <style>
-
-      @media only screen and (max-width:600px){
-        .fts{
-         font-size: 20px;
+    @media only screen and (max-width:600px) {
+        .fts {
+            font-size: 20px;
         }
-          
-      }
+
+    }
     </style>
     <div class="page-content">
         <!-- SLIDER START -->
@@ -40,7 +39,7 @@
                     <div id="rev_slider_1014_1_wrapper" class="rev_slider_wrapper fullscreen-container"
                         data-alias="typewriter-effect" data-source="gallery">
                         <div id="rev_slider_1014_1" class="rev_slider fullscreenbanner" style="display:none;"
-                            data-version="5.4.1" >
+                            data-version="5.4.1">
                             <ul>
                                 @foreach ($banners as $ban)
                                 <li data-index="rs-1000" data-transition="slidingoverlayhorizontal"
@@ -198,14 +197,15 @@
                     <div class="col-md-7 col-sm-7">
                         <div class="section-head text-left">
                             <h2 class="text-uppercase">Welcome to Jas Construction</h2>
-                            Jas 
+                            Jas
                             <div class="wt-separator-outer">
                                 <div class="wt-separator style-square">
                                     <span class="separator-left bg-primary"></span>
                                     <span class="separator-right bg-primary"></span>
                                 </div>
                             </div>
-                            <p>Jas Construction is one of the best Construction in Kanyakumari Dist,Tamilnadu. We specialize in
+                            <p>Jas Construction is one of the best Construction in Kanyakumari Dist,Tamilnadu. We
+                                specialize in
                                 building premier and Baget residential projects . We bring you the finest homes that are
                                 unsurpassed in quality and elegance.</p>
                             <h3>Why Choose Us?</h3>
@@ -650,7 +650,7 @@
 
     <div class="section-full p-t80"
         style="background-image:url('{{ asset('assets/images/background/bg-4.png') }}'); background-repeat:repeat;background-color:#273447; ">
-        <div class="overlay-main"></div> 
+        <div class="overlay-main"></div>
         <div class="container">
             <div class="section-head">
                 <div class="row">
@@ -674,7 +674,7 @@
         </div>
         <div class="section-full p-t80 p-b50  bg-no-repeat bg-bottom-center bg-cover"
             style="background-image:url('{{ asset('assets/images/background/bg-6.jpg') }}');">
-            <div class="container"> 
+            <div class="container">
                 <!-- GALLERY CONTENT START -->
                 <div class="row">
                     <div class="portfolio-wrap mfp-gallery no-col-gap">
@@ -771,7 +771,7 @@
     <div class="section-full p-t80 p-b50 overlay-wraper " data-stellar-background-ratio="0.5"
         style="background-image:url('{{ asset('assets/images/background/bg3.jpg') }}');">
         <div class="overlay-main bg-black" style="opacity:0.8;"></div>
-        <div class="container"> 
+        <div class="container">
             <!-- TITLE START -->
             <div class="section-head text-center text-white">
                 <h2 class="text-uppercase">What Our Client Say</h2>
@@ -786,7 +786,8 @@
                             <div class="testimonial-pic quote-left radius shadow"><img src="images/main.jpg" width="100"
                                     height="100" alt=""></div>
                             <div class="testimonial-text">
-                                <p>Very good Construction who provides nice housing.My first investment is with Jas Construction
+                                <p>Very good Construction who provides nice housing.My first investment is with Jas
+                                    Construction
                                     and I have gained very good returns</p>
                             </div>
                             <div class="testimonial-detail">
@@ -811,8 +812,8 @@
                     </div>
                     <div class="item">
                         <div class="testimonial-1 testimonial-bg">
-                            <div class="testimonial-pic quote-left radius shadow"><img src="images/testimonial.jpg" width="100"
-                                    height="100" alt=""></div>
+                            <div class="testimonial-pic quote-left radius shadow"><img src="images/testimonial.jpg"
+                                    width="100" height="100" alt=""></div>
                             <div class="testimonial-text">
                                 <p>A very good builder, providing quality homes at affordable rates. Do check them out
                                     if you are in the market for a new Home.</p>
