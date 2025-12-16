@@ -30,6 +30,7 @@ class BannersController extends Controller
         $addbanners = DB::table('banners')->insert([
             'banner_name'   => $request->banner_name,
             'description'   => $request->description,
+            'banner_title'  => $request->banner_title,
             'banner_url'    => $banner_url,
             'status'        => 1,
         ]);

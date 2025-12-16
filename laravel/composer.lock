@@ -141,18 +141,6 @@
         },
         {
             "name": "brick/math",
-<<<<<<< HEAD:laravel/composer.lock
-            "version": "0.12.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/brick/math.git",
-                "reference": "866551da34e9a618e64a819ee1e01c20d8a588ba"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/brick/math/zipball/866551da34e9a618e64a819ee1e01c20d8a588ba",
-                "reference": "866551da34e9a618e64a819ee1e01c20d8a588ba",
-=======
             "version": "0.14.1",
             "source": {
                 "type": "git",
@@ -163,7 +151,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/brick/math/zipball/f05858549e5f9d7bb45875a75583240a38a281d0",
                 "reference": "f05858549e5f9d7bb45875a75583240a38a281d0",
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
                 "shasum": ""
             },
             "require": {
@@ -171,13 +158,8 @@
             },
             "require-dev": {
                 "php-coveralls/php-coveralls": "^2.2",
-<<<<<<< HEAD:laravel/composer.lock
-                "phpunit/phpunit": "^10.1",
-                "vimeo/psalm": "6.8.8"
-=======
                 "phpstan/phpstan": "2.1.22",
                 "phpunit/phpunit": "^11.5"
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
             },
             "type": "library",
             "autoload": {
@@ -207,11 +189,7 @@
             ],
             "support": {
                 "issues": "https://github.com/brick/math/issues",
-<<<<<<< HEAD:laravel/composer.lock
-                "source": "https://github.com/brick/math/tree/0.12.3"
-=======
                 "source": "https://github.com/brick/math/tree/0.14.1"
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
             },
             "funding": [
                 {
@@ -219,11 +197,7 @@
                     "type": "github"
                 }
             ],
-<<<<<<< HEAD:laravel/composer.lock
-            "time": "2025-02-28T13:11:00+00:00"
-=======
             "time": "2025-11-24T14:40:29+00:00"
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
         },
         {
             "name": "carbonphp/carbon-doctrine-types",
@@ -873,18 +847,6 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-<<<<<<< HEAD:laravel/composer.lock
-            "version": "7.9.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "7b2f29fe81dc4da0ca0ea7d42107a0845946ea77"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/7b2f29fe81dc4da0ca0ea7d42107a0845946ea77",
-                "reference": "7b2f29fe81dc4da0ca0ea7d42107a0845946ea77",
-=======
             "version": "7.10.0",
             "source": {
                 "type": "git",
@@ -895,7 +857,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/guzzle/guzzle/zipball/b51ac707cfa420b7bfd4e4d5e510ba8008e822b4",
                 "reference": "b51ac707cfa420b7bfd4e4d5e510ba8008e822b4",
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
                 "shasum": ""
             },
             "require": {
@@ -992,11 +953,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/guzzle/issues",
-<<<<<<< HEAD:laravel/composer.lock
-                "source": "https://github.com/guzzle/guzzle/tree/7.9.3"
-=======
                 "source": "https://github.com/guzzle/guzzle/tree/7.10.0"
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
             },
             "funding": [
                 {
@@ -1012,22 +969,6 @@
                     "type": "tidelift"
                 }
             ],
-<<<<<<< HEAD:laravel/composer.lock
-            "time": "2025-03-27T13:37:11+00:00"
-        },
-        {
-            "name": "guzzlehttp/promises",
-            "version": "2.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/guzzle/promises.git",
-                "reference": "7c69f28996b0a6920945dd20b3857e499d9ca96c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/7c69f28996b0a6920945dd20b3857e499d9ca96c",
-                "reference": "7c69f28996b0a6920945dd20b3857e499d9ca96c",
-=======
             "time": "2025-08-23T22:36:01+00:00"
         },
         {
@@ -1042,7 +983,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/guzzle/promises/zipball/481557b130ef3790cf82b713667b43030dc9c957",
                 "reference": "481557b130ef3790cf82b713667b43030dc9c957",
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
                 "shasum": ""
             },
             "require": {
@@ -1096,11 +1036,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/promises/issues",
-<<<<<<< HEAD:laravel/composer.lock
-                "source": "https://github.com/guzzle/promises/tree/2.2.0"
-=======
                 "source": "https://github.com/guzzle/promises/tree/2.3.0"
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
             },
             "funding": [
                 {
@@ -1116,22 +1052,6 @@
                     "type": "tidelift"
                 }
             ],
-<<<<<<< HEAD:laravel/composer.lock
-            "time": "2025-03-27T13:27:01+00:00"
-        },
-        {
-            "name": "guzzlehttp/psr7",
-            "version": "2.7.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/guzzle/psr7.git",
-                "reference": "c2270caaabe631b3b44c85f99e5a04bbb8060d16"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/c2270caaabe631b3b44c85f99e5a04bbb8060d16",
-                "reference": "c2270caaabe631b3b44c85f99e5a04bbb8060d16",
-=======
             "time": "2025-08-22T14:34:08+00:00"
         },
         {
@@ -1146,7 +1066,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/guzzle/psr7/zipball/21dc724a0583619cd1652f673303492272778051",
                 "reference": "21dc724a0583619cd1652f673303492272778051",
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
                 "shasum": ""
             },
             "require": {
@@ -1233,11 +1152,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/psr7/issues",
-<<<<<<< HEAD:laravel/composer.lock
-                "source": "https://github.com/guzzle/psr7/tree/2.7.1"
-=======
                 "source": "https://github.com/guzzle/psr7/tree/2.8.0"
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
             },
             "funding": [
                 {
@@ -1253,11 +1168,7 @@
                     "type": "tidelift"
                 }
             ],
-<<<<<<< HEAD:laravel/composer.lock
-            "time": "2025-03-27T12:30:47+00:00"
-=======
             "time": "2025-08-23T21:21:41+00:00"
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
         },
         {
             "name": "infyomlabs/laravel-generator-helpers",
@@ -1732,18 +1643,6 @@
         },
         {
             "name": "laravel/tinker",
-<<<<<<< HEAD:laravel/composer.lock
-            "version": "v2.10.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/laravel/tinker.git",
-                "reference": "22177cc71807d38f2810c6204d8f7183d88a57d3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/laravel/tinker/zipball/22177cc71807d38f2810c6204d8f7183d88a57d3",
-                "reference": "22177cc71807d38f2810c6204d8f7183d88a57d3",
-=======
             "version": "v2.10.2",
             "source": {
                 "type": "git",
@@ -1754,7 +1653,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/laravel/tinker/zipball/3bcb5f62d6f837e0f093a601e26badafb127bd4c",
                 "reference": "3bcb5f62d6f837e0f093a601e26badafb127bd4c",
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
                 "shasum": ""
             },
             "require": {
@@ -1805,15 +1703,9 @@
             ],
             "support": {
                 "issues": "https://github.com/laravel/tinker/issues",
-<<<<<<< HEAD:laravel/composer.lock
-                "source": "https://github.com/laravel/tinker/tree/v2.10.1"
-            },
-            "time": "2025-01-27T14:24:01+00:00"
-=======
                 "source": "https://github.com/laravel/tinker/tree/v2.10.2"
             },
             "time": "2025-11-20T16:29:12+00:00"
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
         },
         {
             "name": "laravel/ui",
@@ -1878,18 +1770,6 @@
         },
         {
             "name": "league/commonmark",
-<<<<<<< HEAD:laravel/composer.lock
-            "version": "2.7.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/thephpleague/commonmark.git",
-                "reference": "6fbb36d44824ed4091adbcf4c7d4a3923cdb3405"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/6fbb36d44824ed4091adbcf4c7d4a3923cdb3405",
-                "reference": "6fbb36d44824ed4091adbcf4c7d4a3923cdb3405",
-=======
             "version": "2.8.0",
             "source": {
                 "type": "git",
@@ -1900,7 +1780,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/4efa10c1e56488e658d10adf7b7b7dcd19940bfb",
                 "reference": "4efa10c1e56488e658d10adf7b7b7dcd19940bfb",
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
                 "shasum": ""
             },
             "require": {
@@ -1937,11 +1816,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD:laravel/composer.lock
-                    "dev-main": "2.8-dev"
-=======
                     "dev-main": "2.9-dev"
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
                 }
             },
             "autoload": {
@@ -1998,11 +1873,7 @@
                     "type": "tidelift"
                 }
             ],
-<<<<<<< HEAD:laravel/composer.lock
-            "time": "2025-05-05T12:20:28+00:00"
-=======
             "time": "2025-11-26T21:48:24+00:00"
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
         },
         {
             "name": "league/config",
@@ -2579,18 +2450,6 @@
         },
         {
             "name": "nette/utils",
-<<<<<<< HEAD:laravel/composer.lock
-            "version": "v4.0.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nette/utils.git",
-                "reference": "ce708655043c7050eb050df361c5e313cf708309"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nette/utils/zipball/ce708655043c7050eb050df361c5e313cf708309",
-                "reference": "ce708655043c7050eb050df361c5e313cf708309",
-=======
             "version": "v4.1.0",
             "source": {
                 "type": "git",
@@ -2601,7 +2460,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/nette/utils/zipball/fa1f0b8261ed150447979eb22e373b7b7ad5a8e0",
                 "reference": "fa1f0b8261ed150447979eb22e373b7b7ad5a8e0",
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
                 "shasum": ""
             },
             "require": {
@@ -2675,24 +2533,6 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/utils/issues",
-<<<<<<< HEAD:laravel/composer.lock
-                "source": "https://github.com/nette/utils/tree/v4.0.6"
-            },
-            "time": "2025-03-30T21:06:30+00:00"
-        },
-        {
-            "name": "nikic/php-parser",
-            "version": "v5.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "447a020a1f875a434d62f2a401f53b82a396e494"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/447a020a1f875a434d62f2a401f53b82a396e494",
-                "reference": "447a020a1f875a434d62f2a401f53b82a396e494",
-=======
                 "source": "https://github.com/nette/utils/tree/v4.1.0"
             },
             "time": "2025-12-01T17:49:23+00:00"
@@ -2709,7 +2549,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/dca41cd15c2ac9d055ad70dbfd011130757d1f82",
                 "reference": "dca41cd15c2ac9d055ad70dbfd011130757d1f82",
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
                 "shasum": ""
             },
             "require": {
@@ -2752,15 +2591,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nikic/PHP-Parser/issues",
-<<<<<<< HEAD:laravel/composer.lock
-                "source": "https://github.com/nikic/PHP-Parser/tree/v5.4.0"
-            },
-            "time": "2024-12-30T11:07:19+00:00"
-=======
                 "source": "https://github.com/nikic/PHP-Parser/tree/v5.7.0"
             },
             "time": "2025-12-06T11:56:16+00:00"
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
         },
         {
             "name": "opis/closure",
@@ -3401,18 +3234,6 @@
         },
         {
             "name": "psy/psysh",
-<<<<<<< HEAD:laravel/composer.lock
-            "version": "v0.12.8",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "85057ceedee50c49d4f6ecaff73ee96adb3b3625"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/85057ceedee50c49d4f6ecaff73ee96adb3b3625",
-                "reference": "85057ceedee50c49d4f6ecaff73ee96adb3b3625",
-=======
             "version": "v0.12.17",
             "source": {
                 "type": "git",
@@ -3423,7 +3244,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/bobthecow/psysh/zipball/85fbbd9f3064e157fc21fe4362b2b5c19f2ea631",
                 "reference": "85fbbd9f3064e157fc21fe4362b2b5c19f2ea631",
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
                 "shasum": ""
             },
             "require": {
@@ -3487,15 +3307,9 @@
             ],
             "support": {
                 "issues": "https://github.com/bobthecow/psysh/issues",
-<<<<<<< HEAD:laravel/composer.lock
-                "source": "https://github.com/bobthecow/psysh/tree/v0.12.8"
-            },
-            "time": "2025-03-16T03:05:19+00:00"
-=======
                 "source": "https://github.com/bobthecow/psysh/tree/v0.12.17"
             },
             "time": "2025-12-15T04:55:34+00:00"
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
         },
         {
             "name": "ralouphie/getallheaders",
@@ -3697,18 +3511,6 @@
         },
         {
             "name": "sabberworm/php-css-parser",
-<<<<<<< HEAD:laravel/composer.lock
-            "version": "v8.8.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/MyIntervals/PHP-CSS-Parser.git",
-                "reference": "3de493bdddfd1f051249af725c7e0d2c38fed740"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/MyIntervals/PHP-CSS-Parser/zipball/3de493bdddfd1f051249af725c7e0d2c38fed740",
-                "reference": "3de493bdddfd1f051249af725c7e0d2c38fed740",
-=======
             "version": "v8.9.0",
             "source": {
                 "type": "git",
@@ -3719,7 +3521,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/MyIntervals/PHP-CSS-Parser/zipball/d8e916507b88e389e26d4ab03c904a082aa66bb9",
                 "reference": "d8e916507b88e389e26d4ab03c904a082aa66bb9",
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
                 "shasum": ""
             },
             "require": {
@@ -3727,12 +3528,8 @@
                 "php": "^5.6.20 || ^7.0.0 || ~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0"
             },
             "require-dev": {
-<<<<<<< HEAD:laravel/composer.lock
-                "phpunit/phpunit": "5.7.27 || 6.5.14 || 7.5.20 || 8.5.41"
-=======
                 "phpunit/phpunit": "5.7.27 || 6.5.14 || 7.5.20 || 8.5.41",
                 "rawr/cross-data-providers": "^2.0.0"
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
             },
             "suggest": {
                 "ext-mbstring": "for parsing UTF-8 CSS"
@@ -3774,15 +3571,9 @@
             ],
             "support": {
                 "issues": "https://github.com/MyIntervals/PHP-CSS-Parser/issues",
-<<<<<<< HEAD:laravel/composer.lock
-                "source": "https://github.com/MyIntervals/PHP-CSS-Parser/tree/v8.8.0"
-            },
-            "time": "2025-03-23T17:59:05+00:00"
-=======
                 "source": "https://github.com/MyIntervals/PHP-CSS-Parser/tree/v8.9.0"
             },
             "time": "2025-07-11T13:20:48+00:00"
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -3961,18 +3752,6 @@
         },
         {
             "name": "symfony/css-selector",
-<<<<<<< HEAD:laravel/composer.lock
-            "version": "v7.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/css-selector.git",
-                "reference": "601a5ce9aaad7bf10797e3663faefce9e26c24e2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/css-selector/zipball/601a5ce9aaad7bf10797e3663faefce9e26c24e2",
-                "reference": "601a5ce9aaad7bf10797e3663faefce9e26c24e2",
-=======
             "version": "v7.4.0",
             "source": {
                 "type": "git",
@@ -3983,7 +3762,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/css-selector/zipball/ab862f478513e7ca2fe9ec117a6f01a8da6e1135",
                 "reference": "ab862f478513e7ca2fe9ec117a6f01a8da6e1135",
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
                 "shasum": ""
             },
             "require": {
@@ -4019,11 +3797,7 @@
             "description": "Converts CSS selectors to XPath expressions",
             "homepage": "https://symfony.com",
             "support": {
-<<<<<<< HEAD:laravel/composer.lock
-                "source": "https://github.com/symfony/css-selector/tree/v7.2.0"
-=======
                 "source": "https://github.com/symfony/css-selector/tree/v7.4.0"
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
             },
             "funding": [
                 {
@@ -4043,11 +3817,7 @@
                     "type": "tidelift"
                 }
             ],
-<<<<<<< HEAD:laravel/composer.lock
-            "time": "2024-09-25T14:21:43+00:00"
-=======
             "time": "2025-10-30T13:39:42+00:00"
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -4189,18 +3959,6 @@
         },
         {
             "name": "symfony/event-dispatcher",
-<<<<<<< HEAD:laravel/composer.lock
-            "version": "v6.4.13",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/event-dispatcher.git",
-                "reference": "0ffc48080ab3e9132ea74ef4e09d8dcf26bf897e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/0ffc48080ab3e9132ea74ef4e09d8dcf26bf897e",
-                "reference": "0ffc48080ab3e9132ea74ef4e09d8dcf26bf897e",
-=======
             "version": "v6.4.25",
             "source": {
                 "type": "git",
@@ -4211,7 +3969,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/b0cf3162020603587363f0551cd3be43958611ff",
                 "reference": "b0cf3162020603587363f0551cd3be43958611ff",
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
                 "shasum": ""
             },
             "require": {
@@ -4262,11 +4019,7 @@
             "description": "Provides tools that allow your application components to communicate with each other by dispatching events and listening to them",
             "homepage": "https://symfony.com",
             "support": {
-<<<<<<< HEAD:laravel/composer.lock
-                "source": "https://github.com/symfony/event-dispatcher/tree/v6.4.13"
-=======
                 "source": "https://github.com/symfony/event-dispatcher/tree/v6.4.25"
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
             },
             "funding": [
                 {
@@ -4286,11 +4039,7 @@
                     "type": "tidelift"
                 }
             ],
-<<<<<<< HEAD:laravel/composer.lock
-            "time": "2024-09-25T14:18:03+00:00"
-=======
             "time": "2025-08-13T09:41:44+00:00"
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
         },
         {
             "name": "symfony/event-dispatcher-contracts",
@@ -4433,18 +4182,6 @@
         },
         {
             "name": "symfony/http-foundation",
-<<<<<<< HEAD:laravel/composer.lock
-            "version": "v5.4.48",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "3f38b8af283b830e1363acd79e5bc3412d055341"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/3f38b8af283b830e1363acd79e5bc3412d055341",
-                "reference": "3f38b8af283b830e1363acd79e5bc3412d055341",
-=======
             "version": "v5.4.50",
             "source": {
                 "type": "git",
@@ -4455,7 +4192,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/http-foundation/zipball/1a0706e8b8041046052ea2695eb8aeee04f97609",
                 "reference": "1a0706e8b8041046052ea2695eb8aeee04f97609",
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
                 "shasum": ""
             },
             "require": {
@@ -4502,11 +4238,7 @@
             "description": "Defines an object-oriented layer for the HTTP specification",
             "homepage": "https://symfony.com",
             "support": {
-<<<<<<< HEAD:laravel/composer.lock
-                "source": "https://github.com/symfony/http-foundation/tree/v5.4.48"
-=======
                 "source": "https://github.com/symfony/http-foundation/tree/v5.4.50"
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
             },
             "funding": [
                 {
@@ -4526,22 +4258,6 @@
                     "type": "tidelift"
                 }
             ],
-<<<<<<< HEAD:laravel/composer.lock
-            "time": "2024-11-13T18:58:02+00:00"
-        },
-        {
-            "name": "symfony/http-kernel",
-            "version": "v5.4.48",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/http-kernel.git",
-                "reference": "c2dbfc92b851404567160d1ecf3fb7d9b7bde9b0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/c2dbfc92b851404567160d1ecf3fb7d9b7bde9b0",
-                "reference": "c2dbfc92b851404567160d1ecf3fb7d9b7bde9b0",
-=======
             "time": "2025-11-03T12:58:48+00:00"
         },
         {
@@ -4556,7 +4272,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/http-kernel/zipball/2fe5cf994d7e1e189258b7f7d3395cc5999a9762",
                 "reference": "2fe5cf994d7e1e189258b7f7d3395cc5999a9762",
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
                 "shasum": ""
             },
             "require": {
@@ -4640,11 +4355,7 @@
             "description": "Provides a structured process for converting a Request into a Response",
             "homepage": "https://symfony.com",
             "support": {
-<<<<<<< HEAD:laravel/composer.lock
-                "source": "https://github.com/symfony/http-kernel/tree/v5.4.48"
-=======
                 "source": "https://github.com/symfony/http-kernel/tree/v5.4.50"
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
             },
             "funding": [
                 {
@@ -4664,11 +4375,7 @@
                     "type": "tidelift"
                 }
             ],
-<<<<<<< HEAD:laravel/composer.lock
-            "time": "2024-11-27T12:43:17+00:00"
-=======
             "time": "2025-11-12T11:09:00+00:00"
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
         },
         {
             "name": "symfony/mime",
@@ -4757,11 +4464,7 @@
         },
         {
             "name": "symfony/polyfill-ctype",
-<<<<<<< HEAD:laravel/composer.lock
-            "version": "v1.32.0",
-=======
             "version": "v1.33.0",
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
@@ -4820,11 +4523,7 @@
                 "portable"
             ],
             "support": {
-<<<<<<< HEAD:laravel/composer.lock
-                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.32.0"
-=======
                 "source": "https://github.com/symfony/polyfill-ctype/tree/v1.33.0"
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
             },
             "funding": [
                 {
@@ -4848,11 +4547,7 @@
         },
         {
             "name": "symfony/polyfill-iconv",
-<<<<<<< HEAD:laravel/composer.lock
-            "version": "v1.32.0",
-=======
             "version": "v1.33.0",
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-iconv.git",
@@ -4912,11 +4607,7 @@
                 "shim"
             ],
             "support": {
-<<<<<<< HEAD:laravel/composer.lock
-                "source": "https://github.com/symfony/polyfill-iconv/tree/v1.32.0"
-=======
                 "source": "https://github.com/symfony/polyfill-iconv/tree/v1.33.0"
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
             },
             "funding": [
                 {
@@ -4940,11 +4631,7 @@
         },
         {
             "name": "symfony/polyfill-intl-grapheme",
-<<<<<<< HEAD:laravel/composer.lock
-            "version": "v1.32.0",
-=======
             "version": "v1.33.0",
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-grapheme.git",
@@ -5002,11 +4689,7 @@
                 "shim"
             ],
             "support": {
-<<<<<<< HEAD:laravel/composer.lock
-                "source": "https://github.com/symfony/polyfill-intl-grapheme/tree/v1.32.0"
-=======
                 "source": "https://github.com/symfony/polyfill-intl-grapheme/tree/v1.33.0"
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
             },
             "funding": [
                 {
@@ -5030,11 +4713,7 @@
         },
         {
             "name": "symfony/polyfill-intl-idn",
-<<<<<<< HEAD:laravel/composer.lock
-            "version": "v1.32.0",
-=======
             "version": "v1.33.0",
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-idn.git",
@@ -5097,11 +4776,7 @@
                 "shim"
             ],
             "support": {
-<<<<<<< HEAD:laravel/composer.lock
-                "source": "https://github.com/symfony/polyfill-intl-idn/tree/v1.32.0"
-=======
                 "source": "https://github.com/symfony/polyfill-intl-idn/tree/v1.33.0"
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
             },
             "funding": [
                 {
@@ -5125,11 +4800,7 @@
         },
         {
             "name": "symfony/polyfill-intl-normalizer",
-<<<<<<< HEAD:laravel/composer.lock
-            "version": "v1.32.0",
-=======
             "version": "v1.33.0",
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-normalizer.git",
@@ -5190,11 +4861,7 @@
                 "shim"
             ],
             "support": {
-<<<<<<< HEAD:laravel/composer.lock
-                "source": "https://github.com/symfony/polyfill-intl-normalizer/tree/v1.32.0"
-=======
                 "source": "https://github.com/symfony/polyfill-intl-normalizer/tree/v1.33.0"
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
             },
             "funding": [
                 {
@@ -5218,11 +4885,7 @@
         },
         {
             "name": "symfony/polyfill-mbstring",
-<<<<<<< HEAD:laravel/composer.lock
-            "version": "v1.32.0",
-=======
             "version": "v1.33.0",
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
@@ -5283,11 +4946,7 @@
                 "shim"
             ],
             "support": {
-<<<<<<< HEAD:laravel/composer.lock
-                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.32.0"
-=======
                 "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.33.0"
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
             },
             "funding": [
                 {
@@ -5311,11 +4970,7 @@
         },
         {
             "name": "symfony/polyfill-php73",
-<<<<<<< HEAD:laravel/composer.lock
-            "version": "v1.32.0",
-=======
             "version": "v1.33.0",
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php73.git",
@@ -5371,11 +5026,7 @@
                 "shim"
             ],
             "support": {
-<<<<<<< HEAD:laravel/composer.lock
-                "source": "https://github.com/symfony/polyfill-php73/tree/v1.32.0"
-=======
                 "source": "https://github.com/symfony/polyfill-php73/tree/v1.33.0"
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
             },
             "funding": [
                 {
@@ -5399,11 +5050,7 @@
         },
         {
             "name": "symfony/polyfill-php80",
-<<<<<<< HEAD:laravel/composer.lock
-            "version": "v1.32.0",
-=======
             "version": "v1.33.0",
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php80.git",
@@ -5463,11 +5110,7 @@
                 "shim"
             ],
             "support": {
-<<<<<<< HEAD:laravel/composer.lock
-                "source": "https://github.com/symfony/polyfill-php80/tree/v1.32.0"
-=======
                 "source": "https://github.com/symfony/polyfill-php80/tree/v1.33.0"
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
             },
             "funding": [
                 {
@@ -5643,18 +5286,6 @@
         },
         {
             "name": "symfony/service-contracts",
-<<<<<<< HEAD:laravel/composer.lock
-            "version": "v3.6.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/service-contracts.git",
-                "reference": "f021b05a130d35510bd6b25fe9053c2a8a15d5d4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/f021b05a130d35510bd6b25fe9053c2a8a15d5d4",
-                "reference": "f021b05a130d35510bd6b25fe9053c2a8a15d5d4",
-=======
             "version": "v3.6.1",
             "source": {
                 "type": "git",
@@ -5665,7 +5296,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/service-contracts/zipball/45112560a3ba2d715666a509a0bc9521d10b6c43",
                 "reference": "45112560a3ba2d715666a509a0bc9521d10b6c43",
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
                 "shasum": ""
             },
             "require": {
@@ -5719,11 +5349,7 @@
                 "standards"
             ],
             "support": {
-<<<<<<< HEAD:laravel/composer.lock
-                "source": "https://github.com/symfony/service-contracts/tree/v3.6.0"
-=======
                 "source": "https://github.com/symfony/service-contracts/tree/v3.6.1"
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
             },
             "funding": [
                 {
@@ -5743,22 +5369,6 @@
                     "type": "tidelift"
                 }
             ],
-<<<<<<< HEAD:laravel/composer.lock
-            "time": "2025-04-25T09:37:31+00:00"
-        },
-        {
-            "name": "symfony/string",
-            "version": "v6.4.21",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/string.git",
-                "reference": "73e2c6966a5aef1d4892873ed5322245295370c6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/73e2c6966a5aef1d4892873ed5322245295370c6",
-                "reference": "73e2c6966a5aef1d4892873ed5322245295370c6",
-=======
             "time": "2025-07-15T11:30:57+00:00"
         },
         {
@@ -5773,7 +5383,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/string/zipball/50590a057841fa6bf69d12eceffce3465b9e32cb",
                 "reference": "50590a057841fa6bf69d12eceffce3465b9e32cb",
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
                 "shasum": ""
             },
             "require": {
@@ -5829,11 +5438,7 @@
                 "utf8"
             ],
             "support": {
-<<<<<<< HEAD:laravel/composer.lock
-                "source": "https://github.com/symfony/string/tree/v6.4.21"
-=======
                 "source": "https://github.com/symfony/string/tree/v6.4.30"
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
             },
             "funding": [
                 {
@@ -5853,22 +5458,6 @@
                     "type": "tidelift"
                 }
             ],
-<<<<<<< HEAD:laravel/composer.lock
-            "time": "2025-04-18T15:23:29+00:00"
-        },
-        {
-            "name": "symfony/translation",
-            "version": "v6.4.21",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/translation.git",
-                "reference": "bb92ea5588396b319ba43283a5a3087a034cb29c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation/zipball/bb92ea5588396b319ba43283a5a3087a034cb29c",
-                "reference": "bb92ea5588396b319ba43283a5a3087a034cb29c",
-=======
             "time": "2025-11-21T18:03:05+00:00"
         },
         {
@@ -5883,7 +5472,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/translation/zipball/d1fdeefd0707d15eb150c04e8837bf0b15ebea39",
                 "reference": "d1fdeefd0707d15eb150c04e8837bf0b15ebea39",
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
                 "shasum": ""
             },
             "require": {
@@ -5949,11 +5537,7 @@
             "description": "Provides tools to internationalize your application",
             "homepage": "https://symfony.com",
             "support": {
-<<<<<<< HEAD:laravel/composer.lock
-                "source": "https://github.com/symfony/translation/tree/v6.4.21"
-=======
                 "source": "https://github.com/symfony/translation/tree/v6.4.30"
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
             },
             "funding": [
                 {
@@ -5973,22 +5557,6 @@
                     "type": "tidelift"
                 }
             ],
-<<<<<<< HEAD:laravel/composer.lock
-            "time": "2025-04-07T19:02:30+00:00"
-        },
-        {
-            "name": "symfony/translation-contracts",
-            "version": "v3.6.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/translation-contracts.git",
-                "reference": "df210c7a2573f1913b2d17cc95f90f53a73d8f7d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation-contracts/zipball/df210c7a2573f1913b2d17cc95f90f53a73d8f7d",
-                "reference": "df210c7a2573f1913b2d17cc95f90f53a73d8f7d",
-=======
             "time": "2025-11-24T13:57:00+00:00"
         },
         {
@@ -6003,7 +5571,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/translation-contracts/zipball/65a8bc82080447fae78373aa10f8d13b38338977",
                 "reference": "65a8bc82080447fae78373aa10f8d13b38338977",
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
                 "shasum": ""
             },
             "require": {
@@ -6052,11 +5619,7 @@
                 "standards"
             ],
             "support": {
-<<<<<<< HEAD:laravel/composer.lock
-                "source": "https://github.com/symfony/translation-contracts/tree/v3.6.0"
-=======
                 "source": "https://github.com/symfony/translation-contracts/tree/v3.6.1"
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
             },
             "funding": [
                 {
@@ -6076,11 +5639,7 @@
                     "type": "tidelift"
                 }
             ],
-<<<<<<< HEAD:laravel/composer.lock
-            "time": "2024-09-27T08:32:26+00:00"
-=======
             "time": "2025-07-15T13:41:35+00:00"
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
         },
         {
             "name": "symfony/var-dumper",
@@ -6173,18 +5732,6 @@
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
-<<<<<<< HEAD:laravel/composer.lock
-            "version": "v2.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/tijsverkoyen/CssToInlineStyles.git",
-                "reference": "0d72ac1c00084279c1816675284073c5a337c20d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/tijsverkoyen/CssToInlineStyles/zipball/0d72ac1c00084279c1816675284073c5a337c20d",
-                "reference": "0d72ac1c00084279c1816675284073c5a337c20d",
-=======
             "version": "v2.4.0",
             "source": {
                 "type": "git",
@@ -6195,18 +5742,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/tijsverkoyen/CssToInlineStyles/zipball/f0292ccf0ec75843d65027214426b6b163b48b41",
                 "reference": "f0292ccf0ec75843d65027214426b6b163b48b41",
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
                 "shasum": ""
             },
             "require": {
                 "ext-dom": "*",
                 "ext-libxml": "*",
                 "php": "^7.4 || ^8.0",
-<<<<<<< HEAD:laravel/composer.lock
-                "symfony/css-selector": "^5.4 || ^6.0 || ^7.0"
-=======
                 "symfony/css-selector": "^5.4 || ^6.0 || ^7.0 || ^8.0"
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
             },
             "require-dev": {
                 "phpstan/phpstan": "^2.0",
@@ -6239,15 +5781,9 @@
             "homepage": "https://github.com/tijsverkoyen/CssToInlineStyles",
             "support": {
                 "issues": "https://github.com/tijsverkoyen/CssToInlineStyles/issues",
-<<<<<<< HEAD:laravel/composer.lock
-                "source": "https://github.com/tijsverkoyen/CssToInlineStyles/tree/v2.3.0"
-            },
-            "time": "2024-12-21T16:25:41+00:00"
-=======
                 "source": "https://github.com/tijsverkoyen/CssToInlineStyles/tree/v2.4.0"
             },
             "time": "2025-12-02T11:56:42+00:00"
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
         },
         {
             "name": "vlucas/phpdotenv",
@@ -6740,18 +6276,6 @@
         },
         {
             "name": "filp/whoops",
-<<<<<<< HEAD:laravel/composer.lock
-            "version": "2.18.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/filp/whoops.git",
-                "reference": "a7de6c3c6c3c022f5cfc337f8ede6a14460cf77e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/a7de6c3c6c3c022f5cfc337f8ede6a14460cf77e",
-                "reference": "a7de6c3c6c3c022f5cfc337f8ede6a14460cf77e",
-=======
             "version": "2.18.4",
             "source": {
                 "type": "git",
@@ -6762,7 +6286,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/filp/whoops/zipball/d2102955e48b9fd9ab24280a7ad12ed552752c4d",
                 "reference": "d2102955e48b9fd9ab24280a7ad12ed552752c4d",
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
                 "shasum": ""
             },
             "require": {
@@ -6812,11 +6335,7 @@
             ],
             "support": {
                 "issues": "https://github.com/filp/whoops/issues",
-<<<<<<< HEAD:laravel/composer.lock
-                "source": "https://github.com/filp/whoops/tree/2.18.0"
-=======
                 "source": "https://github.com/filp/whoops/tree/2.18.4"
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
             },
             "funding": [
                 {
@@ -6824,11 +6343,7 @@
                     "type": "github"
                 }
             ],
-<<<<<<< HEAD:laravel/composer.lock
-            "time": "2025-03-15T12:00:00+00:00"
-=======
             "time": "2025-08-08T12:00:00+00:00"
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
         },
         {
             "name": "hamcrest/hamcrest-php",
@@ -7031,18 +6546,6 @@
         },
         {
             "name": "myclabs/deep-copy",
-<<<<<<< HEAD:laravel/composer.lock
-            "version": "1.13.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "1720ddd719e16cf0db4eb1c6eca108031636d46c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/1720ddd719e16cf0db4eb1c6eca108031636d46c",
-                "reference": "1720ddd719e16cf0db4eb1c6eca108031636d46c",
-=======
             "version": "1.13.4",
             "source": {
                 "type": "git",
@@ -7053,7 +6556,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/07d290f0c47959fd5eed98c95ee5602db07e0b6a",
                 "reference": "07d290f0c47959fd5eed98c95ee5602db07e0b6a",
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
                 "shasum": ""
             },
             "require": {
@@ -7092,11 +6594,7 @@
             ],
             "support": {
                 "issues": "https://github.com/myclabs/DeepCopy/issues",
-<<<<<<< HEAD:laravel/composer.lock
-                "source": "https://github.com/myclabs/DeepCopy/tree/1.13.1"
-=======
                 "source": "https://github.com/myclabs/DeepCopy/tree/1.13.4"
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
             },
             "funding": [
                 {
@@ -7104,11 +6602,7 @@
                     "type": "tidelift"
                 }
             ],
-<<<<<<< HEAD:laravel/composer.lock
-            "time": "2025-04-29T12:36:36+00:00"
-=======
             "time": "2025-08-01T08:46:24+00:00"
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
         },
         {
             "name": "nunomaduro/collision",
@@ -7636,18 +7130,6 @@
         },
         {
             "name": "phpunit/phpunit",
-<<<<<<< HEAD:laravel/composer.lock
-            "version": "9.6.23",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "43d2cb18d0675c38bd44982a5d1d88f6d53d8d95"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/43d2cb18d0675c38bd44982a5d1d88f6d53d8d95",
-                "reference": "43d2cb18d0675c38bd44982a5d1d88f6d53d8d95",
-=======
             "version": "9.6.31",
             "source": {
                 "type": "git",
@@ -7658,7 +7140,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/945d0b7f346a084ce5549e95289962972c4272e5",
                 "reference": "945d0b7f346a084ce5549e95289962972c4272e5",
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
                 "shasum": ""
             },
             "require": {
@@ -7669,11 +7150,7 @@
                 "ext-mbstring": "*",
                 "ext-xml": "*",
                 "ext-xmlwriter": "*",
-<<<<<<< HEAD:laravel/composer.lock
-                "myclabs/deep-copy": "^1.13.1",
-=======
                 "myclabs/deep-copy": "^1.13.4",
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
                 "phar-io/manifest": "^2.0.4",
                 "phar-io/version": "^3.2.1",
                 "php": ">=7.3",
@@ -7736,11 +7213,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-<<<<<<< HEAD:laravel/composer.lock
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.6.23"
-=======
                 "source": "https://github.com/sebastianbergmann/phpunit/tree/9.6.31"
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
             },
             "funding": [
                 {
@@ -7764,11 +7237,7 @@
                     "type": "tidelift"
                 }
             ],
-<<<<<<< HEAD:laravel/composer.lock
-            "time": "2025-05-02T06:40:34+00:00"
-=======
             "time": "2025-12-06T07:45:52+00:00"
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
         },
         {
             "name": "sebastian/cli-parser",
@@ -8783,18 +8252,6 @@
         },
         {
             "name": "symfony/yaml",
-<<<<<<< HEAD:laravel/composer.lock
-            "version": "v6.4.21",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/yaml.git",
-                "reference": "f01987f45676778b474468aa266fe2eda1f2bc7e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/f01987f45676778b474468aa266fe2eda1f2bc7e",
-                "reference": "f01987f45676778b474468aa266fe2eda1f2bc7e",
-=======
             "version": "v6.4.30",
             "source": {
                 "type": "git",
@@ -8805,7 +8262,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/yaml/zipball/8207ae83da19ee3748d6d4f567b4d9a7c656e331",
                 "reference": "8207ae83da19ee3748d6d4f567b4d9a7c656e331",
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
                 "shasum": ""
             },
             "require": {
@@ -8848,11 +8304,7 @@
             "description": "Loads and dumps YAML files",
             "homepage": "https://symfony.com",
             "support": {
-<<<<<<< HEAD:laravel/composer.lock
-                "source": "https://github.com/symfony/yaml/tree/v6.4.21"
-=======
                 "source": "https://github.com/symfony/yaml/tree/v6.4.30"
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
             },
             "funding": [
                 {
@@ -8872,11 +8324,7 @@
                     "type": "tidelift"
                 }
             ],
-<<<<<<< HEAD:laravel/composer.lock
-            "time": "2025-04-04T09:48:44+00:00"
-=======
             "time": "2025-12-02T11:50:18+00:00"
->>>>>>> 5919d10914f92e047383d6aead2222901d8c8683:01-11-2024/composer.lock
         },
         {
             "name": "theseer/tokenizer",

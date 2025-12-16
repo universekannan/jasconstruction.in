@@ -197,10 +197,6 @@
                     <div class="col-md-7 col-sm-7">
                         <div class="section-head text-left">
                             <h2 class="text-uppercase">Welcome to Jas Construction</h2>
-<<<<<<< HEAD:01-11-2024/resources/views/welcome.blade.php
-                            Jas
-=======
->>>>>>> f551fcc48a4f17dc556d9e7a61786f4a3dc64644:laravel/resources/views/welcome.blade.php
                             <div class="wt-separator-outer">
                                 <div class="wt-separator style-square">
                                     <span class="separator-left bg-primary"></span>
