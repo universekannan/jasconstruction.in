@@ -83,9 +83,13 @@
                                         </div>
                                         <div class="icon-content">
                                             <h6>Email</h6>
-                                            <p>jasconstruction@outlook.com <br>info@jasconstruction.in
-
+                                            <p>
+                                                <a
+                                                    href="mailto:jasconstruction@outlook.com">jasconstruction@outlook.com</a>
+                                                <br>
+                                                <a href="mailto:info@jasconstruction.in">info@jasconstruction.in</a>
                                             </p>
+
                                             <p></p>
                                         </div>
                                     </div>
@@ -261,7 +265,7 @@
 
                         <div class="call-to-action-right p-tb30">
 
-                            <a href="contact-us.php" class="site-button skew-icon-btn m-r15 text-uppercase"
+                            <a href="{{ url('contactus') }}" class="site-button skew-icon-btn m-r15 text-uppercase"
                                 style="font-weight:600;">
 
                                 Contact us <i class="fa fa-angle-double-right"></i>
