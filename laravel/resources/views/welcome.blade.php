@@ -167,7 +167,12 @@
                                     </div>
                                     <div class="icon-content text-white">
                                         <h5 class="wt-tilte text-uppercase m-b0 text-white">24 hour support</h5>
-                                        <p>jasconstruction@outlook.com</p>
+                                        <p>
+                                            <a href="mailto:jasconstruction@outlook.com" style="color: #ffffff;">
+                                                jasconstruction@outlook.com
+                                            </a>
+                                        </p>
+
                                     </div>
                                 </div>
                             </div>
@@ -955,7 +960,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="call-to-action-right p-tb30">
-                            <a href="contact-us.php" class="site-button skew-icon-btn m-r15 text-uppercase"
+                            <a href="{{ url('contactus') }}" class="site-button skew-icon-btn m-r15 text-uppercase"
                                 style="font-weight:600;">
                                 Contact us <i class="fa fa-angle-double-right"></i>
                             </a>

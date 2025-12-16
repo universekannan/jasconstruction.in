@@ -5,8 +5,7 @@
              <div class="row">
                  <div class="wt-topbar-right clearfix">
                      <ul class="social-bx list-inline pull-right">
-                         <li><a href="https://www.facebook.com/profile.php?id=61573566025068"
-                                 class="fa fa-facebook"></a></li>
+                         <li><a href="https://www.facebook.com/profile.php?id=61573566025068" class="fa fa-facebook"></a></li>
                          <li><a href="https://youtube.com/@jasconstructionngl2025" class="fa fa-youtube"></a></li>
                          <li><a href="https://www.instagram.com/jasconstructionngl/" class="fa fa-instagram"></a></li>
                      </ul>

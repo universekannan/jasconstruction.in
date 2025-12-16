@@ -129,7 +129,7 @@
 
                         <div class="call-to-action-right p-tb30">
 
-                            <a href="contact-us.php" class="site-button skew-icon-btn m-r15 text-uppercase"  style="font-weight:600;">
+                            <a href="{{ url('contactus') }}" class="site-button skew-icon-btn m-r15 text-uppercase"  style="font-weight:600;">
 
                                 Contact us <i class="fa fa-angle-double-right"></i>
 
