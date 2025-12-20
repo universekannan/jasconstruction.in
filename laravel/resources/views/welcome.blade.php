@@ -198,6 +198,7 @@
                         <div class="about-com-pic">
                             <img src="assets/images/about.jpg" style="height=20px:" alt="" class="img-responsive" />
                         </div>
+                        <br>
                     </div>
                     <div class="col-md-7 col-sm-7">
                         <div class="section-head text-left">
