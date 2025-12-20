@@ -432,8 +432,8 @@
                                             title="{{ $pro->project_name }}"></a></h4>
                                 </div>
                                 <div class="ow-event-text">
-                                    <p>{{ $pro->project_name }},
-                                        {{ $pro->project_name }}{{ $pro->project_owner }},'{{ $pro->project_address }}
+                                    <p>
+                                    Project Name : {{ $pro->project_name }}<br>Project Owner : {{ $pro->project_owner }}<br>Project Address : {{ $pro->project_address }}
                                     </p>
                                 </div>
                                 <div class="ow-event-readmore ">
@@ -476,8 +476,8 @@
                                             title="{{ $pro->project_name }}"></a></h4>
                                 </div>
                                 <div class="ow-event-text">
-                                    <p>{{ $pro->project_name }},
-                                        {{ $pro->project_name }}{{ $pro->project_owner }},'{{ $pro->project_address }}
+                                    <p>
+                                    Project Name : {{ $pro->project_name }}<br>Project Owner : {{ $pro->project_owner }}<br>Project Address : {{ $pro->project_address }}
                                     </p>
                                 </div>
                                 <div class="ow-event-readmore ">
@@ -520,8 +520,8 @@
                                             title="{{ $pro->project_name }}"></a></h4>
                                 </div>
                                 <div class="ow-event-text">
-                                    <p>{{ $pro->project_name }},
-                                        {{ $pro->project_name }}{{ $pro->project_owner }},'{{ $pro->project_address }}
+                                    <p>
+                                      Project Name : {{ $pro->project_name }}<br>Project Owner : {{ $pro->project_owner }}<br>Project Address : {{ $pro->project_address }}
                                     </p>
                                 </div>
                                 <div class="ow-event-readmore ">

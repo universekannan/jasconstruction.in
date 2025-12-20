@@ -57,8 +57,8 @@ class ProductsController extends Controller {
             'project_status_id'   => $request->project_status_id,
             'project_name'   => $request->project_name,
             'project_owner'  => $request->project_owner,
-            'project_mobile' => $request->project_mobile,
-            'project_email'  => $request->project_email,
+            'project_sqft'   => $request->project_sqft,
+            'project_description'  => $request->project_description,
             'project_amount' => $request->project_amount,
             'project_address'=> $request->project_address,
         ]);
@@ -130,8 +130,8 @@ class ProductsController extends Controller {
             'project_status_id'   => $request->project_status_id,
             'project_name'   => $request->project_name,
             'project_owner'  => $request->project_owner,
-            'project_mobile' => $request->project_mobile,
-            'project_email'  => $request->project_email,
+            'project_sqft' => $request->project_sqft,
+            'project_description'  => $request->project_description,
             'project_amount' => $request->project_amount,
             'project_address'=> $request->project_address,
         ] ); 

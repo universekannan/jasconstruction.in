@@ -22,7 +22,7 @@
                                 <tr>
                                     <th>ID</th>
                                     <th>Project Name</th>
-                                    <th>Project Amount</th>
+                                    <th>Project Sqft</th>
                                     <th>Project Type</th>
                                     <th>Action</th>
                                 </tr>
@@ -32,7 +32,7 @@
                                     <tr>
                                         <td>{{ $pro->id }}</td>
                                         <td>{{ $pro->project_name }}</td>
-                                        <td>{{ $pro->project_amount }}</td>
+                                        <td>{{ $pro->project_sqft }}</td>
                                         <td>{{ $pro->project_status_id }}</td>
                                         <td>
                                         <a class="btn btn-primary btn-sm"
