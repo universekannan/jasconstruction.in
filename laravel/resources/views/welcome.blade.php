@@ -196,7 +196,7 @@
                 <div class="row">
                     <div class="col-md-5 col-sm-5">
                         <div class="about-com-pic">
-                            <img src="assets/images/about.jpg" alt="" class="img-responsive" />
+                            <img src="assets/images/about.jpg" style="height=20px:" alt="" class="img-responsive" />
                         </div>
                     </div>
                     <div class="col-md-7 col-sm-7">
