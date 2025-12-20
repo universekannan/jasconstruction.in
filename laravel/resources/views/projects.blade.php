@@ -42,7 +42,7 @@
                      </div>
                      <div class="wt-info">
                         <h4 class="wt-title m-t20"><a href="project.php">{{ $pro->project_name }}</a></h4>
-                        <p>{{ $pro->project_name }}, {{ $pro->project_name }}{{ $pro->project_owner }},'{{ $pro->project_address }}</p>
+                        <p>Project Name :{{ $pro->project_name }} <br>Project Sqft: {{ $pro->project_sqft }}<br> Address : {{ $pro->project_address }}</p>
                         <a href="{{ url('project') }}/{{ $pro->id }}" class="site-button skew-icon-btn ">More<i class="fa fa-angle-double-right"></i></a>
                      </div>
                   </div>

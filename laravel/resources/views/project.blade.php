@@ -15,15 +15,17 @@
                     <div class="row">
                         <div class="col-md-9">
                             <div class="blog-post blog-lg date-style-3 date-skew">
-                                <div class="wt-post-media wt-img-effect zoom-slow">
+                                <div>
                                    <img src="{{ URL::to('/') }}/upload/projectsave/{{ $project->photo }}" alt="{{ $project->project_name }}">
                                 </div>
                                 <div class="wt-post-info p-a30 p-b15  bg-white">
                                     
                                     <div class="wt-post-text">
-                                       <p>{{ $project->project_name }}</p>
-                                       <p>{{ $project->project_owner }}</p>
-                                       <p>{{ $project->project_address }}</p>
+                                       <p>Project Name : {{ $project->project_name }}</p>
+                                       <p>Project Owner : {{ $project->project_owner }}</p>
+                                       <p>Project Sqft : {{ $project->project_sqft }}</p>
+                                       <p>Project Address : {{ $project->project_address }}</p>
+                                       <p>Project Specification : {{ $project->project_description }}</p>
                                     </div>
                                 </div>
                             </div>

@@ -46,32 +46,18 @@
                             </div>
                         </div>
                             
-                        <div class="form-group row">
-                           <label for="project_mobile" class="col-sm-2 col-form-label"><span
-                            style="color:red">*</span>Mobile</label>
+                         <div class="form-group row">
+                           <label for="project_sqft" class="col-sm-2 col-form-label"><span
+                            style="color:red">*</span>Project Sqft</label>
                             <div class="col-sm-10">
                                 <input required="required" type="text" class="form-control"
-                                name="project_mobile" maxlength="50" placeholder="Mobile number">
+                                name="project_sqft" maxlength="50" placeholder="SQFT">
                             </div>
-                        </div>
+                        </div> 
 
-                                <div class="form-group row">
-                                  <label for="project_email" class="col-sm-2 col-form-label"><span
-                                    style="color:red">*</span>Email</label>
-                                    <div class="col-sm-10">
-                                        <input required="required" type="text" class="form-control"
-                                        name="project_email" maxlength="50" placeholder="Email address">
-                                    </div>
-                                </div>
+                           
 
-                                <div class="form-group row">
-                                   <label for="project_amount" class="col-sm-2 col-form-label"><span
-                                    style="color:red">*</span>Project amount</label>
-                                    <div class="col-sm-10">
-                                        <input required="required" type="text" class="form-control"
-                                        name="project_amount" maxlength="50" placeholder="Project Amount">
-                                    </div>
-                                </div>
+                              
                                 <div class="form-group row">
                                     <label for="photo" class="col-sm-2 col-form-label"><span
                                         style="color:red">*</span>Project Image</label>
@@ -80,6 +66,18 @@
                                         </div>
                                     </div>
                                 </div>
+
+
+                                <div class="form-group row">
+                                  <label for="project_description" class="col-sm-2 col-form-label"><span
+                                    style="color:red">*</span>Project Specification</label>
+                                    <div class="col-sm-10">
+                                        <textarea required="required" type="text" class="form-control"
+                                        name="project_description"  placeholder="Specification">
+                                        </textarea>
+                                    </div>
+                                </div>
+
 
                                 <div class="form-group row">
                                   <label for="project_address" class="col-sm-2 col-form-label"><span
@@ -90,6 +88,8 @@
                                         </textarea>
                                     </div>
                                 </div>
+
+
 
                                 <div class="col-md-12 text-center">
                                     <a class="btn btn-primary" href="{{ url('admin/project') }}">Back</a>

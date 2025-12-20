@@ -61,3 +61,8 @@ CREATE TABLE `category` (
 DROP TABLE `category`;
 
 
+////////////////////////////////
+
+
+ALTER TABLE `project` CHANGE `project_mobile` `project_sqft` VARCHAR(20) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL;
+ALTER TABLE `project` CHANGE `project_email` `project_description` VARCHAR(1000) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL;
