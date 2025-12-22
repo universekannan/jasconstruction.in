@@ -1,10 +1,10 @@
 
 
 <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-<link rel="icon" type="image/png" href="images/logo.png">
+<link rel="icon" type="image/png" href="assets/images/Jas logo2.svg">
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <!-- FAVICONS ICON -->
-    <link rel="icon" href="images/logo.png" type="image/x-icon" />
+    <link rel="icon" href="assets/images/Jas logo2.svg" type="image/x-icon" />
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
     
     <!-- PAGE TITLE HERE -->

@@ -14,7 +14,8 @@
 <meta name="map" content="" />
 <meta name="author" content="Galaxy Kannan" />
 <meta name="copyright" content="Projects Jas Construction" />
-<link rel="shortcut icon" href="images/logo.png" title="Projects Jas Construction"  />
+<link rel="shortcut icon" href="assets/images/Jas logo2.svg" title="Projects Jas Construction"  />
+<link rel="icon" href="assets/images/Jas logo2.svg" type="image/x-icon" />
 <link href="" rel="search" title="Search Projects Jas Construction" type="application/opensearchdescription+xml"/>
 
 @extends('layouts.app')
