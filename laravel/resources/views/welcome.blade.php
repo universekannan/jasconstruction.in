@@ -149,7 +149,7 @@
                                 <div class="wt-icon-box-wraper left ">
                                     <div class="icon-md text-primary">
                                         <a href="contactus" class="icon-cell">
-                                            <img src="images/icons/besty-quality.png" alt="">
+                                            <img src="assets/images/icons/shield-check.svg" alt="">
                                         </a>
                                     </div>
                                     <div class="icon-content text-white">
@@ -162,7 +162,7 @@
                                 <div class="wt-icon-box-wraper left">
                                     <div class="icon-md text-primary">
                                         <a href="contactus" class="icon-cell">
-                                            <img src="images/icons/24-call-icon.png" alt="">
+                                            <img src="assets/images/icons/pending.svg" alt="">
                                         </a>
                                     </div>
                                     <div class="icon-content text-white">
@@ -196,7 +196,7 @@
                 <div class="row">
                     <div class="col-md-5 col-sm-5">
                         <div class="about-com-pic">
-                            <img src="assets/images/about.jpg" style="height=20px:" alt="" class="img-responsive" />
+                            <img src="assets/images/about.webp" style="height=20px:" alt="" class="img-responsive" />
                         </div>
                         <br>
                     </div>

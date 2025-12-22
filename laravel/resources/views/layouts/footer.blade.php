@@ -24,7 +24,7 @@
                         <a href="contact-us.php"><img src="assets/images/logo.png" width="230" height="67" alt="" /></a>
                     </div>
                     <p>Jas Construction is one of the best Construction in Kanniyakumari,Tamilnadu. We specialize in
-                        building premier and Baget residential projects . We bring you the finest homes that are
+                        building  residential projects . We bring you the finest homes that are
                         unsurpassed in quality and elegance.
                     </p>
                 </div>
