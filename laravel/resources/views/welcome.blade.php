@@ -149,7 +149,8 @@
                                 <div class="wt-icon-box-wraper left ">
                                     <div class="icon-md text-primary">
                                         <a href="contactus" class="icon-cell">
-                                            <img src="assets/images/icons/shield-check.svg" alt="">
+                                            <img src="assets/images/icons/shield-check.svg" alt=""
+                                                style="width: 24px; height: 24px;">
                                         </a>
                                     </div>
                                     <div class="icon-content text-white">
@@ -162,7 +163,8 @@
                                 <div class="wt-icon-box-wraper left">
                                     <div class="icon-md text-primary">
                                         <a href="contactus" class="icon-cell">
-                                            <img src="assets/images/icons/pending.svg" alt="">
+                                            <img src="assets/images/icons/pending.svg" alt=""
+                                            style="width: 24px; height: 24px;">
                                         </a>
                                     </div>
                                     <div class="icon-content text-white">
@@ -434,7 +436,8 @@
                                 </div>
                                 <div class="ow-event-text">
                                     <p>
-                                    Project Name : {{ $pro->project_name }}<br>Project Owner : {{ $pro->project_owner }}<br>Project Address : {{ $pro->project_address }}
+                                        Project Name : {{ $pro->project_name }}<br>Project Owner :
+                                        {{ $pro->project_owner }}<br>Project Address : {{ $pro->project_address }}
                                     </p>
                                 </div>
                                 <div class="ow-event-readmore ">
@@ -478,7 +481,8 @@
                                 </div>
                                 <div class="ow-event-text">
                                     <p>
-                                    Project Name : {{ $pro->project_name }}<br>Project Owner : {{ $pro->project_owner }}<br>Project Address : {{ $pro->project_address }}
+                                        Project Name : {{ $pro->project_name }}<br>Project Owner :
+                                        {{ $pro->project_owner }}<br>Project Address : {{ $pro->project_address }}
                                     </p>
                                 </div>
                                 <div class="ow-event-readmore ">
@@ -522,7 +526,8 @@
                                 </div>
                                 <div class="ow-event-text">
                                     <p>
-                                      Project Name : {{ $pro->project_name }}<br>Project Owner : {{ $pro->project_owner }}<br>Project Address : {{ $pro->project_address }}
+                                        Project Name : {{ $pro->project_name }}<br>Project Owner :
+                                        {{ $pro->project_owner }}<br>Project Address : {{ $pro->project_address }}
                                     </p>
                                 </div>
                                 <div class="ow-event-readmore ">
