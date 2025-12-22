@@ -155,7 +155,7 @@
                                     </div>
                                     <div class="icon-content text-white">
                                         <h5 class="wt-tilte text-uppercase m-b5 text-white">best quality</h5>
-                                        <p>12 Years Experience in Building Construction</p>
+                                        <p>20 Years Experience in Building Construction</p>
                                     </div>
                                 </div>
                             </div>
