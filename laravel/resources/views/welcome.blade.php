@@ -156,7 +156,7 @@
                                     </div>
                                     <div class="icon-content text-white">
                                         <h5 class="wt-tilte text-uppercase m-b5 text-white">best quality</h5>
-                                        <p>20 Years Experience in Building <br>Construction in all over Tamilnadu</p>
+                                        <p>20 Years Experience in Building <br>Construction  all over Tamilnadu</p>
                                     </div>
                                 </div>
                             </div>
@@ -172,7 +172,7 @@
                                         <h5 class="wt-tilte text-uppercase m-b0 text-white">BUILDING TRUST </h5>
                                         <p>
                                             <a href="#" style="color: #ffffff;">
-                                                On-time delivery with zero hidden <br>costs
+                                                On time delivery with zero<br> hidden costs
                                             </a>
                                         </p>
 
@@ -320,7 +320,7 @@
                         </div>
                         <div class="icon-content">
                             <h5 class="wt-tilte text-uppercase">BEST QUALITY</h5>
-                            <p>JAS Constructions has always been in the lookout for integrating quality, modernity as well as excellence in each one of their properties. The aim is to change the way people <br>approach quality in construction.</p>
+                            <p>JAS Constructions has always been in the <br>lookout for integrating quality, modernity as<br> well as excellence in each one of their<br> properties. The aim is to change the way <br>people approach quality in construction.</p>
                         </div>
                     </div>
                 </div>
@@ -344,7 +344,7 @@
                         </div>
                         <div class="icon-content">
                             <h5 class="wt-tilte text-uppercase">STRATEGY</h5>
-                            <p>The brand has absorbed the trust of their <br>customers with riveting marketing strategies online and offline, to which their construction standard proves to be on par.</p>
+                            <p>The brand has absorbed the trust of their <br>customers with riveting marketing strategies online and offline, to which their <br>construction standard proves to be on par.</p>
                         </div>
                     </div>
                 </div>
@@ -382,7 +382,7 @@
                         </div>
                         <div class="icon-content">
                             <h5 class="wt-tilte text-uppercase">SUSTAINABILITY</h5>
-                            <p>JAS Constructions has now successfully <br> constructed over several landmark <br> constructions altogether. And in the present-day scenario, JAS Constructions is known exclusively to make innovations to such an extent that it is synonymous to the same!</p>
+                            <p>JAS Constructions has now successfully <br> constructed over several landmark <br> constructions altogether. And in the present-day scenario, JAS Constructions is known <br>exclusively to make innovations to such an<br> extent that it is synonymous to the same!</p>
                         </div>
                     </div>
                 </div>
@@ -558,7 +558,7 @@
                                         <div class="icon-content">
                                             <h5 class="wt-tilte text-uppercase">Years of Experience</h5>
                                             <p>Being in the industry for over 17+ years, <br> Jas constructions is among the
-                                                leading construction<br> in the city. And being succesfull in their era.</p>
+                                                leading <br>construction in the city. And being succesfull era.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -570,8 +570,8 @@
                                         </div>
                                         <div class="icon-content">
                                             <h5 class="wt-tilte text-uppercase">Fully Insured</h5>
-                                            <p>The cost of damage done to a structure while under<br>  construction including
-                                                fire, vandalism, weather, and <br>  theft can be covered </p>
+                                            <p>The cost of damage done to a structure while <br>under  construction including
+                                                fire, vandalism,<br> weather, and  theft can be covered </p>
                                         </div>
                                     </div>
                                 </div>
@@ -598,9 +598,9 @@
                                         </div>
                                         <div class="icon-content">
                                             <h5 class="wt-tilte text-uppercase">Affordable Pricing</h5>
-                                            <p>There are varying definitions of “Affordable Pricing”, <br> but it can
-                                                generally be considered as a price lower<br>than that charged for high
-                                                income countries.</p>
+                                            <p>There are varying definitions of<br>  “Affordable Pricing”,but it can
+                                                generally be  <br>considered as a price lower than that charged <br>for high
+                                                income  countries.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -612,8 +612,8 @@
                                         </div>
                                         <div class="icon-content">
                                             <h5 class="wt-tilte text-uppercase">Cost Control Experts</h5>
-                                            <p>Cost control refers to the process of monitoring and<br>  managing expenses
-                                                within an organization to<br> maintain financial stability</p>
+                                            <p>Cost control refers to the process of monitoring<br> and managing expenses
+                                                within an<br> organization to maintain financial stability</p>
                                         </div>
                                     </div>
                                 </div>
@@ -626,8 +626,8 @@
                                         </div>
                                         <div class="icon-content">
                                             <h5 class="wt-tilte text-uppercase">Satisfied Customers</h5>
-                                            <p>Customer satisfaction information, including surveys<br>  and ratings, can
-                                                help a company determine how to <br>best improve or change the services.</p>
+                                            <p>Customer satisfaction information,including<br>surveys and ratings, can
+                                                help company<br>determine how to best improve/change services.</p>
                                         </div>
                                     </div>
                                 </div>
