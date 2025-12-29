@@ -296,120 +296,100 @@
     </div>
     <!-- ABOUT COMPANY SECTION END -->
     <!-- WHY CHOOSE US SECTION START  -->
-    <div class="section-full bg-gray p-t80 p-b50">
-        <div class="container">
-            <!-- TITLE START-->
-            <div class="section-head text-center">
-                <h2 class="text-uppercase">Why Choose us</h2>
-                <div class="wt-separator-outer">
-                    <div class="wt-separator style-square">
-                        <span class="separator-left site-bg-primary"></span>
-                        <span class="separator-right site-bg-primary"></span>
-                    </div>
+<div class="section-full bg-gray p-t80 p-b50">
+    <div class="container">
+        <!-- TITLE START-->
+        <div class="section-head text-center">
+            <h2 class="text-uppercase">Why Choose us</h2>
+            <div class="wt-separator-outer">
+                <div class="wt-separator style-square">
+                    <span class="separator-left site-bg-primary"></span>
+                    <span class="separator-right site-bg-primary"></span>
                 </div>
-                <p>JAS Constructions is founded to give you trust, value and services alike in each of their services,
-                    and this certainly needs special mentioning about their Successful era.</p>
             </div>
-            <!-- TITLE END-->
-            <div class="section-content m-b20">
-                <div class="row">
-                    <!-- COLUMNS 1 -->
-                    <div class="col-lg-4 col-md-6 col-sm-6 m-b10 animate_line">
-                        <div class="wt-icon-box-wraper  p-a30 center bg-white">
-                            <div class="icon-sm site-text-primary m-b20">
-                                <a href="about-1.html" class="icon-cell"><i class="fa fa-life-ring"
-                                        aria-hidden="true"></i></a>
-                            </div>
-                            <div class="icon-content">
-                                <h5 class="wt-tilte text-uppercase">BEST QUALITY</h5>
-                                <p>The jas constructions has always been in <br>the look out for integrating quality,
-                                <br> modernity as well as excellence in each one of their property. The aim of changing
-                                    the<br> way people approach quality in<br> construction. </p>
-                            </div>
+            <p>JAS Constructions is founded to give you trust, value and services alike in each of their services, and this certainly needs special mentioning about their Successful era.</p>
+        </div>
+        <!-- TITLE END-->
+        <div class="section-content m-b20">
+            <div class="row">
+                <!-- COLUMNS 1 -->
+                <div class="col-lg-4 col-md-6 col-sm-6 m-b10 animate_line">
+                    <div class="wt-icon-box-wraper p-a30 center bg-white">
+                        <div class="icon-sm site-text-primary m-b20">
+                            <a href="about-1.html" class="icon-cell"><i class="fa fa-life-ring" aria-hidden="true"></i></a>
                         </div>
-                    </div>
-                    <!-- COLUMNS 2 -->
-                    <div class="col-lg-4 col-md-6 col-sm-6 m-b10 animate_line">
-                        <div class="wt-icon-box-wraper  p-a30 center bg-white">
-                            <div class="icon-sm site-text-primary m-b20">
-                                <a href="about-1.html" class="icon-cell"><i class="fa fa-trophy"
-                                        aria-hidden="true"></i></a>
-                            </div>
-                            <div class="icon-content ">
-                                <h5 class="wt-tilte text-uppercase">INTEGRITY</h5>
-                                <p>Their sole aim is to exceed the expectations placed by the customers in all ways<br>
-                                    possible. The brand keeps its <br>communication with customers utmost <br>transparent and
-                                    makes trendsetting<br> innovations like no other</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- COLUMNS 3 -->
-                    <div class="col-lg-4 col-md-6 col-sm-6 m-b10 animate_line">
-                        <div class="wt-icon-box-wraper  p-a30 center bg-white ">
-                            <div class="icon-sm site-text-primary m-b20">
-                                <a href="about-1.html" class="icon-cell"><i class="fa fa-thumbs-up"
-                                        aria-hidden="true"></i></a>
-                            </div>
-                            <div class="icon-content">
-                                <h5 class="wt-tilte text-uppercase">STRATEGY</h5>
-                                <p>The brand has absorbed the trust of their <br>customers with riveting marketing
-                                    strategies online and offline to which their<br> construction standard proves to be on
-                                    par.</p>
-                            </div>
+                        <div class="icon-content">
+                            <h5 class="wt-tilte text-uppercase">BEST QUALITY</h5>
+                            <p>JAS Constructions has always been in the lookout for integrating quality, modernity as well as excellence in each one of their properties. The aim is to change the way people <br>approach quality in construction.</p>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <!-- COLUMNS 4 -->
-                    <div class="col-lg-4 col-md-6 col-sm-6 m-b10 animate_line">
-                        <div class="wt-icon-box-wraper  p-a30 center bg-white ">
-                            <div class="icon-sm site-text-primary m-b20">
-                                <a href="about-1.html" class="icon-cell"><i class="fa fa-users"
-                                        aria-hidden="true"></i></a>
-                            </div>
-                            <div class="icon-content">
-                                <h5 class="wt-tilte text-uppercase">SAFETY</h5>
-                                <p> When a construction comes from this house, there is no denying that it is certainly
-                                    of<br> excellence quality with complete vastu<br> compliance and dedication to futuristic
-                                    <br>  lifestyle.</p>
-                            </div>
+                <!-- COLUMNS 2 -->
+                <div class="col-lg-4 col-md-6 col-sm-6 m-b10 animate_line">
+                    <div class="wt-icon-box-wraper p-a30 center bg-white">
+                        <div class="icon-sm site-text-primary m-b20">
+                            <a href="about-1.html" class="icon-cell"><i class="fa fa-trophy" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="icon-content">
+                            <h5 class="wt-tilte text-uppercase">INTEGRITY</h5>
+                            <p>Their sole aim is to exceed the expectations <br>placed by the customers in all ways possible. The brand keeps its communication with <br>customers utmost transparent and makes<br> trendsetting innovations like no other.</p>
                         </div>
                     </div>
-                    <!-- COLUMNS 5 -->
-                    <div class="col-lg-4 col-md-6 col-sm-6 m-b10 animate_line">
-                        <div class="wt-icon-box-wraper  p-a30 center bg-white">
-                            <div class="icon-sm site-text-primary m-b20">
-                                <a href="about-1.html" class="icon-cell"><i class="fa fa-area-chart"
-                                        aria-hidden="true"></i></a>
-                            </div>
-                            <div class="icon-content">
-                                <h5 class="wt-tilte text-uppercase">COMMUNITY</h5>
-                                <p>Among all the Construction out there in the city, jas construction is particularly
-                                <br>  developing the buildings into integrated<br> community each of which has become a<br>
-                                    landmark in the city .</p>
-                            </div>
+                </div>
+                <!-- COLUMNS 3 -->
+                <div class="col-lg-4 col-md-6 col-sm-6 m-b10 animate_line">
+                    <div class="wt-icon-box-wraper p-a30 center bg-white">
+                        <div class="icon-sm site-text-primary m-b20">
+                            <a href="about-1.html" class="icon-cell"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="icon-content">
+                            <h5 class="wt-tilte text-uppercase">STRATEGY</h5>
+                            <p>The brand has absorbed the trust of their <br>customers with riveting marketing strategies online and offline, to which their construction standard proves to be on par.</p>
                         </div>
                     </div>
-                    <!-- COLUMNS 6 -->
-                    <div class="col-lg-4 col-md-6 col-sm-6 m-b10 animate_line">
-                        <div class="wt-icon-box-wraper  p-a30 center bg-white">
-                            <div class="icon-sm site-text-primary m-b20">
-                                <a href="about-1.html" class="icon-cell"><i class="fa fa-cogs"
-                                        aria-hidden="true"></i></a>
-                            </div>
-                            <div class="icon-content">
-                                <h5 class="wt-tilte text-uppercase">SUSTAINABILITY</h5>
-                                <p>Jas constructions has now successfully<br> constructed over serveral landmark<br>
-                                    constructions altogether.And in the present-day scenario, jas constructions is known
-                                    <br> exclusively to make innovations to such an<br>extent that it is synonymous to the same!
-                                </p>
-                            </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- COLUMNS 4 -->
+                <div class="col-lg-4 col-md-6 col-sm-6 m-b10 animate_line">
+                    <div class="wt-icon-box-wraper p-a30 center bg-white">
+                        <div class="icon-sm site-text-primary m-b20">
+                            <a href="about-1.html" class="icon-cell"><i class="fa fa-users" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="icon-content">
+                            <h5 class="wt-tilte text-uppercase">SAFETY</h5>
+                            <p>When a construction comes from this house, there is no denying that it is certainly of <br>excellent quality with complete Vastu <br>compliance and dedication to futuristic <br>lifestyle.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- COLUMNS 5 -->
+                <div class="col-lg-4 col-md-6 col-sm-6 m-b10 animate_line">
+                    <div class="wt-icon-box-wraper p-a30 center bg-white">
+                        <div class="icon-sm site-text-primary m-b20">
+                            <a href="about-1.html" class="icon-cell"><i class="fa fa-area-chart" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="icon-content">
+                            <h5 class="wt-tilte text-uppercase">COMMUNITY</h5>
+                            <p>Among all the construction out there in the<br> city, JAS Construction is particularly<br> developing the buildings into integrated<br>  community, each of which has become a landmark in the city.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- COLUMNS 6 -->
+                <div class="col-lg-4 col-md-6 col-sm-6 m-b10 animate_line">
+                    <div class="wt-icon-box-wraper p-a30 center bg-white">
+                        <div class="icon-sm site-text-primary m-b20">
+                            <a href="about-1.html" class="icon-cell"><i class="fa fa-cogs" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="icon-content">
+                            <h5 class="wt-tilte text-uppercase">SUSTAINABILITY</h5>
+                            <p>JAS Constructions has now successfully <br> constructed over several landmark <br> constructions altogether. And in the present-day scenario, JAS Constructions is known exclusively to make innovations to such an extent that it is synonymous to the same!</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
     <!-- WHY CHOOSE US SECTION END  -->
     <div class="section-full bg-white p-t80 p-b50">
         <div class="container">
@@ -618,7 +598,7 @@
                                         </div>
                                         <div class="icon-content">
                                             <h5 class="wt-tilte text-uppercase">Affordable Pricing</h5>
-                                            <p>There are varying definitions of “Affordable Pricing”, but it can
+                                            <p>There are varying definitions of “Affordable Pricing”, <br> but it can
                                                 generally be considered as a price lower<br>than that charged for high
                                                 income countries.</p>
                                         </div>
@@ -632,7 +612,7 @@
                                         </div>
                                         <div class="icon-content">
                                             <h5 class="wt-tilte text-uppercase">Cost Control Experts</h5>
-                                            <p>Cost control refers to the process of monitoring and managing expenses
+                                            <p>Cost control refers to the process of monitoring and<br>  managing expenses
                                                 within an organization to<br> maintain financial stability</p>
                                         </div>
                                     </div>
@@ -646,7 +626,7 @@
                                         </div>
                                         <div class="icon-content">
                                             <h5 class="wt-tilte text-uppercase">Satisfied Customers</h5>
-                                            <p>Customer satisfaction information, including surveys and ratings, can
+                                            <p>Customer satisfaction information, including surveys<br>  and ratings, can
                                                 help a company determine how to <br>best improve or change the services.</p>
                                         </div>
                                     </div>
