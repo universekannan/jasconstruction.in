@@ -122,10 +122,11 @@
                                         data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
                                         data-paddingleft="[0,0,0,0]"
                                         style="z-index:13; text-transform:uppercase; font-weight:700;">
-                                        <a href="https://wa.me/919894180324?"
+                                        <a href="https://wa.link/887h96"
                                             class="site-button button-lg skew-icon-btn m-r15" target="_blank"
-                                            rel="noopener noreferrer">
-                                            Get Quote <i class="fa fa-angle-double-right"></i>
+                                            rel="noopener noreferrer"
+                                            style="background-color:#1DAA61; color:#ffffff; border:none;">
+                                            Talk on WhatsApp <i class="fa fa-angle-double-right"></i>
                                         </a>
                                     </div>
                                 </li>
@@ -155,7 +156,7 @@
                                     </div>
                                     <div class="icon-content text-white">
                                         <h5 class="wt-tilte text-uppercase m-b5 text-white">best quality</h5>
-                                        <p>20 Years Experience in Building Construction</p>
+                                        <p>20 Years Experience in Building <br>Construction in all over Tamilnadu</p>
                                     </div>
                                 </div>
                             </div>
@@ -163,15 +164,15 @@
                                 <div class="wt-icon-box-wraper left">
                                     <div class="icon-md text-primary">
                                         <a href="contactus" class="icon-cell">
-                                            <img src="assets/images/icons/pending.svg" alt=""
-                                            style="width: 24px; height: 24px;">
+                                            <img src="assets/images/icons/shield-trust.svg" alt=""
+                                                style="width: 24px; height: 24px;">
                                         </a>
                                     </div>
                                     <div class="icon-content text-white">
-                                        <h5 class="wt-tilte text-uppercase m-b0 text-white">24 hour support</h5>
+                                        <h5 class="wt-tilte text-uppercase m-b0 text-white">BUILDING TRUST </h5>
                                         <p>
-                                            <a href="mailto:jasconstruction@outlook.com" style="color: #ffffff;">
-                                                jasconstruction@outlook.com
+                                            <a href="#" style="color: #ffffff;">
+                                                On-time delivery with zero hidden <br>costs
                                             </a>
                                         </p>
 
@@ -183,8 +184,11 @@
                     </div>
                     <div class="col-md-3 p-t50 p-b50 col-md-offset-1">
                         <div class="">
-                            <a href="contactus" class="site-button skew-icon-btn m-r15 text-uppercase"
-                                style="font-weight:600;">Contact us <i class="fa fa-angle-double-right"></i></a>
+                            <a href="https://wa.link/887h96" class="site-button skew-icon-btn m-r15 text-uppercase"
+                                style="font-weight:600; background-color:#1DAA61; color:#ffffff;" target="_blank"
+                                rel="noopener noreferrer">
+                                Talk on WhatsApp <i class="fa fa-angle-double-right"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -233,7 +237,7 @@
                                         <li>Affordable Pricing</li>
                                     </ul>
                                 </div>
-                                <a href="https://wa.me/919894180324?"
+                                <a href="https://wa.link/887h96"
                                     class="site-button skew-icon-btn m-r15 text-uppercase" style="font-weight:600;"
                                     target="_blank" rel="noopener noreferrer">
                                     Talk With Us <i class="fa fa-angle-double-right"></i>
@@ -318,9 +322,9 @@
                             </div>
                             <div class="icon-content">
                                 <h5 class="wt-tilte text-uppercase">BEST QUALITY</h5>
-                                <p>The jas constructions has always been in the look out for integrating quality,
-                                    modernity as well as excellence in each one of their property. The aim of changing
-                                    the way people approach quality in construction. </p>
+                                <p>The jas constructions has always been in <br>the look out for integrating quality,
+                                <br> modernity as well as excellence in each one of their property. The aim of changing
+                                    the<br> way people approach quality in<br> construction. </p>
                             </div>
                         </div>
                     </div>
@@ -333,9 +337,9 @@
                             </div>
                             <div class="icon-content ">
                                 <h5 class="wt-tilte text-uppercase">INTEGRITY</h5>
-                                <p>Their sole aim is to exceed the expectations placed by the customers in all ways
-                                    possible. The brand keeps its communication with customers utmost transparent and
-                                    makes trendsetting innovations like no other</p>
+                                <p>Their sole aim is to exceed the expectations placed by the customers in all ways<br>
+                                    possible. The brand keeps its <br>communication with customers utmost <br>transparent and
+                                    makes trendsetting<br> innovations like no other</p>
                             </div>
                         </div>
                     </div>
@@ -348,8 +352,8 @@
                             </div>
                             <div class="icon-content">
                                 <h5 class="wt-tilte text-uppercase">STRATEGY</h5>
-                                <p>The brand has absorbed the trust of their customers with riveting marketing
-                                    strategies online and offline to which their construction standard proves to be on
+                                <p>The brand has absorbed the trust of their <br>customers with riveting marketing
+                                    strategies online and offline to which their<br> construction standard proves to be on
                                     par.</p>
                             </div>
                         </div>
@@ -366,8 +370,8 @@
                             <div class="icon-content">
                                 <h5 class="wt-tilte text-uppercase">SAFETY</h5>
                                 <p> When a construction comes from this house, there is no denying that it is certainly
-                                    of excellence quality with complete vastu compliance and dedication to futuristic
-                                    lifestyle.</p>
+                                    of<br> excellence quality with complete vastu<br> compliance and dedication to futuristic
+                                    <br>  lifestyle.</p>
                             </div>
                         </div>
                     </div>
@@ -381,7 +385,7 @@
                             <div class="icon-content">
                                 <h5 class="wt-tilte text-uppercase">COMMUNITY</h5>
                                 <p>Among all the Construction out there in the city, jas construction is particularly
-                                    developing the buildings into integrated community each of which has become a
+                                <br>  developing the buildings into integrated<br> community each of which has become a<br>
                                     landmark in the city .</p>
                             </div>
                         </div>
@@ -395,9 +399,9 @@
                             </div>
                             <div class="icon-content">
                                 <h5 class="wt-tilte text-uppercase">SUSTAINABILITY</h5>
-                                <p>Jas constructions has now successfully constructed over serveral landmark
+                                <p>Jas constructions has now successfully<br> constructed over serveral landmark<br>
                                     constructions altogether.And in the present-day scenario, jas constructions is known
-                                    exclusively to make innovations to such an extent that it is synonymous to the same!
+                                    <br> exclusively to make innovations to such an<br>extent that it is synonymous to the same!
                                 </p>
                             </div>
                         </div>
@@ -573,8 +577,8 @@
                                         </div>
                                         <div class="icon-content">
                                             <h5 class="wt-tilte text-uppercase">Years of Experience</h5>
-                                            <p>Being in the industry for over 17+ years, Jas constructions is among the
-                                                leading construction in the city. And being succesfull in their era.</p>
+                                            <p>Being in the industry for over 17+ years, <br> Jas constructions is among the
+                                                leading construction<br> in the city. And being succesfull in their era.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -586,8 +590,8 @@
                                         </div>
                                         <div class="icon-content">
                                             <h5 class="wt-tilte text-uppercase">Fully Insured</h5>
-                                            <p>The cost of damage done to a structure while under construction including
-                                                fire, vandalism, weather, and theft can be covered </p>
+                                            <p>The cost of damage done to a structure while under<br>  construction including
+                                                fire, vandalism, weather, and <br>  theft can be covered </p>
                                         </div>
                                     </div>
                                 </div>
@@ -600,8 +604,8 @@
                                         </div>
                                         <div class="icon-content">
                                             <h5 class="wt-tilte text-uppercase">Free Consultation</h5>
-                                            <p>The purpose of a free consultation is to provide a potential client with
-                                                information regarding the services that we provide.</p>
+                                            <p>The purpose of a free consultation is to provide a <br> potential client with
+                                                information regarding the <br> services that we provide.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -615,7 +619,7 @@
                                         <div class="icon-content">
                                             <h5 class="wt-tilte text-uppercase">Affordable Pricing</h5>
                                             <p>There are varying definitions of “Affordable Pricing”, but it can
-                                                generally be considered as a price lower than that charged for high
+                                                generally be considered as a price lower<br>than that charged for high
                                                 income countries.</p>
                                         </div>
                                     </div>
@@ -629,7 +633,7 @@
                                         <div class="icon-content">
                                             <h5 class="wt-tilte text-uppercase">Cost Control Experts</h5>
                                             <p>Cost control refers to the process of monitoring and managing expenses
-                                                within an organization to maintain financial stability</p>
+                                                within an organization to<br> maintain financial stability</p>
                                         </div>
                                     </div>
                                 </div>
@@ -643,7 +647,7 @@
                                         <div class="icon-content">
                                             <h5 class="wt-tilte text-uppercase">Satisfied Customers</h5>
                                             <p>Customer satisfaction information, including surveys and ratings, can
-                                                help a company determine how to best improve or change the services.</p>
+                                                help a company determine how to <br>best improve or change the services.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -966,11 +970,14 @@
                     </div>
                     <div class="col-md-4">
                         <div class="call-to-action-right p-tb30">
-                            <a href="{{ url('contactus') }}" class="site-button skew-icon-btn m-r15 text-uppercase"
-                                style="font-weight:600;">
-                                Contact us <i class="fa fa-angle-double-right"></i>
+                            <a href="https://wa.link/887h96" class="site-button skew-icon-btn m-r15 text-uppercase"
+                                style="font-weight:600; background-color:#1DAA61;">
+                                GET QUOTE IN WHATSAPP <i class="fa fa-angle-double-right"></i>
                             </a>
                         </div>
+                        <center>
+                            <p style="color:#ffffff;">We Respond in 10 minutes</p>
+                            <center>
                     </div>
                 </div>
             </div>
