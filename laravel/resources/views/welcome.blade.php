@@ -182,7 +182,7 @@
                             <div class="clearfix"></div>
                         </div>
                     </div>
-                    <div class="col-md-3 p-t50 p-b50 col-md-offset-1">
+                    <div class="col-md-3 p-t50 p-b50 col-md-offset-1" style = "text-align: left;">
                         <div class="">
                             <a href="https://wa.link/887h96" class="site-button skew-icon-btn m-r15 text-uppercase"
                                 style="font-weight:600; background-color:#1DAA61; color:#ffffff;" target="_blank"
@@ -190,7 +190,7 @@
                                GET QUOTE IN WHATSAPP  <i class="fa fa-angle-double-right"></i>
                             </a>
                         </div>
-                        <p style="color:#ffffff; text-align:right; margin:0; padding-left:8px;">We Respond in 10 minutes</p>  
+                        <div style="color:#ffffff; text-align:left; margin:0; padding-left:8px;">We Respond in 10 minutes</div>  
                     </div>
                 </div>
             </div>
@@ -950,12 +950,11 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="call-to-action-right p-tb30">
+                        <div class="call-to-action-right p-tb30"   style = "text-align: left;">
                             <a href="https://wa.link/887h96" class="site-button skew-icon-btn m-r15 text-uppercase"
                                 style="font-weight:600; background-color:#1DAA61;">
                                 Talk on WhatsApp <i class="fa fa-angle-double-right"></i>
                             </a>
-                           
                         </div>   
                        
                     </div>
