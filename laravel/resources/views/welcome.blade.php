@@ -187,7 +187,7 @@
                             <a href="https://wa.link/887h96" class="site-button skew-icon-btn m-r15 text-uppercase"
                                 style="font-weight:600; background-color:#1DAA61; color:#ffffff;" target="_blank"
                                 rel="noopener noreferrer">
-                                Talk on WhatsApp <i class="fa fa-angle-double-right"></i>
+                               GET QUOTE IN WHATSAPP  <i class="fa fa-angle-double-right"></i>
                             </a>
                         </div>
                     </div>
@@ -296,7 +296,7 @@
     </div>
     <!-- ABOUT COMPANY SECTION END -->
     <!-- WHY CHOOSE US SECTION START  -->
-<div class="section-full bg-gray p-t80 p-b50">
+    <div class="section-full bg-gray p-t80 p-b50">
     <div class="container">
         <!-- TITLE START-->
         <div class="section-head text-center">
@@ -310,79 +310,85 @@
             <p>JAS Constructions is founded to give you trust, value and services alike in each of their services, and this certainly needs special mentioning about their Successful era.</p>
         </div>
         <!-- TITLE END-->
+
         <div class="section-content m-b20">
             <div class="row">
                 <!-- COLUMNS 1 -->
                 <div class="col-lg-4 col-md-6 col-sm-6 m-b10 animate_line">
-                    <div class="wt-icon-box-wraper p-a30 center bg-white">
+                    <div class="wt-icon-box-wraper p-a30 bg-white" style="text-align:left !important;">
                         <div class="icon-sm site-text-primary m-b20">
                             <a href="about-1.html" class="icon-cell"><i class="fa fa-life-ring" aria-hidden="true"></i></a>
                         </div>
                         <div class="icon-content">
                             <h5 class="wt-tilte text-uppercase">BEST QUALITY</h5>
-                            <p>JAS Constructions has always been in the <br>lookout for integrating quality, modernity as<br> well as excellence in each one of their<br> properties. The aim is to change the way <br>people approach quality in construction.</p>
+                            <p>JAS Constructions has always been in the lookout for integrating quality, modernity as well as excellence in each one of their properties. The aim is to change the way people approach quality in construction.</p>
                         </div>
                     </div>
                 </div>
+
                 <!-- COLUMNS 2 -->
                 <div class="col-lg-4 col-md-6 col-sm-6 m-b10 animate_line">
-                    <div class="wt-icon-box-wraper p-a30 center bg-white">
+                    <div class="wt-icon-box-wraper p-a30 bg-white" style="text-align:left !important;">
                         <div class="icon-sm site-text-primary m-b20">
                             <a href="about-1.html" class="icon-cell"><i class="fa fa-trophy" aria-hidden="true"></i></a>
                         </div>
                         <div class="icon-content">
                             <h5 class="wt-tilte text-uppercase">INTEGRITY</h5>
-                            <p>Their sole aim is to exceed the expectations <br>placed by the customers in all ways possible. The brand keeps its communication with <br>customers utmost transparent and makes<br> trendsetting innovations like no other.</p>
+                            <p>Their sole aim is to exceed the expectations placed by the customers in all ways possible. The brand keeps its communication with customers utmost transparent and makes trendsetting innovations like no other.</p>
                         </div>
                     </div>
                 </div>
+
                 <!-- COLUMNS 3 -->
                 <div class="col-lg-4 col-md-6 col-sm-6 m-b10 animate_line">
-                    <div class="wt-icon-box-wraper p-a30 center bg-white">
+                    <div class="wt-icon-box-wraper p-a30 bg-white" style="text-align:left !important;">
                         <div class="icon-sm site-text-primary m-b20">
                             <a href="about-1.html" class="icon-cell"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
                         </div>
                         <div class="icon-content">
                             <h5 class="wt-tilte text-uppercase">STRATEGY</h5>
-                            <p>The brand has absorbed the trust of their <br>customers with riveting marketing strategies online and offline, to which their <br>construction standard proves to be on par.</p>
+                            <p>The brand has absorbed the trust of their customers with riveting marketing strategies online and offline, to which their construction standard proves to be on par.</p>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="row">
                 <!-- COLUMNS 4 -->
                 <div class="col-lg-4 col-md-6 col-sm-6 m-b10 animate_line">
-                    <div class="wt-icon-box-wraper p-a30 center bg-white">
+                    <div class="wt-icon-box-wraper p-a30 bg-white" style="text-align:left !important;">
                         <div class="icon-sm site-text-primary m-b20">
                             <a href="about-1.html" class="icon-cell"><i class="fa fa-users" aria-hidden="true"></i></a>
                         </div>
                         <div class="icon-content">
                             <h5 class="wt-tilte text-uppercase">SAFETY</h5>
-                            <p>When a construction comes from this house, there is no denying that it is certainly of <br>excellent quality with complete Vastu <br>compliance and dedication to futuristic <br>lifestyle.</p>
+                            <p>When a construction comes from this house, there is no denying that it is certainly of excellent quality with complete Vastu compliance and dedication to futuristic lifestyle.</p>
                         </div>
                     </div>
                 </div>
+
                 <!-- COLUMNS 5 -->
                 <div class="col-lg-4 col-md-6 col-sm-6 m-b10 animate_line">
-                    <div class="wt-icon-box-wraper p-a30 center bg-white">
+                    <div class="wt-icon-box-wraper p-a30 bg-white" style="text-align:left !important;">
                         <div class="icon-sm site-text-primary m-b20">
                             <a href="about-1.html" class="icon-cell"><i class="fa fa-area-chart" aria-hidden="true"></i></a>
                         </div>
                         <div class="icon-content">
                             <h5 class="wt-tilte text-uppercase">COMMUNITY</h5>
-                            <p>Among all the construction out there in the<br> city, JAS Construction is particularly<br> developing the buildings into integrated<br>  community, each of which has become a landmark in the city.</p>
+                            <p>Among all the construction out there in the city, JAS Construction is particularly developing the buildings into integrated community, each of which has become a landmark in the city.</p>
                         </div>
                     </div>
                 </div>
+
                 <!-- COLUMNS 6 -->
                 <div class="col-lg-4 col-md-6 col-sm-6 m-b10 animate_line">
-                    <div class="wt-icon-box-wraper p-a30 center bg-white">
+                    <div class="wt-icon-box-wraper p-a30 bg-white" style="text-align:left !important;">
                         <div class="icon-sm site-text-primary m-b20">
                             <a href="about-1.html" class="icon-cell"><i class="fa fa-cogs" aria-hidden="true"></i></a>
                         </div>
                         <div class="icon-content">
                             <h5 class="wt-tilte text-uppercase">SUSTAINABILITY</h5>
-                            <p>JAS Constructions has now successfully <br> constructed over several landmark <br> constructions altogether. And in the present-day scenario, JAS Constructions is known <br>exclusively to make innovations to such an<br> extent that it is synonymous to the same!</p>
+                            <p>JAS Constructions has now successfully constructed over several landmark constructions altogether. And in the present-day scenario, JAS Constructions is known exclusively to make innovations to such an extent that it is synonymous to the same!</p>
                         </div>
                     </div>
                 </div>
@@ -952,13 +958,13 @@
                         <div class="call-to-action-right p-tb30">
                             <a href="https://wa.link/887h96" class="site-button skew-icon-btn m-r15 text-uppercase"
                                 style="font-weight:600; background-color:#1DAA61;">
-                                GET QUOTE IN WHATSAPP <i class="fa fa-angle-double-right"></i>
+                                Talk on WhatsApp <i class="fa fa-angle-double-right"></i>
                             </a>
-                        </div>
-                        <center>
-                            <p style="color:#ffffff;">We Respond in 10 minutes</p>
-                            <center>
+                            <p style="color:#ffffff; text-align:right; margin:0; padding-left:8px;">We Respond in 10 minutes</p>  
+                        </div>   
+                       
                     </div>
+                  
                 </div>
             </div>
         </div>
