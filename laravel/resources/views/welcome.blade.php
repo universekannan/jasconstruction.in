@@ -190,6 +190,7 @@
                                GET QUOTE IN WHATSAPP  <i class="fa fa-angle-double-right"></i>
                             </a>
                         </div>
+                        <p style="color:#ffffff; text-align:right; margin:0; padding-left:8px;">We Respond in 10 minutes</p>  
                     </div>
                 </div>
             </div>
@@ -954,7 +955,7 @@
                                 style="font-weight:600; background-color:#1DAA61;">
                                 Talk on WhatsApp <i class="fa fa-angle-double-right"></i>
                             </a>
-                            <p style="color:#ffffff; text-align:right; margin:0; padding-left:8px;">We Respond in 10 minutes</p>  
+                           
                         </div>   
                        
                     </div>
