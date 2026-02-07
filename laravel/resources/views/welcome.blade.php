@@ -19,7 +19,15 @@
     <meta name="copyright" content="Jas Construction" />
     <link rel="shortcut icon" href="images/logo.png" title="Jas Construction" />
     <link href="" rel="search" title="Search Jas Construction" type="application/opensearchdescription+xml" />
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16886085655"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'AW-16886085655');
+</script>
     @extends('layouts.app')
     @section('content')
     <style>
