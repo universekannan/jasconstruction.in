@@ -11,22 +11,36 @@ Route::get('gallery', [App\Http\Controllers\MainController::class, 'gallery'])->
 Route::get('testimonial', [App\Http\Controllers\MainController::class, 'testimonial'])->name('testimonial');
 Route::get('contactus', [App\Http\Controllers\MainController::class, 'contactus'])->name('contactus');
 ROUTE::post('contactdetails', [App\Http\Controllers\MainController::class, 'contactdetails'])->name('contactdetails');
-Route::get('admin/contact',[App\Http\Controllers\Admin\UsersController::class, 'contact'])->name('contact');
-Route::post('/updatedetails',[App\Http\Controllers\MainController::class, 'updatedetails'])->name('updatedetails');
-
-
-
 Route::get('project/{id}', [App\Http\Controllers\MainController::class, 'project'])->name('project');
 Route::get('projects/{id}', [App\Http\Controllers\MainController::class, 'projects'])->name('projects');
-Route::get('admin', [App\Http\Controllers\MainController::class, 'admin'])->name('admin');
 
-Route::get('slider', [App\Http\Controllers\MainController::class, 'slider'])->name('slider');
-Route::get('admin/category/{id}', [App\Http\Controllers\MainController::class, 'categoryproducts'])->name('categoryproduct');
-Route::post('saveorder', [App\Http\Controllers\MainController::class, 'saveorder'])->name('saveorder');
 
 
 //admin
+
+Route::get('admin', [App\Http\Controllers\MainController::class, 'admin'])->name('admin');
+
 Route::get('admin/dashboard', [App\Http\Controllers\Admin\DashboardController::class, 'dashboard'])->name('dashboard');
+
+Route::get('admin/changepassword',[App\Http\Controllers\Admin\UsersController::class, 'changepassword'])->name('changepassword');
+Route::get('admin/profile', [App\Http\Controllers\Admin\UsersController::class, 'profile'])->name('profile');
+Route::post('/updateprofile', [App\Http\Controllers\Admin\UsersController::class, 'updateprofile'])->name('updateprofile');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Route::get('admin/contact',[App\Http\Controllers\Admin\UsersController::class, 'contact'])->name('contact');
+
 Route::get('admin/addproject', [App\Http\Controllers\Admin\ProductsController::class, 'addproject'])->name('addproject');
 
 Route::get('admin/projects/{id}', [App\Http\Controllers\Admin\ProductsController::class, 'projects'])->name('projects');
@@ -73,4 +87,24 @@ Route::post('addbanner',[App\Http\Controllers\Admin\BannersController::class, 'a
 Route::post('/updatebanners',[App\Http\Controllers\Admin\BannersController::class, 'updatebanners'])->name('updatebanners');
 Route::get('deletebanner/{id}',[App\Http\Controllers\Admin\BannersController::class, 'deletebanner'])->name('deletebanner');
 Route::get('/deletebanners/{id}',[App\Http\Controllers\Admin\BannersController::class, 'deletebanners'])->name('deletebanners');
-Route::get('changepassword',[App\Http\Controllers\Admin\UsersController::class, 'changepassword'])->name('changepassword');
+
+
+
+
+
+
+
+
+
+Route::post('/updatedetails',[App\Http\Controllers\MainController::class, 'updatedetails'])->name('updatedetails');
+
+
+
+
+
+Route::get('slider', [App\Http\Controllers\MainController::class, 'slider'])->name('slider');
+Route::get('admin/category/{id}', [App\Http\Controllers\MainController::class, 'categoryproducts'])->name('categoryproduct');
+Route::post('saveorder', [App\Http\Controllers\MainController::class, 'saveorder'])->name('saveorder');
+
+
+//admin

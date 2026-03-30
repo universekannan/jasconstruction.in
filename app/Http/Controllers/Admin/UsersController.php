@@ -113,7 +113,7 @@ class UsersController extends Controller
     public function profile()
      {
       $userid = Auth::user()->id;
-      $profile = DB::table('users')->where('id','=', $userid)->get();
+      $profile = DB::table('users')->where('id','=', $userid)->first();
 
      return view('admin/users/profile', compact('profile'));
 	 }
