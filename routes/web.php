@@ -29,7 +29,8 @@ Route::post('/updateprofile', [App\Http\Controllers\Admin\UsersController::class
 
 
 
-
+Route::get('admin/website-settings',[App\Http\Controllers\Admin\SettingsController::class, 'web_setting'])->name('web_setting');
+Route::post('admin/setting_update',[App\Http\Controllers\Admin\SettingsController::class, 'setting_update'])->name('setting_update');
 
 
 
@@ -105,6 +106,28 @@ Route::post('/updatedetails',[App\Http\Controllers\MainController::class, 'updat
 Route::get('slider', [App\Http\Controllers\MainController::class, 'slider'])->name('slider');
 Route::get('admin/category/{id}', [App\Http\Controllers\MainController::class, 'categoryproducts'])->name('categoryproduct');
 Route::post('saveorder', [App\Http\Controllers\MainController::class, 'saveorder'])->name('saveorder');
+
+
+Route::get('admin/usertype', [App\Http\Controllers\Admin\UsersController::class, 'usertype'])->name('usertype');
+Route::post('/editusertype', [App\Http\Controllers\UserController::class, 'editusertype'])->name('editusertype');
+Route::post('/editusertypepermission', [App\Http\Controllers\UserController::class, 'editusertypepermission'])->name('editusertypepermission');
+
+
+
+Route::prefix('admin')->middleware('auth')->group(function () {
+
+    Route::get('users', [App\Http\Controllers\Admin\UsersController::class, 'index']);
+    Route::get('users/create', [App\Http\Controllers\Admin\UsersController::class, 'create']);
+    Route::post('users/store', [App\Http\Controllers\Admin\UsersController::class, 'store']);
+
+    Route::get('users/edit/{id}', [App\Http\Controllers\Admin\UsersController::class, 'edit']);
+    Route::post('users/update/{id}', [App\Http\Controllers\Admin\UsersController::class, 'update']);
+    Route::post('admin/users/update', [App\Http\Controllers\Admin\UsersController::class, 'update']);
+    Route::get('users/delete/{id}', [App\Http\Controllers\Admin\UsersController::class, 'delete']);
+  
+
+
+});
 
 
 //admin
