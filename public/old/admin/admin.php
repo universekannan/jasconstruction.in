@@ -3,7 +3,7 @@ session_start();
 $page = "users";
 include "timeout.php";
 include "config.php";
-if ($_SESSION['user_type'] != "admin") header("location: index.php");
+if ($_SESSION['user_types_id'] != "1") header("location: index.php");
 $user_id=$_SESSION['user_id'];
 
  ?>
@@ -65,7 +65,7 @@ $user_id=$_SESSION['user_id'];
                     <div class="panel panel-primary">
 					<?php
     $notification_count=0;
-	if($_SESSION['user_type']=="admin"){ 
+	if($_SESSION['user_types_id']=="1"){ 
     $notification_sql = "select * from equipment";
 	
 	}else 
@@ -105,7 +105,7 @@ $user_id=$_SESSION['user_id'];
                     <div class="panel panel-green">
 					<?php
     $notification_count=0;
-	if($_SESSION['user_type']=="admin"){ 
+	if($_SESSION['user_types_id']=="1"){ 
     $notification_sql = "select * from staff WHERE status<>'Done'";
 	}
     $notification_result = mysqli_query($conn, $notification_sql);
@@ -139,7 +139,7 @@ $user_id=$_SESSION['user_id'];
                     <div class="panel panel-yellow">
 					 <?php
     $notification_count=0;
-	if($_SESSION['user_type']=="admin"){ 
+	if($_SESSION['user_type']=="1"){ 
     $notification_sql = "select * from staff WHERE status='Done'";
 	
 	}

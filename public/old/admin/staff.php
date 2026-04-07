@@ -3,7 +3,7 @@ session_start();
 $page = "users";
 include "timeout.php";
 include "config.php";
-if ($_SESSION['user_type'] != "Supervisor") header("location: index.php");
+if ($_SESSION['user_types_id'] != "1") header("location: index.php");
 $user_id=$_SESSION['user_id'];
 
  ?>
@@ -65,24 +65,17 @@ $user_id=$_SESSION['user_id'];
             <div class="row">
                 <div class="col-lg-3 col-md-6">
                     <div class="panel panel-primary">
-	  	  				 <?php
+					<?php
     $notification_count=0;
 	if($_SESSION['user_type']=="Staff"){ 
-    $notification_sql = "select * from assign_project WHERE assign_project_user_id=$user_id";
-	
-	
-	}else 
-	{
-		$user_id=$_SESSION['user_id'];
-		$notification_sql = "select * from assign_project WHERE assign_project_user_id=$user_id";
-	
+    $notification_sql = "select * from equipment";
 	}
- $notification_result = mysqli_query($conn, $notification_sql);
+    $notification_result = mysqli_query($conn, $notification_sql);
     while ($notification_row = mysqli_fetch_assoc($notification_result)) {
-      
+        {
             $notification_count++;
         }
-    
+    }
 	?>
                         <div class="panel-heading">
                             <div class="row">
@@ -91,25 +84,26 @@ $user_id=$_SESSION['user_id'];
                                 </div>
                                 <div class="col-xs-9 text-right">
                                     <div class="huge"><?php echo $notification_count; ?></div>
-                                    <div>Project</div>
+                                    <div>Equipments</div>
                                 </div>
                             </div>
                         </div>
                         <a href="#">
                             <div class="panel-footer">
-                                 <a href="project.php" ><span class="pull-left">View Details</span></a>
+                                 <a href="equipment.php" ><span class="pull-left">View Details</span></a>
                                 <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                                 <div class="clearfix"></div>
                             </div>
                         </a>
                     </div>
                 </div>
-               <div class="col-lg-3 col-md-6">
-                    <div class="panel panel-yellow">
-					 <?php
+                <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-green">
+					<?php
     $notification_count=0;
-	$user_id=$_SESSION['user_id'];
-    $notification_sql = "select  a.*,b.assign_project_id from supervisor a, assign_project b where a.project_id=b.assign_project_id and b.assign_project_user_id=$user_id and a.status='Supervisor'";
+	if($_SESSION['user_type']=="Staff"){ 
+     $notification_sql = "select * from staff where status<>'Done' and status<>'Approved'";
+	}
     $notification_result = mysqli_query($conn, $notification_sql);
     while ($notification_row = mysqli_fetch_assoc($notification_result)) {
         {
@@ -130,21 +124,26 @@ $user_id=$_SESSION['user_id'];
                         </div>
                         <a href="#">
                             <div class="panel-footer">
-                                <a href="supervisor-pending.php" ><span class="pull-left">View Pending</span>
-                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span></a>
+                                 <a href="staff-pending.php" ><span class="pull-left">View Details</span></a>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                                 <div class="clearfix"></div>
                             </div>
                         </a>
                     </div>
                 </div>
-				
                 <div class="col-lg-3 col-md-6">
-                    <div class="panel panel-green">
-					<?php
+                    <div class="panel panel-yellow">
+					 <?php
     $notification_count=0;
+	if($_SESSION['user_type']=="Staff"){ 
+    $notification_sql = "select * from staff WHERE status='Approved'";
 	
+	}else 
+	{
 		$user_id=$_SESSION['user_id'];
-		$notification_sql = "select * from staff WHERE status='Supervisor' and user_id=$user_id";
+		$notification_sql = "select * from staff WHERE status='Approved'";
+	
+	}
 	
     $notification_result = mysqli_query($conn, $notification_sql);
     while ($notification_row = mysqli_fetch_assoc($notification_result)) {
@@ -160,29 +159,25 @@ $user_id=$_SESSION['user_id'];
                                 </div>
                                 <div class="col-xs-9 text-right">
                                     <div class="huge"><?php echo $notification_count; ?></div>
-                                    <div>Transfering</div>
+                                    <div>Approved</div>
                                 </div>
                             </div>
                         </div>
                         <a href="#">
                             <div class="panel-footer">
-                                 <a href="supervisor-transfer.php" ><span class="pull-left">View Details</span></a>
+                                <a href="staff-approval.php" ><span class="pull-left">View Details</span></a>
                                 <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                                 <div class="clearfix"></div>
                             </div>
                         </a>
                     </div>
                 </div>
- 
                 <div class="col-lg-3 col-md-6">
                     <div class="panel panel-red">
-                     <?php
+ <?php
     $notification_count=0;
-	if($_SESSION['user_type']=="admin"){ 
     $notification_sql = "select * from project WHERE project_type='Project'";
-	
-	}
-    $notification_result = mysqli_query($conn, $notification_sql);
+	    $notification_result = mysqli_query($conn, $notification_sql);
     while ($notification_row = mysqli_fetch_assoc($notification_result)) {
       
             $notification_count++;
@@ -200,9 +195,9 @@ $user_id=$_SESSION['user_id'];
                                 </div>
                             </div>
                         </div>
-                        <a href="#">
+                        <a href="projects.php">
                             <div class="panel-footer">
-                                <a href="project.php" ><span class="pull-left">View Details</span>
+                                <span class="pull-left">View Details</span>
                                 <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                                 <div class="clearfix"></div>
                             </div>
@@ -214,15 +209,15 @@ $user_id=$_SESSION['user_id'];
             <div class="row">
                				<?php include "chat-map.php"; ?>
 
-                <!-- /.col-lg-4 -->
             </div>
             <!-- /.row -->
         </div>
         <!-- /#page-wrapper -->
+<?php include "footer.php"; ?>
 
     </div>
     <!-- /#wrapper -->
-<?php include"footer.php"?>
+
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
 

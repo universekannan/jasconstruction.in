@@ -29,16 +29,16 @@
                             </div>
                             <!-- /input-group -->
                        <!-- </li>-->
-					   <?php if($_SESSION['user_type']=="admin"){ ?>
+					   <?php if($_SESSION['user_type_id']=="1"){ ?>
                         <li><a href="admin.php"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a></li>
-						<?php }else if($_SESSION['user_type']=="Store"){ ?>
+						<?php }else if($_SESSION['user_type_id']=="1"){ ?>
 						<li><a href="store.php"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a></li>
-						<?php }else if($_SESSION['user_type']=="Staff"){ ?>
+						<?php }else if($_SESSION['user_type_id']=="1"){ ?>
 						<li><a href="staff.php"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a></li>
-						<?php }else if($_SESSION['user_type']=="Supervisor"){ ?>
+						<?php }else if($_SESSION['user_type_id']=="1"){ ?>
 						<li><a href="supervisor.php"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a></li>
 						<?php } ?>
-					  <!--  <?php if(($_SESSION['user_type']=="admin") || ($_SESSION['user_type']=="Staff")) { ?>
+					  <!--  <?php if(($_SESSION['user_type_id']=="1") || ($_SESSION['user_type_id']=="1")) { ?>
                             <li><a href="equipment.php"><i class="fa fa-gears"></i> Equipments<span class="fa arrow"></span></a>
 							<ul class="nav nav-second-level">
                                 <li>
@@ -54,7 +54,7 @@
 			</li>
 							
 	                    <?php } ?>-->
-                      <?php if(($_SESSION['user_type']=="admin") || ($_SESSION['user_type']=="Staff")) { ?>
+                      <?php if(($_SESSION['user_type_id']=="1") || ($_SESSION['user_type_id']=="1")) { ?>
         <li><a href="project.php"><i class="fa fa-paypal"></i> Project<span class="fa arrow"></span></a>
 			<ul class="nav nav-second-level">
                                 <li>
@@ -69,10 +69,10 @@
 								</ul>
 							</li>
 	  <?php } ?>
-	  <?php if($_SESSION['user_type']=="Supervisor") { ?>
+	  <?php if($_SESSION['user_type_id']=="1") { ?>
         <li><a href="project.php"><i class="fa fa-paypal"></i> <span>Project</span></a></li>
 	  <?php } ?>
-	 <!--  <?php if($_SESSION['user_type']=="admin") { ?>
+	 <!--  <?php if($_SESSION['user_type_id']=="1") { ?>
         <li><a href="assign-project.php"><i class="fa fa-paypal"></i> Assign Projects<span class="fa arrow"></span></a>
 			<ul class="nav nav-second-level">
                                 <li>
@@ -85,12 +85,9 @@
 							</li>
 	  <?php } ?>
 
+                        <?php if($_SESSION['user_type_id']=="1"){ ?>
 
-
-
-                        <?php if($_SESSION['user_type']=="admin"){ ?>
-
-<?php if(($_SESSION['user_type']=="admin") || ($_SESSION['user_type']=="Staff")) { ?>
+<?php if(($_SESSION['user_type_id']=="admin") || ($_SESSION['user_type_id']=="1")) { ?>
                             <li><a href="equipment.php"><i class="fa fa-gears"></i> Payment<span class="fa arrow"></span></a>
 							<ul class="nav nav-second-level">
                                 <li>
@@ -119,16 +116,16 @@
                                     <a href="salarys.php">Salary</a>
                                 </li>
                             </ul></li>
-                       <?php }else if($_SESSION['user_type']=="Store"){ ?> 
+                       <?php }else if($_SESSION['user_type_id']=="1"){ ?> 
               <li><a href="store-tr.php"><i class="fa fa-exchange"></i> <span>TR</span></a></li>
 
          <li><a href="store-equipment.php"><i class="fa fa-exchange"></i> <span>Equipment</span></a></li>
         <li><a href="store-pending.php"><i class="fa fa-exchange"></i> <span>Pending </span></a></li>
         <li><a href="store-transfer.php"><i class="fa fa-exchange"></i> <span>Transfer</span></a></li>
-		<?php }else if($_SESSION['user_type']=="Staff"){ ?>
+		<?php }else if($_SESSION['user_type_id']=="1"){ ?>
         <li><a href="staff-approval.php"><i class="fa fa-exchange"></i> <span>Approval </span></a></li>
         <li><a href="staff-pending.php"><i class="fa fa-exchange"></i> <span>Pending</span></a></li>
-		<?php }else if($_SESSION['user_type']=="Supervisor"){ ?>
+		<?php }else if($_SESSION['user_type_id']=="1"){ ?>
         <li><a href="supervisor-pending.php"><i class="fa fa-exchange"></i> <span>Pending </span></a></li>
         <li><a href="supervisor-transfer.php"><i class="fa fa-exchange"></i> <span>Transfering</span></a></li>
 <li><a href="transfer-status.php"><i class="fa fa-exchange"></i> <span>Transfer Status</span></a></li>                               <?php } ?>
@@ -148,7 +145,7 @@
                             <!-- 
                     </ul>
                 </div>
-                <!-- /.sidebar-collapse -->
+                <!-- /.sidebar-collapse --> 
             </div>
             <!-- /.navbar-static-side -->
         </nav>

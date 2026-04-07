@@ -6,7 +6,7 @@ if (isset($_POST['submit'])) {
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-    $sql = "SELECT * FROM users WHERE email='$email' and password='$password'";
+    $sql = "SELECT * FROM users WHERE email='$email' and cpassword='$password'";
     $result1 = mysqli_query($conn, $sql);
     $count = mysqli_num_rows($result1);
     $row = mysqli_fetch_array($result1);
@@ -17,14 +17,14 @@ if (isset($_POST['submit'])) {
         $_SESSION['project'] = $row['id'];
         $_SESSION['equ_id'] = $row['id'];
         $_SESSION['full_name'] = $row['full_name'];
-        $_SESSION['user_type'] = $row['user_type'];
-        if($row['user_type']=="admin" )
+        $_SESSION['user_types_id'] = $row['user_types_id'];
+        if($row['user_types_id']=="1" )
             header("location: admin.php");
-        else if($row['user_type']=="Staff" )
+        else if($row['user_types_id']=="1" )
             header("location: staff.php");
-		else if($row['user_type']=="Supervisor" )
+		else if($row['user_types_id']=="1" )
             header("location: supervisor.php");
-		else if($row['user_type']=="Store" )
+		else if($row['user_types_id']=="1" )
             header("location: store.php");
     } else {
         $error = "Your User Name or Password is invalid";
