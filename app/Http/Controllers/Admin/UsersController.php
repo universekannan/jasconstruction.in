@@ -48,6 +48,53 @@ class UsersController extends Controller
 
     }
 
+    public function index()
+{
+    $users = DB::table('users')->get();
+    return view('admin.users.index', compact('users'));
+}
+
+public function create()
+{
+    return view('admin.users.create');
+}
+public function store(Request $request)
+{
+    DB::table('users')->insert([
+        'full_name' => $request->name,
+        'email' => $request->email,
+        'password' => bcrypt($request->password),
+    ]);
+
+    return back()->with('success', 'User Added');
+}
+
+public function update(Request $request, $id)
+{
+    DB::table('users')->where('id', $id)->update([
+        'full_name' => $request->name,
+        'email' => $request->email,
+    ]);
+
+    return back()->with('success', 'User Updated');
+}
+
+public function edit($id)
+{
+    $user = DB::table('users')->where('id', $id)->first();
+    return view('admin.users.edit', compact('user'));
+}
+
+public function delete($id)
+{
+    DB::table('users')->where('id', $id)->delete();
+    return back()->with('success', 'User Deleted');
+}
+ public function usertype(){
+        $usertypes = DB::table('user_types')->get();
+		return view('admin/users/user_type', compact('usertypes'));
+   }
+
 	public function viewsalary($month) {
 	 if(auth()->user()->usertype_id == '1'){
         $sql="select a.*,b.name from stafs_salery a,users b where a.user_id=b.id and salary_month='$month'";

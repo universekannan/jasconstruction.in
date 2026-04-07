@@ -1,207 +1,132 @@
 @extends('admin.layouts.app')
 
-@section('admin.content')
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="content-header">
-                </div>
-                <div class="card card-primary">
+@section('content')
+<div class="container-fluid">
 
-                    <div class="card-header">
-                        <h3 class="card-title">Center Details</h3>
-                        <button type="button" class="btn btn-sm btn-secondary float-right" data-toggle="modal"
-                            data-target="#addcenter"><i class="fa fa-plus"> </i> Add Center</button>
-                    </div>
-                    <div class="card-body">
-                        @if (session()->has('success'))
-                            <div class="alert alert-success alert-dismissable" style="margin: 15px;">
-                                <a href="#" style="color:white !important" class="close" data-dismiss="alert"
-                                    aria-label="close">&times;</a>
-                                <strong> {{ session('success') }} </strong>
-                            </div>
-                        @endif
-                        <div class="table-responsive">
-                            <table id="example2" class="table table-bordered">
-                                <thead>
-                                    <tr>
-                                        <th>Name</th>
-                                        <th>Email</th>
-                                        <th>Mobile No</th>
-                                        <th>Status</th>
-                                        <th>Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    @foreach ($centers as $centerslist)
-                                        <tr>
-                                            <td>{{ $centerslist->full_name }}</td>
-                                            <td>{{ $centerslist->email }}</td>
-                                            <td>{{ $centerslist->mobile }}</td>
-                                            @if ($centerslist->status == 1)
-                                                <td>Active</td>
-                                            @else
-                                                <td>Inactive</td>
-                                            @endif
-                                            <td width="10%" style="white-space: nowrap">
-                                                <a onclick="edit_center('{{ $centerslist->id }}','{{ $centerslist->full_name }}','{{ $centerslist->email }}','{{ $centerslist->mobile }}','{{ $centerslist->status }}')"
-                                                    href="#" class="btn btn-sm btn-primary"><i class="fa fa-edit"></i>
-                                                    Edit</a>
-                                                <a onclick="return confirm('Do you want to Confirm delete operation?')"
-                                                    href="{{ url('/deletecenterslist', $centerslist->id) }}"
-                                                    class="btn btn-danger btn-sm"><i class="fa fa-trash"></i> Delete</a>
-                                            </td>
-                                        </tr>
-                                    @endforeach
-                                </tbody>
-                            </table>
-                        </div>
+    <div class="card">
+        <div class="card-header">
+            <h3 class="card-title">Users</h3>
 
-                        <div class="modal fade" id="addcenter">
-                            <form action="{{ url('/addcenters') }}" method="post">
-                                {{ csrf_field() }}
-                                <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h4 class="modal-title">Add centerslist</h4>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <div class="form-group row">
-                                                        <label for="name" class="col-sm-4 col-form-label"><span
-                                                                style="color:red">*</span>Full Name</label>
-                                                        <div class="col-sm-8">
-                                                            <input required="required" type="text" class="form-control"
-                                                                name="name" maxlength="50" placeholder="Full Name">
-                                                        </div>
-                                                    </div>
+            <!-- ADD BUTTON -->
+            <button class="btn btn-primary float-right" data-toggle="modal" data-target="#addUserModal">
+                Add User
+            </button>
+        </div>
 
-                                                    <div class="form-group row">
-                                                        <label for="email" class="col-sm-4 col-form-label"><span
-                                                                style="color:red">*</span>Email</label>
-                                                        <div class="col-sm-8">
-                                                            <input required="required" type="email" class="form-control"
-                                                                name="email" maxlength="30" placeholder="Email">
-                                                        </div>
-                                                    </div>
+        <div class="card-body">
 
-                                                    <div class="form-group row">
-                                                        <label for="password" class="col-sm-4 col-form-label"><span
-                                                                style="color:red">*</span>Password</label>
-                                                        <div class="col-sm-8">
-                                                            <input required="required" type="password" class="form-control"
-                                                                name="password" maxlength="20" placeholder="Password">
-                                                        </div>
-                                                    </div>
+            @if(session('success'))
+                <div class="alert alert-success">{{ session('success') }}</div>
+            @endif
 
-                                                    <div class="form-group row">
-                                                        <label for="mobile" class="col-sm-4 col-form-label"><span
-                                                                style="color:red">*</span>Mobile No</label>
-                                                        <div class="col-sm-8">
-                                                            <input required="required" type="text" class="form-control"
-                                                                name="mobile" maxlength="20" placeholder="Mobile Number">
-                                                        </div>
-                                                    </div>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Action</th>
+                        
+                        
+                    </tr>
+                </thead>
 
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer justify-content-between">
-                                            <button type="button" class="btn btn-default"
-                                                data-dismiss="modal">Close</button>
-                                            <input class="btn btn-primary" type="submit" value="Submit" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
+                <tbody>
+                    @foreach($users as $user)
+                    <tr>
+                        <td>{{ $user->id }}</td>
+                        <td>{{ $user->full_name ?? '-' }}</td>
+                        <td>{{ $user->email }}</td>
 
-                        <div class="modal fade" id="editcenters" tabindex="-1" aria-hidden="true">
-                            <form action="{{ url('/updatecenter') }}" method="post">
-                                {{ csrf_field() }}
-                                <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalScrollable">Edit centerslist</h5>
-                                            <button type="button" class="close" data-dismiss="modal"
-                                                aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <div class="form-group row">
-                                                        <input type="hidden" name="user_id" id="user_id">
-                                                        <label for="name" class="col-sm-4 col-form-label"><span
-                                                                style="color:red">*</span>Full Name</label>
-                                                        <div class="col-sm-8">
-                                                            <input required="required" type="text"
-                                                                class="form-control" name="name" maxlength="50"
-                                                                placeholder="Full Name" id="centerslistname">
-                                                        </div>
-                                                    </div>
+                        <td>
+                            <!-- EDIT -->
+                            <button class="btn btn-warning btn-sm"
+                                onclick="editUser('{{ $user->id }}','{{ $user->full_name }}','{{ $user->email }}')">
+                                Edit
+                            </button>
 
-                                                    <div class="form-group row">
-                                                        <label for="email" class="col-sm-4 col-form-label"><span
-                                                                style="color:red">*</span>Email</label>
-                                                        <div class="col-sm-8">
-                                                            <input required="required" type="email"
-                                                                class="form-control" name="email" maxlength="30"
-                                                                placeholder="Email" id="centerslistemail">
-                                                        </div>
-                                                    </div>
+                            <!-- DELETE -->
+                            <a href="{{ url('admin/users/delete/'.$user->id) }}"
+                               class="btn btn-danger btn-sm"
+                               onclick="return confirm('Delete this user?')">
+                               Delete
+                            </a>
+                        </td>
+                    </tr>
+                    @endforeach
+                </tbody>
 
-                                                    <div class="form-group row">
-                                                        <label for="phone" class="col-sm-4 col-form-label"><span
-                                                                style="color:red">*</span>Mobile No</label>
-                                                        <div class="col-sm-8">
-                                                            <input required="required" type="text"
-                                                                class="form-control" name="mobile" maxlength="20"
-                                                                placeholder="Mobile Number" id="centerslistmobile">
-                                                        </div>
-                                                    </div>
+            </table>
 
-                                                    <div class="form-group row">
-                                                        <label for="email" class="col-sm-4 col-form-label"><span
-                                                                style="color:red">*</span>Status</label>
-                                                        <div class="col-sm-8">
-                                                            <select id="editstatus" name="status" class="form-control">
-                                                                <option value="1">Active</option>
-                                                                <option value="0">Inactive</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="modal-footer justify-content-between">
-                                                <button type="button" class="btn btn-default"
-                                                    data-dismiss="modal">Close</button>
-                                                <input class="btn btn-primary" type="submit" value="Submit" />
-                                            </div>
-                                        </div>
-                                    </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
+
+</div>
+
+<!-- ================= ADD MODAL ================= -->
+<div class="modal fade" id="addUserModal">
+    <div class="modal-dialog">
+        <form method="post" action="{{ url('admin/users/store') }}">
+            @csrf
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>Add User</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <input type="text" name="name" class="form-control mb-2" placeholder="Name" required>
+                    <input type="email" name="email" class="form-control mb-2" placeholder="Email" required>
+                    <input type="password" name="password" class="form-control mb-2" placeholder="Password" required>
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-success">Save</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+<!-- ================= EDIT MODAL ================= -->
+<div class="modal fade" id="editUserModal">
+    <div class="modal-dialog">
+        <form method="post" id="editForm">
+            @csrf
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>Edit User</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <input type="text" name="name" id="edit_name" class="form-control mb-2">
+                    <input type="email" name="email" id="edit_email" class="form-control mb-2">
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-primary">Update</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>
+
 @endsection
+
 @push('page_scripts')
-    <script>
-        function edit_center(id, name, email, mobile, status) {
-            $("#centerslistname").val(name);
-            $("#centerslistemail").val(email);
-            $("#centerslistmobile").val(mobile);
-            $("#editstatus").val(status);
-            $('#user_id').val(id);
-            $("#editcenters").modal("show");
-        }
-    </script>
+<script>
+function editUser(id, name, email) {
+    $('#edit_name').val(name);
+    $('#edit_email').val(email);
+
+    $('#editForm').attr('action', "{{ url('admin/users/update') }}/" + id);
+
+    $('#editUserModal').modal('show');
+}
+</script>
 @endpush
