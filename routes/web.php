@@ -109,16 +109,15 @@ Route::post('saveorder', [App\Http\Controllers\MainController::class, 'saveorder
 
 
 Route::get('admin/usertype', [App\Http\Controllers\Admin\UsersController::class, 'usertype'])->name('usertype');
-Route::post('/editusertype', [App\Http\Controllers\UserController::class, 'editusertype'])->name('editusertype');
-Route::post('/editusertypepermission', [App\Http\Controllers\UserController::class, 'editusertypepermission'])->name('editusertypepermission');
-
+Route::post('/updateuser_type', [App\Http\Controllers\Admin\UsersController::class, 'updateuser_type'])->name('updateuser_type');
+Route::post('/editusertypepermission', [App\Http\Controllers\Admin\UsersController::class, 'editusertypepermission'])->name('editusertypepermission');
+Route::post('/adduser_type', [App\Http\Controllers\Admin\UsersController::class, 'adduser_type'])->name('adduser_type');
+Route::post('/adduser', [App\Http\Controllers\Admin\UsersController::class, 'adduser'])->name('adduser');
 
 
 Route::prefix('admin')->middleware('auth')->group(function () {
 
     Route::get('users', [App\Http\Controllers\Admin\UsersController::class, 'index']);
-    Route::get('users/create', [App\Http\Controllers\Admin\UsersController::class, 'create']);
-    Route::post('users/store', [App\Http\Controllers\Admin\UsersController::class, 'store']);
 
     Route::get('users/edit/{id}', [App\Http\Controllers\Admin\UsersController::class, 'edit']);
     Route::post('users/update/{id}', [App\Http\Controllers\Admin\UsersController::class, 'update']);

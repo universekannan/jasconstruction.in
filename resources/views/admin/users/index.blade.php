@@ -16,7 +16,7 @@
         <div class="card-body">
 
             @if(session('success'))
-                <div class="alert alert-success">{{ session('success') }}</div>
+            <div class="alert alert-success">{{ session('success') }}</div>
             @endif
 
             <table class="table table-bordered">
@@ -25,9 +25,12 @@
                         <th>ID</th>
                         <th>Name</th>
                         <th>Email</th>
+                        <th>User Type</th>
+                        <th>Mobile Number</th>
+                        <th>Gender</th>
                         <th>Action</th>
-                        
-                        
+
+
                     </tr>
                 </thead>
 
@@ -37,19 +40,21 @@
                         <td>{{ $user->id }}</td>
                         <td>{{ $user->full_name ?? '-' }}</td>
                         <td>{{ $user->email }}</td>
+                        <td>{{ $user->user_types_id ?? '-' }}</td>
+                        <td>{{ $user->mobile_number?? '-'  }}</td>
+                        <td>{{ $user->gender }}</td>
 
                         <td>
                             <!-- EDIT -->
                             <button class="btn btn-warning btn-sm"
-                                onclick="editUser('{{ $user->id }}','{{ $user->full_name }}','{{ $user->email }}')">
+                                onclick="editUser('{{ $user->id }}','{{ $user->full_name }}','{{ $user->email }}',)">
                                 Edit
                             </button>
 
                             <!-- DELETE -->
-                            <a href="{{ url('admin/users/delete/'.$user->id) }}"
-                               class="btn btn-danger btn-sm"
-                               onclick="return confirm('Delete this user?')">
-                               Delete
+                            <a href="{{ url('admin/users/delete/'.$user->id) }}" class="btn btn-danger btn-sm"
+                                onclick="return confirm('Delete this user?')">
+                                Delete
                             </a>
                         </td>
                     </tr>
@@ -64,30 +69,102 @@
 </div>
 
 <!-- ================= ADD MODAL ================= -->
-<div class="modal fade" id="addUserModal">
-    <div class="modal-dialog">
-        <form method="post" action="{{ url('admin/users/store') }}">
-            @csrf
+<div class="modal fade" id="addUserModal" tabindex="-1" aria-hidden="true">
+    <form method="post" action="{{ url('adduser') }}">
+        @csrf
 
+        <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4>Add User</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Add User</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
                 </div>
-
                 <div class="modal-body">
-                    <input type="text" name="name" class="form-control mb-2" placeholder="Name" required>
-                    <input type="email" name="email" class="form-control mb-2" placeholder="Email" required>
-                    <input type="password" name="password" class="form-control mb-2" placeholder="Password" required>
+                    <div class="row">
+
+                        <!-- LEFT -->
+                        <div class="col-md-6">
+
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label">Full Name</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" name="full_name">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label">Email</label>
+                                <div class="col-sm-8">
+                                    <input type="email" class="form-control" name="email">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label">Password</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" name="password">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label">Mobile No</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" name="mobile_number">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label">User Type</label>
+                                <div class="col-sm-8">
+                                    <select class="form-control" name="user_type_id">
+                                        <option>Select</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- RIGHT -->
+                        <div class="col-md-6">
+
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label">Gender</label>
+                                <div class="col-sm-8">
+                                    <select class="form-control" name="gender">
+                                        <option>Select Gender</option>
+                                        <option>Male</option>
+                                        <option>Female</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label">Date Of Birth</label>
+                                <div class="col-sm-8">
+                                    <input type="date" class="form-control" name="dob">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label">Address</label>
+                                <div class="col-sm-8">
+                                    <textarea class="form-control" name="address" rows="3"></textarea>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
                 </div>
 
                 <div class="modal-footer">
                     <button class="btn btn-success">Save</button>
                 </div>
             </div>
-
-        </form>
-    </div>
+        </div>
+    </form>
 </div>
 
 <!-- ================= EDIT MODAL ================= -->

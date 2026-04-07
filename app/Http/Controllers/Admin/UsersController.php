@@ -49,25 +49,83 @@ class UsersController extends Controller
     }
 
     public function index()
-{
-    $users = DB::table('users')->get();
-    return view('admin.users.index', compact('users'));
-}
+    {
+        $users = DB::table('users')->get();
+        $user_type = DB::table('user_types')->where('status',1)->get();
+        return view('admin.users.index', compact('users', 'user_type'));
+    }
+
+    public function adduser( Request $request ) {
+        $userid = DB::table( 'users' )->insertGetId( [
+            'full_name' => $request->full_name,
+            'email' => $request->email,
+            'password'=>   Hash::make( $request->password ),
+            'mobile_number' => $request->mobile_number,
+            'user_types_id' => $request->user_type_id,
+            'gender' => $request->gender,
+            'dob' => $request->dob,
+            'address' => $request->address,
+
+
+            
+        ] );
+
+        return redirect()->back()->with( 'success', 'Users Added Successfully ... !' );
+
+    }
+ 
+ public function adduser_type( Request $request ) {
+        //dd($request->all());
+        $userid = DB::table( 'user_types' )->insertGetId( [
+            'user_types_name' => $request->user_types_name,
+            'status' => $request->status,
+            'dashboard' => $request->dashboard ?? 0,
+            'add_user'  => $request->add_user ?? 0,
+            'edit_user'  => $request->edit_user ?? 0,
+            'delete_user'  => $request->delete_user ?? 0,
+            'view_user'  => $request->view_user ?? 0,
+            'add_customers'  => $request->add_customers ?? 0,
+            'edit_customers'  => $request->edit_customers ?? 0,
+            'delete_customers'  => $request->delete_customers ?? 0,
+            'view_customers'  => $request->view_customers ?? 0,
+            'setting'  => $request->setting ?? 0,
+            'backup'  => $request->backup ?? 0,
+        ] );
+
+      
+
+        return redirect()->back()->with( 'success', 'Userstype Added Successfully ... !' );
+
+    }
 
 public function create()
 {
     return view('admin.users.create');
 }
-public function store(Request $request)
-{
-    DB::table('users')->insert([
-        'full_name' => $request->name,
-        'email' => $request->email,
-        'password' => bcrypt($request->password),
-    ]);
+ 
+ public function updateuser_type( Request $request ) {
+        //dd($request->all());
+        $userid = DB::table( 'user_types' )->where('id',$request->user_id)->update( [
+            'user_types_name' => $request->user_types_name,
+            'status' => $request->status,
+            'dashboard' => $request->dashboard ?? 0,
+            'add_user'  => $request->add_user ?? 0,
+            'edit_user'  => $request->edit_user ?? 0,
+            'delete_user'  => $request->delete_user ?? 0,
+            'view_user'  => $request->view_user ?? 0,
+            'add_customers'  => $request->add_customers ?? 0,
+            'edit_customers'  => $request->edit_customers ?? 0,
+            'delete_customers'  => $request->delete_customers ?? 0,
+            'view_customers'  => $request->view_customers ?? 0,
+            'setting'  => $request->setting ?? 0,
+            'backup'  => $request->backup ?? 0,
+        ] );
 
-    return back()->with('success', 'User Added');
-}
+      
+
+        return redirect()->back()->with( 'success', 'Userstype Updated Successfully ... !' );
+
+    }
 
 public function update(Request $request, $id)
 {
@@ -193,7 +251,7 @@ public function delete($id)
         $updateprofile = DB::table( 'users' )->where('id',$userid)->update([
           'name'       => $request->name,
           'aadhar_no'  => $request->aadhar_no,
-          'phone'      => $request->phone,
+          'mobile_number'      => $request->mobile_number,
           'email'      => $request->email,
           'gender'     => $request->gender,
           'address'    => $request->address,
@@ -272,7 +330,7 @@ public function delete($id)
      DB::table('users')->insert([
     	'name' => $request->name,
     	'email' => $request->email,
-    	'phone_number' => $request->phone_number,
+    	'mobile_number' => $request->mobile_number,
         'address' => $request->address,
         'pincode' => $request->pincode,
         'location' => $request->location,
@@ -410,38 +468,8 @@ if (Auth::user()->usertype_id == 1 || Auth::user()->usertype_id == 2 ){
         return view( 'admin/users/userattendance', compact( 'attendances' ) );
     }
 
-    public function adduser( Request $request ) {
-        //dd($request->all());
-        $userid = DB::table( 'users' )->insertGetId( [
-            'name' => $request->name,
-            'aadhar_no' => $request->aadhar_no,
-            'phone' => $request->phone,
-            'email' => $request->email,
-            'password'=>   Hash::make( $request->password ),
-            'cpassword' => $request->password,
-            'address' => $request->address,
-            'store_id' => $request->store_id,
-            'usertype_id' => $request->usertype,
-            'referral_id' => Auth::user()->id,
-        ] );
-
-        if ( $request->has( 'deliverable_location' ) ) {
-            foreach ( $request->input( 'deliverable_location' ) as $key => $loc ) {
-// code...
-                DB::table( 'deliverable_location' )->insert( [
-                    'store_id'          =>   $userid,
-                    'deliverable_id'    =>   $loc,
-                    'created_at'        =>   date( 'Y-m-d H:i:s' ),
-
-                ] );
-            }
-
-        }
-
-        return redirect()->back()->with( 'success', 'Users Added Successfully ... !' );
-
-    }
-
+    
+    
    public function edituser( $id ) {
 
         $stores = DB::table( 'users' )->where( 'id', $id )->orderBy( 'id', 'Asc' )->get();
@@ -492,6 +520,8 @@ if (Auth::user()->usertype_id == 1 || Auth::user()->usertype_id == 2 ){
 
     }
 
+    
+
 
     public function updateuser( Request $request ) {
         //dd( $request->all() );
@@ -500,7 +530,7 @@ if (Auth::user()->usertype_id == 1 || Auth::user()->usertype_id == 2 ){
             'name'        => $request->name,
             'email'       => $request->email,
             'email'       => $request->email,
-            'phone'       => $request->phone,
+            'mobile_number' => $request->mobile_number,
             'store_id'    => $request->store_id,
             'usertype_id' => $request->usertype_id,
             'address'     => $request->address,
