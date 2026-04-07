@@ -525,44 +525,20 @@ if (Auth::user()->usertype_id == 1 || Auth::user()->usertype_id == 2 ){
 
     public function updateuser( Request $request ) {
         //dd( $request->all() );
-        $userid = $request->row_id;
+        $userid = $request->user_id;
         DB::table( 'users' )->where( 'id', $userid )->update( [
-            'name'        => $request->name,
-            'email'       => $request->email,
-            'email'       => $request->email,
+             'full_name' => $request->full_name,
+            'email' => $request->email,
             'mobile_number' => $request->mobile_number,
-            'store_id'    => $request->store_id,
-            'usertype_id' => $request->usertype_id,
-            'address'     => $request->address,
-            'location'    => $request->location,
-            'leavescound' => $request->leavescound,
-            'salery'      => $request->salery,
-            'status'      => $request->status,
+            'user_types_id' => $request->user_type_id,
+            'gender' => $request->gender,
+            'dob' => $request->dob,
+            'address' => $request->address,
+
+
         ] );
 
-        if ($request->has( 'deliverable_location' ) != '' ) {
-            DB::table( 'deliverable_location' )->where( 'store_id', $userid )->delete();
-            foreach ( $request->input( 'deliverable_location' ) as $key => $loc ) {
-                DB::table( 'deliverable_location' )->insert( [
-                    'store_id'          =>   $userid,
-                    'deliverable_id'    =>   $loc,
-                    'created_at'        =>   date( 'Y-m-d H:i:s' ),
-
-                ] );
-            }
-        }
-
-        $qrcode = '';
-        if ( $request->photo != null ) {
-            $qrcode = $userid.'.'.$request->file( 'photo' )->extension();
-
-            $filepath = public_path( 'upload'.DIRECTORY_SEPARATOR.'users'.DIRECTORY_SEPARATOR );
-            move_uploaded_file( $_FILES[ 'photo' ][ 'tmp_name' ], $filepath.$qrcode );
-            $sql = "update users set photo='$qrcode' where id = $userid";
-            DB::update( DB::raw( $sql ) );
-        }
-
-        return redirect( 'admin/users/'.$request->usertype_id );
+        return redirect()->back()->with( 'success', 'Users Updated Successfully ... !' );
     }
 
 

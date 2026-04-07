@@ -47,15 +47,36 @@
                         <td>
                             <!-- EDIT -->
                             <button class="btn btn-warning btn-sm"
-                                onclick="editUser('{{ $user->id }}','{{ $user->full_name }}','{{ $user->email }}',)">
+                                onclick="editUser('{{ $user->id }}','{{ $user->full_name }}','{{ $user->email }}','{{ $user->mobile_number }}','{{ $user->user_types_id }}','{{ $user->gender }}','{{ $user->dob }}','{{ $user->address }}')">
                                 Edit
                             </button>
+
+
+                            
+                            <a onclick="edit_permission(
+                                                '{{ $user->id }}',
+                                                    '{{ $user->dashboard ?? 0 }}',
+                                                    '{{ $user->add_user ?? 0 }}',
+                                                    '{{ $user->edit_user ?? 0 }}',
+                                                    '{{ $user->delete_user ?? 0 }}',
+                                                    '{{ $user->view_user ?? 0 }}',
+                                                    '{{ $user->add_customers ?? 0 }}',
+                                                    '{{ $user->edit_customers ?? 0 }}',
+                                                    '{{ $user->delete_customers ?? 0 }}',
+                                                    '{{ $user->view_customers ?? 0 }}',
+                                                   
+                                                )" href="javascript:void(0)" class="btn btn-sm btn-warning">
+                                <i class="fas fa-cog"></i>
+                            </a>
+
+                          
 
                             <!-- DELETE -->
                             <a href="{{ url('admin/users/delete/'.$user->id) }}" class="btn btn-danger btn-sm"
                                 onclick="return confirm('Delete this user?')">
                                 Delete
                             </a>
+
                         </td>
                     </tr>
                     @endforeach
@@ -120,6 +141,9 @@
                                 <div class="col-sm-8">
                                     <select class="form-control" name="user_type_id">
                                         <option>Select</option>
+                                        @foreach($user_type as $ud)
+                                        <option value="{{$ud->id}}">{{$ud->user_types_name}}</option>
+                                        @endforeach
                                     </select>
                                 </div>
                             </div>
@@ -168,42 +192,117 @@
 </div>
 
 <!-- ================= EDIT MODAL ================= -->
-<div class="modal fade" id="editUserModal">
-    <div class="modal-dialog">
-        <form method="post" id="editForm">
-            @csrf
-
+<div class="modal fade" id="updateuser" tabindex="-1" aria-hidden="true">
+    <form action="{{ url('/updateuser') }}" method="post">
+        {{ csrf_field() }}
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4>Edit User</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h5 class="modal-title">Edit User</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
                 </div>
-
                 <div class="modal-body">
-                    <input type="text" name="name" id="edit_name" class="form-control mb-2">
-                    <input type="email" name="email" id="edit_email" class="form-control mb-2">
-                </div>
+                    <div class="row">
 
-                <div class="modal-footer">
-                    <button class="btn btn-primary">Update</button>
+                        <!-- LEFT SIDE -->
+                        <div class="col-md-6">
+
+                            <input type="hidden" name="user_id" id="user_id">
+
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label">Full Name</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" name="full_name" id="editname">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label">Email</label>
+                                <div class="col-sm-8">
+                                    <input type="email" class="form-control" name="email" id="editemail">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label">Mobile No</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" name="mobile_number" id="editmobile_number">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label">User Type</label>
+                                <div class="col-sm-8">
+                                    <select name="user_type_id" id="editusertype" class="form-control">
+                                        <option value="">Select User Type</option>
+                                        @foreach($user_type as $ud)
+                                        <option value="{{$ud->id}}">{{$ud->user_types_name}}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- RIGHT SIDE -->
+                        <div class="col-md-6">
+
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label">Gender</label>
+                                <div class="col-sm-8">
+                                    <select class="form-control" name="gender" id="editgender">
+                                        <option value="">Select Gender</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label">Date Of Birth</label>
+                                <div class="col-sm-8">
+                                    <input type="date" class="form-control" name="dob" id="editdob">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label">Address</label>
+                                <div class="col-sm-8">
+                                    <textarea class="form-control" name="address" id="editaddress" rows="3"></textarea>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="modal-footer justify-content-between">
+                            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary">Update user</button>
+                        </div>
+
+                    </div>
                 </div>
             </div>
-
-        </form>
-    </div>
+        </div>
+    </form>
 </div>
 
+</div>
 @endsection
 
 @push('page_scripts')
 <script>
-function editUser(id, name, email) {
-    $('#edit_name').val(name);
-    $('#edit_email').val(email);
-
-    $('#editForm').attr('action', "{{ url('admin/users/update') }}/" + id);
-
-    $('#editUserModal').modal('show');
+function editUser(id, full_name, email, mobile_number, user_types_id, gender, dob, address) {
+    $('#editname').val(full_name);
+    $('#editemail').val(email);
+    $('#editmobile_number').val(mobile_number);
+    $('#editusertype').val(user_types_id);
+    $('#editgender').val(gender);
+    $('#editdob').val(dob);
+    $('#editaddress').val(address);
+    $('#user_id').val(id);
+    $('#updateuser').modal('show');
 }
 </script>
 @endpush
