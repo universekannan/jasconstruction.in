@@ -76,6 +76,7 @@ class UsersController extends Controller
         DB::table('users')
             ->where('id', $userid)
             ->update([
+                'dashboard' => $userType->dashboard,
                 'add_user' => $userType->add_user,
                 'edit_user' => $userType->edit_user,
                 'delete_user' => $userType->delete_user,
@@ -565,6 +566,10 @@ if (Auth::user()->usertype_id == 1 || Auth::user()->usertype_id == 2 ){
 
     public function updateuser( Request $request ) {
         //dd( $request->all() );
+        $userType = DB::table('user_types')
+        ->where('id', $request->user_type_id)
+        ->first(); 
+        
         $userid = $request->user_id;
         DB::table( 'users' )->where( 'id', $userid )->update( [
              'full_name' => $request->full_name,
@@ -577,6 +582,22 @@ if (Auth::user()->usertype_id == 1 || Auth::user()->usertype_id == 2 ){
 
 
         ] );
+
+         DB::table('users')
+            ->where('id', $userid)
+            ->update([
+                'dashboard' => $userType->dashboard,
+                'add_user' => $userType->add_user,
+                'edit_user' => $userType->edit_user,
+                'delete_user' => $userType->delete_user,
+                'view_user' => $userType->add_user,
+                'add_attendance' => $userType->add_attendance,
+                'edit_attendance' => $userType->edit_attendance,
+                'delete_attendance' => $userType->delete_attendance,
+                'view_attendance' => $userType->view_attendance,
+                'setting' => $userType->setting,
+                'backup' => $userType->backup,
+            ]);
 
         return redirect()->back()->with( 'success', 'Users Updated Successfully ... !' );
     }

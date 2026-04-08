@@ -71,12 +71,6 @@
                     </a>
                 </li>
 
-                <li class="nav-item has-treeview {{ request()->segment(1) == 'backup' ? 'menu-open' : '' }}">
-                    <a href="{{ route('backup') }}" class="nav-link {{ Request::is('admin/backup') ? 'active' : '' }}">
-                        <i class="nav-icon fas fa-archive"></i>
-                        <p>Backup</p>
-                    </a>
-                </li>
 
 
                 {{-- Users --}}
@@ -103,31 +97,14 @@
                 </li>
                 <li class="nav-item">
                     <a href="{{ url('admin/attendances') }}"
-                        class="nav-link {{ Request::is('admin/attendances') ? 'active' : '' }}">
+                        class="nav-link {{ Request::is('admin/attendance') ? 'active' : '' }}">
                         <i class="far fa-circle nav-icon"></i>
                         <p>Attendance</p>
                     </a>
                 </li>
 
-                <li class="nav-item">
-                    <a href="{{ url('admin/viewsalary') }}/{{ date('Y-m-01', strtotime(date('Y-m-d').' -1 month')) }}/{{ date('Y-m-01') }}"
-                        class="nav-link {{ (request()->segment('1')) == 'viewsalary' ? 'active' : '' }}">
-                        <i class="far fa-circle nav-icon"></i>
-                        <p>Salary</p>
-                    </a>
-                </li>
-                @php
-                $firstDayLastMonth = date('Y-m-01', strtotime('first day of last month'));
-                $lastDayLastMonth = date('Y-m-t', strtotime('last day of last month'));
-                @endphp
-                <li class="nav-item">
-                    <a href="{{ url('admin/usersalary/'.$firstDayLastMonth.'/'.$lastDayLastMonth) }}"
-                        class="nav-link {{ request()->segment(1) == 'usersalary' ? 'active' : '' }}">
-                        <i class="far fa-circle nav-icon"></i>
-                        <p>Salary Report</p>
-                    </a>
-                </li>
-
+                
+            
             </ul>
             </li>
             @endif
@@ -229,14 +206,7 @@
                 </a>
                 <ul class="nav nav-treeview">
 
-                    {{-- User Type --}}
-                    <li class="nav-item">
-                        <a href="{{ url('/users/permissions') }}"
-                            class="nav-link {{ Request::is('users/permissions') ? 'active' : '' }}">
-                            <i class="far fa-circle nav-icon"></i>
-                            <p>User Type</p>
-                        </a>
-                    </li>
+                   
 
                     {{-- Setting --}}
                     @if(Auth()->user()->id == 1)
