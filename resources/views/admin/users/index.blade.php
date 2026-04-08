@@ -1,6 +1,4 @@
-@extends('admin.layouts.app')
-
-@section('content')
+attendances
 <div class="container-fluid">
 
     <div class="card">
