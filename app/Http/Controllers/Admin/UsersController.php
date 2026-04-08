@@ -56,6 +56,11 @@ class UsersController extends Controller
     }
 
     public function adduser( Request $request ) {
+
+        $userType = DB::table('user_types')
+        ->where('id', $request->user_type_id)
+        ->first();
+
         $userid = DB::table( 'users' )->insertGetId( [
             'full_name' => $request->full_name,
             'email' => $request->email,
@@ -65,10 +70,23 @@ class UsersController extends Controller
             'gender' => $request->gender,
             'dob' => $request->dob,
             'address' => $request->address,
-
-
             
         ] );
+
+        DB::table('users')
+            ->where('id', $userid)
+            ->update([
+                'add_user' => $userType->add_user,
+                'edit_user' => $userType->edit_user,
+                'delete_user' => $userType->delete_user,
+                'view_user' => $userType->add_user,
+                'add_attendance' => $userType->add_attendance,
+                'edit_attendance' => $userType->edit_attendance,
+                'delete_attendance' => $userType->delete_attendance,
+                'view_attendance' => $userType->view_attendance,
+                'setting' => $userType->setting,
+                'backup' => $userType->backup,
+            ]);
 
         return redirect()->back()->with( 'success', 'Users Added Successfully ... !' );
 
