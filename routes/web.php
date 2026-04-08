@@ -131,4 +131,31 @@ Route::prefix('admin')->middleware('auth')->group(function () {
 });
 
 
-//admin
+////////// ATTENDANCE ////////////////////////
+
+Route::get('admin/attendances', [App\Http\Controllers\Admin\AttendanceController::class, 'attendances'])->name('attendances');
+Route::post('/attendancelist', [App\Http\Controllers\Admin\AttendanceController::class, 'attendancelist'])->name('attendancelist');
+
+Route::get('/staff_attendance', [App\Http\Controllers\Admin\AttendanceController::class, 'staff_attendance'])->name('staff_attendance');
+Route::get('admin/usersalary/{from}/{to}', [App\Http\Controllers\Admin\AttendanceController::class, 'usersalary']);
+Route::get('admin/usersalary/filter', [App\Http\Controllers\Admin\AttendanceController::class, 'userAttendanceFilter']);
+
+
+Route::post('/attendanceins', [App\Http\Controllers\Admin\AttendanceController::class, 'attendanceins'])->name('attendanceins');
+Route::get('/apprulayer', [App\Http\Controllers\Admin\AttendanceController::class, 'apprulayer'])->name('apprulayer');
+Route::post('/attendancein', [App\Http\Controllers\Admin\AttendanceController::class, 'attendancein'])->name('attendancein');
+Route::post('/userattendancein', [App\Http\Controllers\Admin\AttendanceController::class, 'userattendancein'])->name('userattendancein');
+Route::post('/attendanceout', [App\Http\Controllers\Admin\AttendanceController::class, 'attendanceout'])->name('attendanceout');
+Route::post('/userattendanceout', [App\Http\Controllers\Admin\AttendanceController::class, 'userattendanceout'])->name('userattendanceout');
+Route::post('/processsalary', [App\Http\Controllers\Admin\AttendanceController::class, 'processsalary'])->name('processsalary');
+Route::get('admin/viewsalary/{from}/{to}', [App\Http\Controllers\Admin\AttendanceController::class, 'viewsalary'])->name('viewsalary');
+Route::get('admin/viewsalary/{year}', [App\Http\Controllers\Admin\AttendanceController::class, 'viewsalary'])->name('viewsalary');
+
+Route::get('/leaves', [App\Http\Controllers\Admin\AttendanceController::class, 'leaves'])->name('leaves');
+Route::get('/deleteapplayer/{id}/{user_id}', [App\Http\Controllers\Admin\AttendanceController::class, 'deleteapplayer'])->name('deleteapplayer');
+Route::get('admin/userattendances/{id}/{from}/{to}', [App\Http\Controllers\Admin\AttendanceController::class, 'userattendancesbyId'])->name('userattendances');
+Route::get('admin/userattendances/{id}', [App\Http\Controllers\Admin\AttendanceController::class, 'userattendances'])->name('userattendances');
+Route::post('admin/userattendanceslist/{id}', [App\Http\Controllers\Admin\AttendanceController::class, 'userattendanceslist'])->name('userattendanceslist');
+
+Route::get('/deleteattendance/{id}', [App\Http\Controllers\Admin\AttendanceController::class, 'deleteattendance'])->name('deleteattendance');
+Route::post('/paysalary', [App\Http\Controllers\Admin\AttendanceController::class, 'paysalary'])->name('paysalary');

@@ -51,48 +51,7 @@
 <body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed sidebar-collapse">
     <div class="wrapper">
 
-        <!-- Main Header -->
-        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
-            <!-- Left navbar links -->
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i
-                            class="fas fa-bars"></i></a>
-                </li>
-            </ul>
-
-            <ul class="navbar-nav ml-auto">
-
-                <li class="nav-item dropdown user-menu">
-
-                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
-                        <img src="{{ URL::to('/') }}/upload/user_profile/{{ Auth::user()->user_photo }}"
-                            class="user-image img-circle elevation-2" alt="User Image">
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-                        <!-- User image -->
-                        <li class="user-header bg-primary">
-                            <img src="{{ URL::to('/') }}/upload/user_profile/{{ Auth::user()->user_photo }}"
-                                class="img-circle elevation-2" alt="User Image">
-                            <p>
-                                {{ Auth::user()->full_name }}
-                            </p>
-                        </li>
-                        <!-- Menu Footer-->
-                        <li class="user-footer">
-                            <a href="{{ url('profile') }}" class="btn btn-default btn-flat">Profile</a>
-                            <a href="#" class="btn btn-default btn-flat float-right"
-                                onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                                Log Out
-                            </a>
-                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                @csrf
-                            </form>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+    @include('admin/layouts.header')
 
         @include('admin.layouts.sidebar')
         <div class="content-wrapper">
