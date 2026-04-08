@@ -51,8 +51,6 @@
                                 Edit
                             </button>
 
-
-                            
                             <a onclick="edit_permission(
                                                 '{{ $user->id }}',
                                                     '{{ $user->dashboard ?? 0 }}',
@@ -60,16 +58,15 @@
                                                     '{{ $user->edit_user ?? 0 }}',
                                                     '{{ $user->delete_user ?? 0 }}',
                                                     '{{ $user->view_user ?? 0 }}',
-                                                    '{{ $user->add_customers ?? 0 }}',
-                                                    '{{ $user->edit_customers ?? 0 }}',
-                                                    '{{ $user->delete_customers ?? 0 }}',
-                                                    '{{ $user->view_customers ?? 0 }}',
-                                                   
+                                                    '{{ $user->add_attendance ?? 0 }}',
+                                                    '{{ $user->edit_attendance ?? 0 }}',
+                                                    '{{ $user->delete_attendance ?? 0 }}',
+                                                    '{{ $user->view_attendance ?? 0 }}',
+                                                    '{{ $user->setting ?? 0 }}',
+                                                    '{{ $user->backup ?? 0 }}'
                                                 )" href="javascript:void(0)" class="btn btn-sm btn-warning">
                                 <i class="fas fa-cog"></i>
                             </a>
-
-                          
 
                             <!-- DELETE -->
                             <a href="{{ url('admin/users/delete/'.$user->id) }}" class="btn btn-danger btn-sm"
@@ -289,6 +286,155 @@
 </div>
 
 </div>
+<div class="modal fade" id="edit_permission" tabindex="-1" role="dialog" aria-hidden="true">
+    <form action="{{ url('/update_permission') }}" method="post">
+        {{ csrf_field() }}
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h4 class="modal-title">Permission </h4>
+                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" name="user_id" id="permission_user_id">
+
+                    <div class="card mb-3 shadow-sm">
+                        <div class="card-header bg-light font-weight-bold">
+                            Dashboard Permission
+                        </div>
+                        <div class="card-body p-2">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span>Dashboard</span>
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="edit_dashboard"
+                                        name="dashboard" value="1">
+                                    <label class="custom-control-label" for="edit_dashboard"></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3 shadow-sm">
+                        <div class="card-header bg-light font-weight-bold">
+                            Users Permissions
+                        </div>
+                        <div class="card-body p-2">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span>Add User</span>
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="edit_add_user"
+                                        name="add_user" value="1">
+                                    <label class="custom-control-label" for="edit_add_user"></label>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span>Edit User</span>
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="edit_edit_user"
+                                        name="edit_user" value="1">
+                                    <label class="custom-control-label" for="edit_edit_user"></label>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span>Delete User</span>
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="edit_delete_user"
+                                        name="delete_user" value="1">
+                                    <label class="custom-control-label" for="edit_delete_user"></label>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span>View User</span>
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="edit_view_user"
+                                        name="view_user" value="1">
+                                    <label class="custom-control-label" for="edit_view_user"></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 shadow-sm">
+                        <div class="card-header bg-light font-weight-bold">
+                            Attendance Permissions
+                        </div>
+                        <div class="card-body p-2">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span>Add Attendance</span>
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="edit_add_attendance"
+                                        name="add_attendance" value="1">
+                                    <label class="custom-control-label" for="edit_add_attendance"></label>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span>Edit Attendance</span>
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="edit_edit_attendance"
+                                        name="edit_attendance" value="1">
+                                    <label class="custom-control-label" for="edit_edit_attendance"></label>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span>Delete Attendance</span>
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="edit_delete_attendance"
+                                        name="delete_attendance" value="1">
+                                    <label class="custom-control-label" for="edit_delete_attendance"></label>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span>View Attendance</span>
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="edit_view_attendance"
+                                        name="view_attendance" value="1">
+                                    <label class="custom-control-label" for="edit_view_attendance"></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3 shadow-sm">
+                        <div class="card-header bg-light font-weight-bold">
+                            Setting & Backup
+                        </div>
+                        <div class="card-body p-2">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span>Setting</span>
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="edit_setting" name="setting"
+                                        value="1">
+                                    <label class="custom-control-label" for="edit_setting"></label>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span>Backup</span>
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="edit_backup" name="backup"
+                                        value="1">
+                                    <label class="custom-control-label" for="edit_backup"></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer justify-content-between">
+                        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Update Permission</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
 @endsection
 
 @push('page_scripts')
@@ -303,6 +449,30 @@ function editUser(id, full_name, email, mobile_number, user_types_id, gender, do
     $('#editaddress').val(address);
     $('#user_id').val(id);
     $('#updateuser').modal('show');
+}
+</script>
+
+<script>
+function edit_permission(id, dashboard, add_user, edit_user, delete_user, view_user,
+    add_attendance, edit_attendance, delete_attendance, view_attendance, setting, backup) {
+
+    $("#permission_user_id").val(id);
+
+    // Set checkbox values (convert to boolean)
+    $("#edit_dashboard").prop('checked', dashboard == 1);
+    $("#edit_add_user").prop('checked', add_user == 1);
+    $("#edit_edit_user").prop('checked', edit_user == 1);
+    $("#edit_delete_user").prop('checked', delete_user == 1);
+    $("#edit_view_user").prop('checked', view_user == 1);
+    $("#edit_add_attendance").prop('checked', add_attendance == 1);
+    $("#edit_edit_attendance").prop('checked', edit_attendance == 1);
+    $("#edit_delete_attendance").prop('checked', delete_attendance == 1);
+    $("#edit_view_attendance").prop('checked', view_attendance == 1);
+    $("#edit_setting").prop('checked', setting == 1);
+    $("#edit_backup").prop('checked', backup == 1);
+
+    // Show modal
+    $("#edit_permission").modal("show");
 }
 </script>
 @endpush

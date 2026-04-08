@@ -223,6 +223,8 @@ public function delete($id)
      return view('admin/users/profile', compact('profile'));
 	 }
 
+     
+
 
 
      public function updatepass(Request $request){
@@ -519,6 +521,26 @@ if (Auth::user()->usertype_id == 1 || Auth::user()->usertype_id == 2 ){
         return view( 'admin/stores/storesproducts', compact( 'products' ) );
 
     }
+    public function update_permission(Request $request)
+{
+    DB::table('users')->where('id', $request->user_id)->update([
+        'dashboard' => $request->dashboard ?? 0,
+        'add_user' => $request->add_user ?? 0,
+        'edit_user' => $request->edit_user ?? 0,
+        'delete_user' => $request->delete_user ?? 0,
+        'view_user' => $request->view_user ?? 0,
+
+        'add_attendance' => $request->add_attendance ?? 0,
+        'edit_attendance' => $request->edit_attendance ?? 0,
+        'delete_attendance' => $request->delete_attendance ?? 0,
+        'view_attendance' => $request->view_attendance ?? 0,
+
+        'setting' => $request->setting ?? 0,
+        'backup' => $request->backup ?? 0,
+    ]);
+
+    return back()->with('success', 'Permission updated successfully');
+}
 
     
 
@@ -540,6 +562,8 @@ if (Auth::user()->usertype_id == 1 || Auth::user()->usertype_id == 2 ){
 
         return redirect()->back()->with( 'success', 'Users Updated Successfully ... !' );
     }
+
+     
 
 
     public function saleshistory( $from,$to ){

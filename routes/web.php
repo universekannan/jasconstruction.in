@@ -114,6 +114,7 @@ Route::post('/editusertypepermission', [App\Http\Controllers\Admin\UsersControll
 Route::post('/adduser_type', [App\Http\Controllers\Admin\UsersController::class, 'adduser_type'])->name('adduser_type');
 Route::post('/adduser', [App\Http\Controllers\Admin\UsersController::class, 'adduser'])->name('adduser');
 Route::post('/updateuser', [App\Http\Controllers\Admin\UsersController::class, 'updateuser'])->name('updateuser');
+Route::post('/update_permission', [App\Http\Controllers\Admin\UsersController::class, 'update_permission'])->name('update_permission');
 
 
 Route::prefix('admin')->middleware('auth')->group(function () {
