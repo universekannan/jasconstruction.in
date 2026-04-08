@@ -50,10 +50,10 @@
                                                 '{{ $centerslist->edit_user ?? 0 }}',
                                                 '{{ $centerslist->delete_user ?? 0 }}',
                                                 '{{ $centerslist->view_user ?? 0 }}',
-                                                '{{ $centerslist->add_customers ?? 0 }}',
-                                                '{{ $centerslist->edit_customers ?? 0 }}',
-                                                '{{ $centerslist->delete_customers ?? 0 }}',
-                                                '{{ $centerslist->view_customers ?? 0 }}',
+                                                '{{ $centerslist->add_attendance ?? 0 }}',
+                                                '{{ $centerslist->edit_attendance ?? 0 }}',
+                                                '{{ $centerslist->delete_attendance ?? 0 }}',
+                                                '{{ $centerslist->view_attendance ?? 0 }}',
                                                 '{{ $centerslist->setting ?? 0 }}',
                                                 '{{ $centerslist->backup ?? 0 }}'
                                             )" href="javascript:void(0)" class="btn btn-sm btn-primary">
@@ -179,32 +179,32 @@
                                         <span>Add Attendance</span>
                                         <div class="custom-control custom-switch">
                                             <input type="checkbox" class="custom-control-input"
-                                                id="add_add_customers" name="add_customers" value="1">
-                                            <label class="custom-control-label" for="add_add_customers"></label>
+                                                id="add_add_attendance" name="add_attendance" value="1">
+                                            <label class="custom-control-label" for="add_add_attendance"></label>
                                         </div>
                                     </div>
                                     <div class="d-flex justify-content-between align-items-center mb-2">
                                         <span>Edit Attendance</span>
                                         <div class="custom-control custom-switch">
                                             <input type="checkbox" class="custom-control-input"
-                                                id="add_edit_customers" name="edit_customers" value="1">
-                                            <label class="custom-control-label" for="add_edit_customers"></label>
+                                                id="add_edit_attendance" name="edit_attendance" value="1">
+                                            <label class="custom-control-label" for="add_edit_attendance"></label>
                                         </div>
                                     </div>
                                     <div class="d-flex justify-content-between align-items-center mb-2">
                                         <span>Delete Attendance</span>
                                         <div class="custom-control custom-switch">
                                             <input type="checkbox" class="custom-control-input"
-                                                id="add_delete_customers" name="delete_customers" value="1">
-                                            <label class="custom-control-label" for="add_delete_customers"></label>
+                                                id="add_delete_attendance" name="delete_attendance" value="1">
+                                            <label class="custom-control-label" for="add_delete_attendance"></label>
                                         </div>
                                     </div>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <span>View Attendance</span>
                                         <div class="custom-control custom-switch">
                                             <input type="checkbox" class="custom-control-input"
-                                                id="add_view_customers" name="view_customers" value="1">
-                                            <label class="custom-control-label" for="add_view_customers"></label>
+                                                id="add_view_attendance" name="view_attendance" value="1">
+                                            <label class="custom-control-label" for="add_view_attendance"></label>
                                         </div>
                                     </div>
                                 </div>
@@ -362,32 +362,32 @@
                                         <span>Add Attendance</span>
                                         <div class="custom-control custom-switch">
                                             <input type="checkbox" class="custom-control-input"
-                                                id="edit_add_customers" name="add_customers" value="1">
-                                            <label class="custom-control-label" for="edit_add_customers"></label>
+                                                id="edit_add_attendance" name="add_attendance" value="1">
+                                            <label class="custom-control-label" for="edit_add_attendance"></label>
                                         </div>
                                     </div>
                                     <div class="d-flex justify-content-between align-items-center mb-2">
                                         <span>Edit Attendance</span>
                                         <div class="custom-control custom-switch">
                                             <input type="checkbox" class="custom-control-input"
-                                                id="edit_edit_customers" name="edit_customers" value="1">
-                                            <label class="custom-control-label" for="edit_edit_customers"></label>
+                                                id="edit_edit_attendance" name="edit_attendance" value="1">
+                                            <label class="custom-control-label" for="edit_edit_attendance"></label>
                                         </div>
                                     </div>
                                     <div class="d-flex justify-content-between align-items-center mb-2">
                                         <span>Delete Attendance</span>
                                         <div class="custom-control custom-switch">
                                             <input type="checkbox" class="custom-control-input"
-                                                id="edit_delete_customers" name="delete_customers" value="1">
-                                            <label class="custom-control-label" for="edit_delete_customers"></label>
+                                                id="edit_delete_attendance" name="delete_attendance" value="1">
+                                            <label class="custom-control-label" for="edit_delete_attendance"></label>
                                         </div>
                                     </div>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <span>View Attendance</span>
                                         <div class="custom-control custom-switch">
                                             <input type="checkbox" class="custom-control-input"
-                                                id="edit_view_customers" name="view_customers" value="1">
-                                            <label class="custom-control-label" for="edit_view_customers"></label>
+                                                id="edit_view_attendance" name="view_attendance" value="1">
+                                            <label class="custom-control-label" for="edit_view_attendance"></label>
                                         </div>
                                     </div>
                                 </div>
@@ -440,7 +440,7 @@ function edit_user_type(
     id, user_types_name, status,
     dashboard,
     add_user, edit_user, delete_user, view_user,
-    add_customers, edit_customers, delete_customers, view_customers,
+    add_attendance, edit_attendance, delete_attendance, view_attendance,
     setting, backup
 ) {
     $('#user_id').val(id);
@@ -457,10 +457,10 @@ function edit_user_type(
     $('#edit_view_user').prop('checked',   view_user == 1);
 
     // Attendance
-    $('#edit_add_customers').prop('checked',    add_customers == 1);
-    $('#edit_edit_customers').prop('checked',   edit_customers == 1);
-    $('#edit_delete_customers').prop('checked', delete_customers == 1);
-    $('#edit_view_customers').prop('checked',   view_customers == 1);
+    $('#edit_add_attendance').prop('checked',    add_attendance == 1);
+    $('#edit_edit_attendance').prop('checked',   edit_attendance == 1);
+    $('#edit_delete_attendance').prop('checked', delete_attendance == 1);
+    $('#edit_view_attendance').prop('checked',   view_attendance == 1);
 
     // Setting & Backup
     $('#edit_setting').prop('checked', setting == 1);
