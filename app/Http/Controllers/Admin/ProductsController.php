@@ -44,43 +44,50 @@ class ProductsController extends Controller {
         return view( 'admin/projects/addproject', compact( 'project', 'seller') );
     }
 
-    public function saveproject( Request $request ) {
-        $project_status_id = $request->project_status_id;
-        $name = $request->project_name;
-        $project_name = str_replace( "'", '', $name );
-        $project_name = str_replace( [ '\\', '/' ], ' ', $project_name );
-        $output = preg_replace( '!\s+!', ' ', $project_name );
-        $project_url =  strtolower( str_replace( ' ', '_', $output ) );
+   public function saveproject(Request $request)
+{
+    // INSERT PROJECT
+    DB::table('project')->insert([
+        'project_status_id' => $request->project_status_id,
+        'project_name' => $request->project_name,
+        'project_owner' => $request->project_owner,
+        'project_sqft' => $request->project_sqft,
+        'project_description' => $request->project_description,
+        'project_address' => $request->project_address,
+    ]);
 
-        $adduser = DB::table( 'project' )->insert( [
-            
-            'project_status_id'   => $request->project_status_id,
-            'project_name'   => $request->project_name,
-            'project_owner'  => $request->project_owner,
-            'project_sqft'   => $request->project_sqft,
-            'project_description'  => $request->project_description,
-            'project_amount' => $request->project_amount,
-            'project_address'=> $request->project_address,
-        ]);
+    $id = DB::getPdo()->lastInsertId();
 
-        $last_insert_id = DB::getPdo()->lastInsertId();
+    $photo = '';
 
-        $photo = '';
-        if ( $request->photo != null ) {
-            $photo = $last_insert_id . '.' . $request->file( 'photo' )->extension();
-            $filepath = public_path( 'upload' . DIRECTORY_SEPARATOR . 'projectsave' . DIRECTORY_SEPARATOR );
-            move_uploaded_file( $_FILES[ 'photo' ][ 'tmp_name' ], $filepath . $photo );
+    // ✅ HANDLE CROPPED IMAGE
+    if ($request->image_base64) {
 
-            $addimg = DB::table( 'project' )->where( 'id', $last_insert_id )->update( [
-                'photo'      => $photo,
-            ] );
-            
-            
-        } 
+        $image = $request->image_base64;
 
-        return redirect( 'admin/projects/1' )->with( 'Success', 'Projects Added Successfully' );
+        $image = preg_replace('/^data:image\/\w+;base64,/', '', $image);
+        $image = str_replace(' ', '+', $image);
 
+        $photo = $id . '.png';
+
+        $path = public_path('upload/projectsave/');
+
+        if (!file_exists($path)) {
+            mkdir($path, 0777, true);
+        }
+
+        file_put_contents($path . $photo, base64_decode($image));
     }
+
+    // SAVE IMAGE NAME
+    if ($photo != '') {
+        DB::table('project')->where('id', $id)->update([
+            'photo' => $photo
+        ]);
+    }
+
+    return redirect('admin/projects/1')->with('success', 'Project Added Successfully');
+}
 
     public function editproject( $id ) {
      
@@ -117,52 +124,58 @@ class ProductsController extends Controller {
 
     }
 
-    public function updateproject( Request $request ) {
-        $project_id = $request->project_id;
-        $project_status_id = $request->project_status_id;
-        $name = $request->project_name;
-        $project_name = str_replace( "'", '', $name );
-        $project_name = str_replace( [ '\\', '/' ], ' ', $project_name );
-        $output = preg_replace( '!\s+!', ' ', $project_name );
-        $project_url =  strtolower( str_replace( ' ', '_', $output ) );
-        DB::table( 'project' )->where('id',$project_id)->update([ 
-            
-            'project_status_id'   => $request->project_status_id,
-            'project_name'   => $request->project_name,
-            'project_owner'  => $request->project_owner,
-            'project_sqft' => $request->project_sqft,
-            'project_description'  => $request->project_description,
-            'project_amount' => $request->project_amount,
-            'project_address'=> $request->project_address,
-        ] ); 
+    public function updateproject(Request $request)
+{
+    $project_id = $request->project_id;
 
-        $last_insert_id = DB::getPdo()->lastInsertId();
+    // UPDATE TEXT DATA
+    DB::table('project')->where('id', $project_id)->update([
 
-        $photo = '';  
-        if ( $request->photo != null ) {
-            $photo = $last_insert_id . '.' . $request->file( 'photo' )->extension();
-            $filepath = public_path( 'upload' . DIRECTORY_SEPARATOR . 'product' . DIRECTORY_SEPARATOR );
-            move_uploaded_file( $_FILES[ 'photo' ][ 'tmp_name' ], $filepath . $photo );
+        'project_status_id' => $request->project_status_id,
+        'project_name' => $request->project_name,
+        'project_owner' => $request->project_owner,
+        'project_sqft' => $request->project_sqft,
+        'project_description' => $request->project_description,
+        'project_amount' => $request->project_amount,
+        'project_address' => $request->project_address,
 
-            $addimg = DB::table( 'project' )->where( 'id', $last_insert_id )->update( [
-                'photo'      => $photo,
-            ] );
+    ]);
+
+
+    /* -------------------------
+       SAVE CROPPED IMAGE
+    -------------------------*/
+
+    if ($request->image_base64) {
+
+        $image = $request->image_base64;
+
+        $image = preg_replace('/^data:image\/\w+;base64,/', '', $image);
+
+        $image = str_replace(' ', '+', $image);
+
+        $photo = $project_id . '.png';
+
+        $path = public_path('upload/projectsave/');
+
+        if (!file_exists($path)) {
+            mkdir($path, 0777, true);
         }
 
-        if ( $request->input( 'project' ) == '' ) {
-            DB::table( 'project' )->where( 'id', $project_name )->delete();
-        } else {
-            DB::table( 'project' )->where( 'id', $project_status_id )->delete();
-            foreach ( $request->input( 'project' ) as $key => $project_name ) {
+        file_put_contents($path . $photo, base64_decode($image));
 
-                DB::table( 'project' )->insert( [
-                    'project_status_id'   =>   $project_status_id,
-                    'project_name'       =>   $project_name,
-                ] );
-            }
-        }
-        return redirect('admin/projects/'. $request->project_status_id)->with( 'Success', 'Projects Updated Successfully' );
+        DB::table('project')
+        ->where('id', $project_id)
+        ->update([
+            'photo' => $photo
+        ]);
     }
+
+
+    return redirect('admin/projects/'.$request->project_status_id)
+    ->with('success', 'Project Updated Successfully');
+
+}
 
     public function pendingorder() {
         $pendingorder = DB::table( 'productorder' )->select( 'productorder.*', 'products.product_name')

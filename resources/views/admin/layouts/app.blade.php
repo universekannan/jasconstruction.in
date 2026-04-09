@@ -14,6 +14,8 @@
     <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css"
         rel="stylesheet">
 
+
+
     <!-- icheck bootstrap -->
     <link rel="stylesheet" href="{!! asset('plugins/icheck-bootstrap/icheck-bootstrap.min.css') !!}">
     <!-- DataTables -->
@@ -42,6 +44,9 @@
     <meta name="theme-color" content="#6777ef" />
     <link rel="apple-touch-icon" href="{{ asset('/AdminLTELogo.png') }}">
     <link rel="manifest" href="{{ asset('/manifest.json') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.css" rel="stylesheet"/>
+
+
 
     @yield('third_party_stylesheets')
 
@@ -113,6 +118,7 @@
     <script src="{!! asset('plugins/select2/js/select2.full.min.js') !!}"></script>
     <script src="{{ asset('js/dropzone.js') }}"></script>
     <script src="{{ asset('js/cropper.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.js"></script>
 
 
 
@@ -179,6 +185,7 @@
     </script>
 <script src="https://adminlte.io/themes/AdminLTE/bower_components/ckeditor/ckeditor.js"></script>
 <script src="https://adminlte.io/themes/AdminLTE/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+
 <script>
     $(function () {
     // Replace the <textarea id="editor1"> with a CKEditor
@@ -196,6 +203,59 @@
     //bootstrap WYSIHTML5 - text editor
       $('.textarea').wysihtml5()
     })
+
+    let cropper;
+
+// LOAD IMAGE
+document.getElementById('image').addEventListener('change', function(e) {
+
+    let file = e.target.files[0];
+
+    if (!file) return;
+
+    let reader = new FileReader();
+
+    reader.onload = function(e) {
+
+        let img = document.getElementById('preview');
+        img.src = e.target.result;
+        img.style.display = 'block';
+
+        document.getElementById('cropBtn').style.display = 'inline-block';
+
+        if (cropper) {
+            cropper.destroy();
+        }
+
+        cropper = new Cropper(img, {
+            aspectRatio: 1,
+            viewMode: 1
+        });
+    };
+
+    reader.readAsDataURL(file);
+});
+
+// CROP BUTTON
+document.getElementById('cropBtn').addEventListener('click', function() {
+    console.log("Crop button clicked");
+
+    if (!cropper) {
+        alert("Cropper not initialized");
+        return;
+    }
+
+    let canvas = cropper.getCroppedCanvas({
+        width: 400,
+        height: 400
+    });
+
+    let base64 = canvas.toDataURL('image/png');
+
+    document.getElementById('image_base64').value = base64;
+
+    document.getElementById('preview').src = base64;
+});
 
  </script>
 </body>

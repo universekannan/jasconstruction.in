@@ -22,20 +22,28 @@ class UsersController extends Controller
 	 
     public function user($id)
     {
-        $users = DB::table('users')->get();
+        $users = DB::table('users')
+            ->join('user_types', 'user_types.id', '=', 'users.user_types_id')
+            ->where('users.user_types_id', $id)
+            ->select('users.*', 'user_types.user_types_name')
+            ->get();
         $user_type = DB::table('user_types')->where('status',1)->where('id',$id)->get();
         return view('admin.users.index', compact('users', 'user_type'));
     }
 
     public function index()
     {
-        $users = DB::table('users')->get();
+         $users = DB::table('users')
+            ->join('user_types', 'user_types.id', '=', 'users.user_types_id')
+            ->where('users.status', 1)
+            ->select('users.*', 'user_types.user_types_name')
+            ->get();
         $user_type = DB::table('user_types')->where('status',1)->get();
         return view('admin.users.index', compact('users', 'user_type'));
     }
 
     public function adduser( Request $request ) {
-
+        
         $userType = DB::table('user_types')
         ->where('id', $request->user_type_id)
         ->first();
@@ -74,6 +82,7 @@ class UsersController extends Controller
  
  public function adduser_type( Request $request ) {
         //dd($request->all());
+        
         $userid = DB::table( 'user_types' )->insertGetId( [
             'user_types_name' => $request->user_types_name,
             'status' => $request->status,

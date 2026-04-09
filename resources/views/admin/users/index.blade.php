@@ -1,4 +1,6 @@
-attendances
+@extends('admin.layouts.app')
+
+@section('content')
 <div class="container-fluid">
 
     <div class="card">
@@ -38,7 +40,7 @@ attendances
                         <td>{{ $user->id }}</td>
                         <td>{{ $user->full_name ?? '-' }}</td>
                         <td>{{ $user->email }}</td>
-                        <td>{{ $user->user_types_id ?? '-' }}</td>
+                        <td>{{ $user->user_types_name ?? '-' }}</td>
                         <td>{{ $user->mobile_number?? '-'  }}</td>
                         <td>{{ $user->gender }}</td>
 
