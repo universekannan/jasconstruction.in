@@ -20,33 +20,15 @@ class UsersController extends Controller
      return view('admin/users/changepassword');
 	 }
 	 
-	 
-    public function users($usertype_id) {
-
-        $referral_id = Auth::user()->id;
-        if(Auth::user()->usertype_id == 3){
-            $sql="select a.*,b.name as refname,c.usertype_name from users a,users b,user_type c where a.referral_id=b.id and a.usertype_id=c.id and a.referral_id=$referral_id and a.usertype_id=$usertype_id order by a.id";
-            $users = DB::select($sql);
-        }elseif(Auth::user()->usertype_id == 1){
-            if($usertype_id == 3){
-            $sql="select a.*,b.name as refname,c.usertype_name from users a,users b,user_type c where a.referral_id=b.id and a.usertype_id=c.id and a.usertype_id=$usertype_id order by a.id";
-            }else{
-            $sql="select a.*,c.usertype_name from users a,user_type c where a.usertype_id=c.id and a.usertype_id=$usertype_id order by a.id";
-            }
-            $users = DB::select($sql);
-        }else{
-            $sql="select a.*,c.usertype_name from users a,user_type c where a.usertype_id=c.id and a.usertype_id=$usertype_id order by a.id";
-            $users = DB::select($sql);
-        }
-
-        $location = DB::table( 'location' )
-        ->whereNotIn( 'id', DB::table( 'deliverable_location' )->pluck( 'deliverable_id' ) )->distinct()
-        ->get();
-        $leads_type = DB::table( 'leads_type' )->orderBy( 'id', 'Asc' )->get();
-        $usertype = DB::table( 'user_type' )->orderBy( 'id', 'Asc' )->get();
-        $shop = DB::table( 'users' )->where( 'usertype_id', '5' )->get();
-        return view( 'admin/users/index', compact( 'users','location','usertype','shop','usertype_id','leads_type' ) );
-
+    public function user($id)
+    {
+        $users = DB::table('users')
+            ->join('user_types', 'user_types.id', '=', 'users.user_types_id')
+            ->where('users.user_types_id', $id)
+            ->select('users.*', 'user_types.user_types_name')
+            ->get();
+        $user_type = DB::table('user_types')->where('status',1)->where('id',$id)->get();
+        return view('admin.users.index', compact('users', 'user_type'));
     }
 
     public function index()
