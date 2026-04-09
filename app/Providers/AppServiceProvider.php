@@ -3,29 +3,25 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use DB;
+use Illuminate\Support\Facades\DB;
 
 class AppServiceProvider extends ServiceProvider
 {
-    /**
-     * Register any application services.
-     *
-     * @return void
-     */
-    public function register()
+    public $userStatu;
+
+    public function boot()
     {
-        //
+        view()->composer('admin/layouts.sidebar', function ($view) {
+
+            $this->userStatu = DB::table('user_types')
+                                ->where('status', 1)
+                                ->orderBy('id')
+                                ->get();
+
+
+            $view->with([
+                'userStatu'    => $this->userStatu
+            ]);
+        });
     }
-
-    /**
-     * Bootstrap any application services.
-     *
-     * @return void
-     */
-
-
-	  public function boot()
-    {
-		
-}
 }

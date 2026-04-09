@@ -120,6 +120,7 @@ Route::post('/update_permission', [App\Http\Controllers\Admin\UsersController::c
 Route::prefix('admin')->middleware('auth')->group(function () {
 
     Route::get('users', [App\Http\Controllers\Admin\UsersController::class, 'index']);
+    Route::get('admin/users/{id}', [App\Http\Controllers\Admin\UsersController::class, 'index']);
 
     Route::get('users/edit/{id}', [App\Http\Controllers\Admin\UsersController::class, 'edit']);
     Route::post('users/update/{id}', [App\Http\Controllers\Admin\UsersController::class, 'update']);

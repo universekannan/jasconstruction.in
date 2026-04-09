@@ -81,12 +81,15 @@
                         <p>Users <i class="right fas fa-angle-left"></i></p>
                     </a>
                     <ul class="nav nav-treeview">
+                        @foreach ($userStatu as $userStatus)
                         <li class="nav-item">
-                            <a href="{{ url('admin/users') }}"
-                                class="nav-link {{ Request::is('admin/users') ? 'active' : '' }}">
+                            <a href="{{ url('admin/users/' . $userStatus->id) }}"
+                                class="nav-link {{ isset($user_statu_id) && $user_statu_id == $userStatus->id ? 'active' : '' }}">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Users</p>
+                                <p>{{ $userStatus->user_types_name }}</p>
                             </a>
+                        </li>
+                        @endforeach
                         <li class="nav-item">
                             <a href="{{ url('admin/usertype') }}"
                                 class="nav-link {{ Request::is('admin/usertype*') ? 'active' : '' }}">
@@ -103,8 +106,8 @@
                     </a>
                 </li>
 
-                
-            
+
+
             </ul>
             </li>
             @endif
@@ -206,7 +209,7 @@
                 </a>
                 <ul class="nav nav-treeview">
 
-                   
+
 
                     {{-- Setting --}}
                     @if(Auth()->user()->id == 1)
