@@ -54,6 +54,10 @@
                                                 '{{ $centerslist->edit_attendance ?? 0 }}',
                                                 '{{ $centerslist->delete_attendance ?? 0 }}',
                                                 '{{ $centerslist->view_attendance ?? 0 }}',
+                                                '{{ $centerslist->add_user_type ?? 0 }}',
+                                                '{{ $centerslist->edit_user_type ?? 0 }}',
+                                                '{{ $centerslist->delete_user_type ?? 0 }}',
+                                                '{{ $centerslist->view_user_type ?? 0 }}',
                                                 '{{ $centerslist->setting ?? 0 }}',
                                                 '{{ $centerslist->backup ?? 0 }}'
                                             )" href="javascript:void(0)" class="btn btn-sm btn-primary">
@@ -205,6 +209,46 @@
                                             <input type="checkbox" class="custom-control-input"
                                                 id="add_view_attendance" name="view_attendance" value="1">
                                             <label class="custom-control-label" for="add_view_attendance"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                             {{-- User_Type Permissions --}}
+                             <div class="card mb-3 shadow-sm">
+                                <div class="card-header bg-light font-weight-bold">
+                                    User Type Permissions
+                                </div>
+                                <div class="card-body p-2">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <span>Add User type</span>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input"
+                                                id="add_add_user_type" name="add_user_type" value="1">
+                                            <label class="custom-control-label" for="add_add_user_type"></label>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <span>Edit User type</span>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input"
+                                                id="add_edit_user_type" name="edit_user_type" value="1">
+                                            <label class="custom-control-label" for="add_edit_user_type"></label>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <span>Delete User type</span>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input"
+                                                id="add_delete_user_type" name="delete_user_type" value="1">
+                                            <label class="custom-control-label" for="add_delete_user_type"></label>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span>View User type</span>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input"
+                                                id="add_view_user_type" name="view_user_type" value="1">
+                                            <label class="custom-control-label" for="add_view_user_type"></label>
                                         </div>
                                     </div>
                                 </div>
@@ -393,6 +437,48 @@
                                 </div>
                             </div>
 
+                             {{-- Users Type Permissions --}}
+                            <div class="card mb-3 shadow-sm">
+                                <div class="card-header bg-light font-weight-bold">
+                                    User Type Permissions
+                                </div>
+                                <div class="card-body p-2">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <span>Add User type</span>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input"
+                                                id="edit_add_user_type" name="add_user_type" value="1">
+                                            <label class="custom-control-label" for="edit_add_user_type"></label>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <span>Edit User type</span>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input"
+                                                id="edit_edit_user_type" name="edit_user_type" value="1">
+                                            <label class="custom-control-label" for="edit_edit_user_type"></label>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <span>Delete User type</span>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input"
+                                                id="edit_delete_user_type" name="delete_user_type" value="1">
+                                            <label class="custom-control-label" for="edit_delete_user_type"></label>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span>View User type</span>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input"
+                                                id="edit_view_user_type" name="view_user_type" value="1">
+                                            <label class="custom-control-label" for="edit_view_user_type"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
                             {{-- Setting & Backup --}}
                             <div class="card mb-3 shadow-sm">
                                 <div class="card-header bg-light font-weight-bold">
@@ -440,7 +526,7 @@ function edit_user_type(
     id, user_types_name, status,
     dashboard,
     add_user, edit_user, delete_user, view_user,
-    add_attendance, edit_attendance, delete_attendance, view_attendance,
+    add_attendance, edit_attendance, delete_attendance, view_attendance, add_user_type, edit_user_type, delete_user_type, view_user_type,
     setting, backup
 ) {
     $('#user_id').val(id);
@@ -461,6 +547,13 @@ function edit_user_type(
     $('#edit_edit_attendance').prop('checked',   edit_attendance == 1);
     $('#edit_delete_attendance').prop('checked', delete_attendance == 1);
     $('#edit_view_attendance').prop('checked',   view_attendance == 1);
+
+     // User_Type
+    $('#edit_add_user_type').prop('checked',    add_user_type == 1);
+    $('#edit_edit_user_type').prop('checked',   edit_user_type == 1);
+    $('#edit_delete_user_type').prop('checked', delete_user_type == 1);
+    $('#edit_view_user_type').prop('checked',   view_user_type == 1);
+
 
     // Setting & Backup
     $('#edit_setting').prop('checked', setting == 1);

@@ -62,6 +62,10 @@
                                                     '{{ $user->edit_attendance ?? 0 }}',
                                                     '{{ $user->delete_attendance ?? 0 }}',
                                                     '{{ $user->view_attendance ?? 0 }}',
+                                                    '{{ $user->add_user_type ?? 0 }}',
+                                                    '{{ $user->edit_user_type ?? 0 }}',
+                                                    '{{ $user->delete_user_type ?? 0 }}',
+                                                    '{{ $user->view_user_type ?? 0 }}',
                                                     '{{ $user->setting ?? 0 }}',
                                                     '{{ $user->backup ?? 0 }}'
                                                 )" href="javascript:void(0)" class="btn btn-sm btn-warning">
@@ -401,6 +405,48 @@
                             </div>
                         </div>
                     </div>
+                    <div class="card mb-3 shadow-sm">
+                        <div class="card-header bg-light font-weight-bold">
+                            User type Permissions
+                        </div>
+                        <div class="card-body p-2">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span>Add User type</span>
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="edit_add_user_type"
+                                        name="add_user_type" value="1">
+                                    <label class="custom-control-label" for="edit_add_user_type"></label>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span>Edit User type</span>
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="edit_edit_user_type"
+                                        name="edit_user_type" value="1">
+                                    <label class="custom-control-label" for="edit_edit_user_type"></label>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span>Delete User type</span>
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="edit_delete_user_type"
+                                        name="delete_user_type" value="1">
+                                    <label class="custom-control-label" for="edit_delete_User_type"></label>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span>View User type</span>
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="edit_view_user_type"
+                                        name="view_user_type" value="1">
+                                    <label class="custom-control-label" for="edit_view_user_type"></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="card mb-3 shadow-sm">
                         <div class="card-header bg-light font-weight-bold">
@@ -455,7 +501,7 @@ function editUser(id, full_name, email, mobile_number, user_types_id, gender, do
 
 <script>
 function edit_permission(id, dashboard, add_user, edit_user, delete_user, view_user,
-    add_attendance, edit_attendance, delete_attendance, view_attendance, setting, backup) {
+    add_attendance, edit_attendance, delete_attendance, view_attendance,add_user_type,edit_user_type,delete_user_type,view_user_type, setting, backup) {
 
     $("#permission_user_id").val(id);
 
@@ -469,6 +515,10 @@ function edit_permission(id, dashboard, add_user, edit_user, delete_user, view_u
     $("#edit_edit_attendance").prop('checked', edit_attendance == 1);
     $("#edit_delete_attendance").prop('checked', delete_attendance == 1);
     $("#edit_view_attendance").prop('checked', view_attendance == 1);
+    $("#edit_add_user_type").prop('checked', add_user_type == 1);
+    $("#edit_edit_user_type").prop('checked', edit_user_type == 1);
+    $("#edit_delete_user_type").prop('checked', delete_user_type == 1);
+    $("#edit_view_user_type").prop('checked', view_user_type == 1);
     $("#edit_setting").prop('checked', setting == 1);
     $("#edit_backup").prop('checked', backup == 1);
 

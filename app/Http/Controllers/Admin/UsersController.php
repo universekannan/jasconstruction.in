@@ -67,11 +67,15 @@ class UsersController extends Controller
                 'add_user' => $userType->add_user,
                 'edit_user' => $userType->edit_user,
                 'delete_user' => $userType->delete_user,
-                'view_user' => $userType->add_user,
+                'view_user' => $userType->view_user,
                 'add_attendance' => $userType->add_attendance,
                 'edit_attendance' => $userType->edit_attendance,
                 'delete_attendance' => $userType->delete_attendance,
                 'view_attendance' => $userType->view_attendance,
+                'add_user_type' => $userType->add_user_type,
+                'edit_user_type' => $userType->edit_user_type,
+                'delete_user_type' => $userType->delete_user_type,
+                'view_user_type' => $userType->view_user_type,
                 'setting' => $userType->setting,
                 'backup' => $userType->backup,
             ]);
@@ -95,6 +99,10 @@ class UsersController extends Controller
             'edit_attendance'  => $request->edit_attendance ?? 0,
             'delete_attendance'  => $request->delete_attendance ?? 0,
             'view_attendance'  => $request->view_attendance ?? 0,
+            'add_user_type'  => $request->add_user_type ?? 0,
+            'edit_user_type'  => $request->edit_user_type ?? 0,
+            'delete_user_type'  => $request->delete_user_type ?? 0,
+            'view_user_type'  => $request->view_user_type ?? 0,
             'setting'  => $request->setting ?? 0,
             'backup'  => $request->backup ?? 0,
         ] );
@@ -124,6 +132,10 @@ public function create()
             'edit_attendance'  => $request->edit_attendance ?? 0,
             'delete_attendance'  => $request->delete_attendance ?? 0,
             'view_attendance'  => $request->view_attendance ?? 0,
+            'add_user_type'  => $request->add_user_type ?? 0,
+            'edit_user_type'  => $request->edit_user_type ?? 0,
+            'delete_user_type'  => $request->delete_user_type ?? 0,
+            'view_user_type'  => $request->view_user_type ?? 0,
             'setting'  => $request->setting ?? 0,
             'backup'  => $request->backup ?? 0,
         ] );
@@ -542,6 +554,11 @@ if (Auth::user()->usertype_id == 1 || Auth::user()->usertype_id == 2 ){
         'delete_attendance' => $request->delete_attendance ?? 0,
         'view_attendance' => $request->view_attendance ?? 0,
 
+        'add_user_type' => $request->add_user_type ?? 0,
+        'edit_user_type' => $request->edit_user_type ?? 0,
+        'delete_user_type' => $request->delete_user_type ?? 0,
+        'view_user_type' => $request->view_user_type ?? 0,
+
         'setting' => $request->setting ?? 0,
         'backup' => $request->backup ?? 0,
     ]);
@@ -583,6 +600,10 @@ if (Auth::user()->usertype_id == 1 || Auth::user()->usertype_id == 2 ){
                 'edit_attendance' => $userType->edit_attendance,
                 'delete_attendance' => $userType->delete_attendance,
                 'view_attendance' => $userType->view_attendance,
+                'add_user_type' => $userType->add_user_type,
+                'edit_user_type' => $userType->edit_user_type,
+                'delete_user_type' => $userType->delete_user,
+                'view_user_type' => $userType->add_user_type,
                 'setting' => $userType->setting,
                 'backup' => $userType->backup,
             ]);
