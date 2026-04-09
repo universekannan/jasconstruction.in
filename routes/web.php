@@ -116,11 +116,11 @@ Route::post('/adduser', [App\Http\Controllers\Admin\UsersController::class, 'add
 Route::post('/updateuser', [App\Http\Controllers\Admin\UsersController::class, 'updateuser'])->name('updateuser');
 Route::post('/update_permission', [App\Http\Controllers\Admin\UsersController::class, 'update_permission'])->name('update_permission');
 
+ROUTE::get('admin/users/{id}', [App\Http\Controllers\Admin\UsersController::class, 'user'])->name('user');
 
 Route::prefix('admin')->middleware('auth')->group(function () {
 
     Route::get('users', [App\Http\Controllers\Admin\UsersController::class, 'index']);
-    Route::get('admin/users/{id}', [App\Http\Controllers\Admin\UsersController::class, 'index']);
 
     Route::get('users/edit/{id}', [App\Http\Controllers\Admin\UsersController::class, 'edit']);
     Route::post('users/update/{id}', [App\Http\Controllers\Admin\UsersController::class, 'update']);
