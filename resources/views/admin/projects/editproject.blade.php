@@ -71,17 +71,42 @@
 
 
 
-                            <div class="form-group ">
-                                <label for="photo" class="col-sm-2 col-form-label"><span
-                                        style="color:red">*</span>Project Image</label>
+                            <div class="form-group">
 
-                                <input type="file" class="form-control" name="photo" maxlength="100" type="photo">
+                                <label>
+                                    Project Image
+                                </label>
+
+                                <input type="file" id="image" class="form-control">
+
+                                <br>
+
+                                @if($projects->photo)
+
+                                <img id="oldImage" src="{{ URL::to('/') }}/upload/projectsave/{{ $projects->photo }}"
+                                    width="150" class="img-thumbnail">
+
+                                @endif
+
+
+                                <img id="preview" style="display:none; max-width:200px;" class="img-thumbnail mt-2">
+
+
+                                <br>
+
+                                <button type="button" id="cropBtn" class="btn btn-success mt-2" style="display:none">
+
+                                    Crop Image
+
+                                </button>
+
+
+                                <input type="hidden" name="image_base64" id="image_base64">
 
                             </div>
-
                             <div class="form-group ">
-                                <label for="project_description" class="col-sm-2 col-form-label">Project Specification<span
-                                        style="color:red">*</span></label>
+                                <label for="project_description" class="col-sm-2 col-form-label">Project
+                                    Specification<span style="color:red">*</span></label>
                                 <textarea required="required" class="form-control" name="project_description"
                                     placeholder="project Specification">{{ $projects->project_description }}
                                               </textarea>
@@ -234,6 +259,54 @@ function show_price() {
 
 $("#pricetable").on('click', '.btnDelete', function() {
     $(this).closest('tr').remove();
+});
+</script>
+<script>
+var canvas = document.createElement('canvas');
+var ctx = canvas.getContext('2d');
+var image = new Image();
+
+$("#image").change(function(e) {
+
+    var file = e.target.files[0];
+
+    var reader = new FileReader();
+
+    reader.onload = function(event) {
+
+        image.src = event.target.result;
+
+        image.onload = function() {
+
+            canvas.width = 300;
+            canvas.height = 300;
+
+            ctx.drawImage(image, 0, 0, 300, 300);
+
+            $("#preview")
+                .attr("src", canvas.toDataURL())
+                .show();
+
+            $("#cropBtn").show();
+
+        }
+
+    }
+
+    reader.readAsDataURL(file);
+
+});
+
+
+
+$("#cropBtn").click(function() {
+
+    var base64 = canvas.toDataURL("image/png");
+
+    $("#image_base64").val(base64);
+
+    alert("Image ready for upload");
+
 });
 </script>
 

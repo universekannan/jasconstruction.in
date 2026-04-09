@@ -22,6 +22,7 @@ class UsersController extends Controller
 	 
 	 
     public function users($usertype_id) {
+
         $referral_id = Auth::user()->id;
         if(Auth::user()->usertype_id == 3){
             $sql="select a.*,b.name as refname,c.usertype_name from users a,users b,user_type c where a.referral_id=b.id and a.usertype_id=c.id and a.referral_id=$referral_id and a.usertype_id=$usertype_id order by a.id";
@@ -50,13 +51,17 @@ class UsersController extends Controller
 
     public function index()
     {
-        $users = DB::table('users')->get();
+         $users = DB::table('users')
+            ->join('user_types', 'user_types.id', '=', 'users.user_types_id')
+            ->where('users.status', 1)
+            ->select('users.*', 'user_types.user_types_name')
+            ->get();
         $user_type = DB::table('user_types')->where('status',1)->get();
         return view('admin.users.index', compact('users', 'user_type'));
     }
 
     public function adduser( Request $request ) {
-
+        
         $userType = DB::table('user_types')
         ->where('id', $request->user_type_id)
         ->first();
@@ -95,6 +100,7 @@ class UsersController extends Controller
  
  public function adduser_type( Request $request ) {
         //dd($request->all());
+        
         $userid = DB::table( 'user_types' )->insertGetId( [
             'user_types_name' => $request->user_types_name,
             'status' => $request->status,
