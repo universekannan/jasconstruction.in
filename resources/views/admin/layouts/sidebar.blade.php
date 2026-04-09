@@ -81,12 +81,15 @@
                         <p>Users <i class="right fas fa-angle-left"></i></p>
                     </a>
                     <ul class="nav nav-treeview">
+                        @foreach ($userStatu as $userStatus)
                         <li class="nav-item">
-                            <a href="{{ url('admin/users') }}"
-                                class="nav-link {{ Request::is('admin/users') ? 'active' : '' }}">
+                            <a href="{{ url('admin/users/' . $userStatus->id) }}"
+                                class="nav-link {{ isset($user_statu_id) && $user_statu_id == $userStatus->id ? 'active' : '' }}">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Users</p>
+                                <p>{{ $userStatus->user_types_name }}</p>
                             </a>
+                        </li>
+                        @endforeach
                         <li class="nav-item">
                             <a href="{{ url('admin/usertype') }}"
                                 class="nav-link {{ Request::is('admin/usertype*') ? 'active' : '' }}">
@@ -160,6 +163,7 @@
                     </ul>
                 </li>
 
+<<<<<<< HEAD
                 <li
                     class="nav-item has-treeview {{ request()->segment(2) == 'accounting_year' || request()->segment(2) == 'expense_type' || request()->segment(2) == 'income_type' ? 'menu-open' : '' }}">
                     <a href="" class="nav-link">
@@ -208,6 +212,123 @@
                         </p>
                     </a>
                     <ul class="nav nav-treeview">
+=======
+
+
+            </ul>
+            </li>
+            @endif
+
+            <li
+                class="nav-item has-treeview {{ request()->segment(2) == 'transaction' ||request()->segment(2) == 'donation' || request()->segment(2) == 'expenses' || request()->segment(2) == 'income' ? 'menu-open' : '' }}">
+                <a href="" class="nav-link">
+                    <i class="nav-icon fas fa-user"></i>
+                    <p>
+                        Payments
+                        <i class="fas fa-angle-left right"></i>
+                    </p>
+                </a>
+                <ul class="nav nav-treeview">
+
+                    <li class="nav-item">
+                        <a href="{{ url('admin/expense') }}"
+                            class="nav-link {{ request()->segment(2) == 'admin/expense' ? 'active' : '' }}">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Expense</p>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="{{ url('fund_transfer') }}"
+                            class="nav-link {{ request()->segment(2) == 'fund_transfer' ? 'active' : '' }}">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Fund Transfer</p>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item has-treeview {{ request()->segment(2) == 'website-settings' ? 'menu-open' : '' }}">
+                <a href="#" class="nav-link {{ Request::is('admin/website-settings*') ? 'active' : '' }}">
+                    <i class="nav-icon fas fa-globe"></i>
+                    <p>
+                        Website
+                        <i class="right fas fa-angle-left"></i>
+                    </p>
+                </a>
+
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                        <a href="{{ url('admin/website-settings') }}"
+                            class="nav-link {{ Request::is('admin/website-settings') ? 'active' : '' }}">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Website Settings</p>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li
+                class="nav-item has-treeview {{ request()->segment(2) == 'accounting_year' || request()->segment(2) == 'expense_type' || request()->segment(2) == 'income_type' ? 'menu-open' : '' }}">
+                <a href="" class="nav-link">
+                    <i class="nav-icon fas fa-user"></i>
+                    <p>
+                        Accounting
+                        <i class="fas fa-angle-left right"></i>
+                    </p>
+                </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                        <a href="{{ url('admin/accounting_year') }}"
+                            class="nav-link {{ request()->segment(2) == 'accounting_year' ? 'active' : '' }}">
+                            <i class="fas fa-circle nav-icon"></i>
+                            <p>Accounting Year</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ url('admin/expense_type') }}"
+                            class="nav-link {{ request()->segment(2) == 'expense_type' ? 'active' : '' }}">
+                            <i class="fas fa-circle nav-icon"></i>
+                            <p>Expense Type</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ url('admin/income_type') }}"
+                            class="nav-link {{ request()->segment(2) == 'income_type' ? 'active' : '' }}">
+                            <i class="fas fa-circle nav-icon"></i>
+                            <p>Income Type</p>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            {{-- Settings --}}
+            @if(Auth::user()->view_bank || Auth::user()->setting || Auth::user()->backup ||
+            Auth::user()->view_expense || Auth::user()->view_expense_type)
+            <li
+                class="nav-item has-treeview {{ Request::is('admin/setting*') || Request::is('admin/web_setting*') || Request::is('admin/govt_bank*') || Request::is('users/permissions*') || Request::is('admin/backup*') ? 'menu-open' : '' }}">
+                <a href="#"
+                    class="nav-link {{ Request::is('admin/setting*') || Request::is('admin/web_setting*') || Request::is('admin/govt_bank*') || Request::is('users/permissions*') || Request::is('admin/backup*') ? 'active' : '' }}">
+                    <i class="nav-icon fas fa-cog"></i>
+                    <p>
+                        Setting
+                        <i class="right fas fa-angle-left"></i>
+                    </p>
+                </a>
+                <ul class="nav nav-treeview">
+
+
+
+                    {{-- Setting --}}
+                    @if(Auth()->user()->id == 1)
+                    <li class="nav-item">
+                        <a href="{{ url('/admin/setting') }}"
+                            class="nav-link {{ Request::is('admin/setting') ? 'active' : '' }}">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Setting</p>
+                        </a>
+                    </li>
+                    @endif
+>>>>>>> f0085d98224ffacee9fe59079475e8936817f226
 
 
 
