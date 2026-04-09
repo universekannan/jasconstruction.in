@@ -108,33 +108,34 @@
                             <div class="form-group row">
                                 <label class="col-sm-4 col-form-label">Full Name</label>
                                 <div class="col-sm-8">
-                                    <input type="text" class="form-control" name="full_name">
+                                    <input required="required" type="text" class="form-control" name="full_name">
                                 </div>
                             </div>
 
                             <div class="form-group row">
                                 <label class="col-sm-4 col-form-label">Email</label>
                                 <div class="col-sm-8">
-                                    <input type="email" class="form-control" name="email">
+                                    <input required="required" type="email" class="form-control" name="email">
                                 </div>
                             </div>
 
                             <div class="form-group row">
                                 <label class="col-sm-4 col-form-label">Password</label>
                                 <div class="col-sm-8">
-                                    <input type="text" class="form-control" name="password">
+                                    <input required="required" type="text" class="form-control" name="password">
                                 </div>
                             </div>
 
                             <div class="form-group row">
                                 <label class="col-sm-4 col-form-label">Mobile No</label>
                                 <div class="col-sm-8">
-                                    <input type="text" class="form-control" name="mobile_number">
+                                    <input required="required" type="text" class="form-control" name="mobile_number">
                                 </div>
                             </div>
 
                             <div class="form-group row">
                                 <label class="col-sm-4 col-form-label">User Type</label>
+                            
                                 <div class="col-sm-8">
                                     <select class="form-control" name="user_type_id">
                                         <option>Select</option>
@@ -164,14 +165,14 @@
                             <div class="form-group row">
                                 <label class="col-sm-4 col-form-label">Date Of Birth</label>
                                 <div class="col-sm-8">
-                                    <input type="date" class="form-control" name="dob">
+                                    <input required="required" type="date" class="form-control" name="dob">
                                 </div>
                             </div>
 
                             <div class="form-group row">
                                 <label class="col-sm-4 col-form-label">Address</label>
                                 <div class="col-sm-8">
-                                    <textarea class="form-control" name="address" rows="3"></textarea>
+                                    <textarea required="required" class="form-control" name="address" rows="3"></textarea>
                                 </div>
                             </div>
 
@@ -211,21 +212,21 @@
                             <div class="form-group row">
                                 <label class="col-sm-4 col-form-label">Full Name</label>
                                 <div class="col-sm-8">
-                                    <input type="text" class="form-control" name="full_name" id="editname">
+                                    <input required="required" type="text" class="form-control" name="full_name" id="editname">
                                 </div>
                             </div>
 
                             <div class="form-group row">
                                 <label class="col-sm-4 col-form-label">Email</label>
                                 <div class="col-sm-8">
-                                    <input type="email" class="form-control" name="email" id="editemail">
+                                    <input required="required" type="email" class="form-control" name="email" id="editemail">
                                 </div>
                             </div>
 
                             <div class="form-group row">
                                 <label class="col-sm-4 col-form-label">Mobile No</label>
                                 <div class="col-sm-8">
-                                    <input type="text" class="form-control" name="mobile_number" id="editmobile_number">
+                                    <input required="required" type="text" class="form-control" name="mobile_number" id="editmobile_number">
                                 </div>
                             </div>
 
@@ -260,14 +261,14 @@
                             <div class="form-group row">
                                 <label class="col-sm-4 col-form-label">Date Of Birth</label>
                                 <div class="col-sm-8">
-                                    <input type="date" class="form-control" name="dob" id="editdob">
+                                    <input required="required" type="date" class="form-control" name="dob" id="editdob">
                                 </div>
                             </div>
 
                             <div class="form-group row">
                                 <label class="col-sm-4 col-form-label">Address</label>
                                 <div class="col-sm-8">
-                                    <textarea class="form-control" name="address" id="editaddress" rows="3"></textarea>
+                                    <textarea required="required" class="form-control" name="address" id="editaddress" rows="3"></textarea>
                                 </div>
                             </div>
 
